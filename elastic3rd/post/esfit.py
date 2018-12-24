@@ -31,7 +31,7 @@ def esplot(x, y, coef, saveflag):
     plotfit = plt.plot(xfit, yfit, 'r', label = 'fitting')
     plt.show()
 
-#'''
+'''
 #FOR TEST
 x = np.arange(-0.05, 0.075, 0.025)
 y = np.array([0.19287, 0.04706, 0, 0.04824, 0.17438])
@@ -45,4 +45,4 @@ print coefall
 
 #print x
 #print y
-#'''
+'''
