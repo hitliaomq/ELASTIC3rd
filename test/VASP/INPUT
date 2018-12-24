@@ -4,5 +4,3 @@ EnergyRun       1           # 1 for default(CASTEP: RunCASTEP, VASP: vasp_std), 
 MaxStrain       5           #The maximum strain in each deform mode, in unit %
 STEPS           5           #The steps in each mode, if it is even, STEPS = STEPS + 1, if it is odd, STEPS = STEPS
 NP              2           #The number of core
-abc
-
