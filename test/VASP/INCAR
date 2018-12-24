@@ -1,0 +1,4 @@
+ENCUT = 300
+ISMEAR = 0
+SIGMA = 0.1
+PREC = Accurate

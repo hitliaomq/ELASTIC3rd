@@ -1,0 +1,27 @@
+task : SinglePoint
+comment : CASTEP calculation from Materials Studio
+xc_functional : PBE
+spin_polarized : false
+opt_strategy : Default
+page_wvfns :        0
+cut_off_energy :      136.099999999999990
+grid_scale :        1.500000000000000
+fine_grid_scale :        1.500000000000000
+finite_basis_corr :        0
+elec_energy_tol :   2.000000000000000e-006
+max_scf_cycles :      100
+fix_occupancy : true
+metals_method : dm
+mixing_scheme : Pulay
+mix_charge_amp :        0.500000000000000
+mix_charge_gmax :        1.500000000000000
+mix_history_length :       20
+nextra_bands : 0
+num_dump_cycles : 0
+calculate_ELF : false
+calculate_stress : false
+popn_calculate : true
+calculate_hirshfeld : true
+calculate_densdiff : false
+popn_bond_cutoff :        3.000000000000000
+pdos_calculate_weights : false
