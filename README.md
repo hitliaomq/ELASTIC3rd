@@ -14,8 +14,8 @@
 |            Author: Liao Mingqing                        |
 |            E_mail: liaomq1900127@163.com                |
 |   FGMS @ Harbin Institute of Technology(HIT)            |
-|URL:https://github.com/hitliaomq/ELASTIC3rd      |
-|                                           |
+|URL:https://github.com/hitliaomq/ELASTIC3rd              |
+|                                                         |
 +=========================================================+
 
 
