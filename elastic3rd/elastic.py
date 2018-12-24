@@ -20,24 +20,26 @@ import numpy as np
 import sys
 import os
 
-#Print LOGO
-esutils.print_logo()
-
-#Read INPUT
-if len(sys.argv) > 1:
-    INPUT = sys.argv[1]
-else:
-    INPUT = "INPUT"
-ParaIn = esutils.read_input(INPUT)
 crystaltype = "cubic"
-print("===================The input parameters===================")
-esutils.print_parain(ParaIn)
-
-#Import glue as eglue
-
-eglue = __import__("energy." + ParaIn['EnergyCode'], fromlist = ParaIn['EnergyCode'])
 
 def elastic3():
+    #Print LOGO
+    esutils.print_logo()
+
+    #Read INPUT
+    if len(sys.argv) > 1:
+        INPUT = sys.argv[1]
+    else:
+        INPUT = "INPUT"
+    ParaIn = esutils.read_input(INPUT)    
+    print("===================The input parameters===================")
+    esutils.print_parain(ParaIn)
+
+    #Import glue as eglue
+
+    eglue = __import__("energy." + ParaIn['EnergyCode'], fromlist = ParaIn['EnergyCode'])
+
+
     #Deform mode this is for cubic
     #TODO : for any symmtry
     Mode_index = range(1, 7)
@@ -74,7 +76,7 @@ def elastic3():
     n_Strain = len(StrainList)
     n_Mode = len(Mode_index)
     E = np.zeros((n_Strain, n_Mode))
-    print E
+    #print E
     for i in range(1, n_Mode + 1):
         print("----------------------------------------------------------")
         print("Start calculating Mode " + str(i))

@@ -64,6 +64,7 @@ def escoef(crystaltryp):
             [4, 6, 0, 0, 0, 0, 0, 0, 12, 12, -2, 0, 0, 0]])
     return (coef2, coef3)
 
+'''
 crystaltype = "cubic"
 
 e = read_e()
@@ -77,3 +78,4 @@ print coef_fit
 (C2, C3) = get_cij(coef_fit, crystaltype)
 print C2
 print C3
+'''
