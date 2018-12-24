@@ -2,22 +2,13 @@
 
 # ELASTIC3rd
 
-
-
 +=========================================================+
-
 |  EEEEE L     SSSSS TTTTT IIIII CCCCC 33333 PPPPP Y   Y  |
-
 |  E     L     S       T     I   C         3 P   P  Y Y   |
-
 |  EEEE  L     SSSSS   T     I   C      3333 PPPPP   Y    |
-
 |  E     L         S   T     I   C         3 P       Y    |
-
 |  EEEEE LLLLL SSSSS   T   IIIII CCCCC 33333 P       Y    |
-
 +---------------------------------------------------------+
-
 |           Version: ELASTIC3PY                           |
 |              Date: 2018-12-22                           |
 |            Author: Liao Mingqing                        |
