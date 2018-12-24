@@ -43,7 +43,7 @@ def write_base_vec(BaseName, BaseVec):
     os.rename('tmpfile', FileName)
 
 def run(NP, BaseName):
-    RunStr = "mpirum -np " + str(int(NP)) + " vasp_std"
+    RunStr = "mpirun -np " + str(int(NP)) + " vasp_std"
     return RunStr
 
 def get_energy(BaseName):
