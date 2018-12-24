@@ -68,8 +68,7 @@ def print_logo():
     print("|            Author: Liao Mingqing                        |")
     print("|            E_mail: liaomq1900127@163.com                |")
     print("|   FGMS @ Harbin Institute of Technology(HIT)            |")
-    print("|URL:https://github.com/hitliaomq/MaterialPOST/tree/      |")
-    print("|    master/ScriptsForCASTEP/Elastic                      |")
+    print("|  URL:https://github.com/hitliaomq/ELASTIC3rd            |")
     print("|Please Cite:                                             |")
     print("+=========================================================+")
 
