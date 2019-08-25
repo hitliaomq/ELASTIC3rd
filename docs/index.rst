@@ -4,18 +4,17 @@
    contain the root `toctree` directive.
 
 .. |logo| image:: Elastic3rd_LOGO_NoBG.png
-          :height: 23pt
-          :width: 16pt
+          :height: 46pt
+          :width: 33pt
           :alt: Logo
 
-|logo| ELASTIC3rd: An Open Source Code to Calculate Higher-Order Elastic Constants(HOECs) from First Principles
+|logo| ELASTIC3rd: 3rd ELASTIC constants calculator
 ==============================================================================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
-   :glob:
 
    Introduction
    Get Started <GetStart>
@@ -25,7 +24,16 @@ Contents:
    API
 
    *
+Citing
+======
 
+Author Information
+==================
+Mingqing Liao(廖名情)
+
+liaomq1900127@163.com
+
+FGMS group @ Harbin Institute of Technology(HIT)
 
 
 Indices and tables
