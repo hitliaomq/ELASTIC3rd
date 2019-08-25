@@ -3,14 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ELASTIC3rd documentation!
-==================================================
+.. |logo| image:: Elastic3rd_LOGO_NoBG.png
+          :height: 23pt
+          :width: 16pt
+          :alt: Logo
+
+|logo| ELASTIC3rd: An Open Source Code to Calculate Higher-Order Elastic Constants(HOECs) from First Principles
+==============================================================================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
    :glob:
+
+   Introduction
+   Get Started <GetStart>
+   Theory Background <Theory>
+   Examples
+   FAQ
+   API
 
    *
 
