@@ -6,7 +6,7 @@ Calculate the 2nd and 3rd elastic constant.
 
 The perl version for CASTEP in Materials Studio were shown in <https://github.com/hitliaomq/MaterialPOST/tree/master/ScriptsForCASTEP/Elastic>
 
-<img src="https://github.com/hitliaomq/ELASTIC3rd/blob/master/LOGO.png" width="305" height="177"></img>
+<img src="https://github.com/hitliaomq/ELASTIC3rd/blob/master/Elastic3rd_LOGO.png" width="305" height="177"></img>
 
 
 
