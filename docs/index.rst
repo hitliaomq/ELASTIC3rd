@@ -30,9 +30,7 @@ Citing
 Author Information
 ==================
 Mingqing Liao(廖名情)
-
 liaomq1900127@163.com
-
 FGMS group @ Harbin Institute of Technology(HIT)
 
 
