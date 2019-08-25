@@ -4,8 +4,8 @@
    contain the root `toctree` directive.
 
 .. |logo| image:: Elastic3rd_LOGO_NoBG.png
-          :height: 46pt
-          :width: 33pt
+          :height: 30pt
+          :width: 30pt
           :alt: Logo
 
 |logo| ELASTIC3rd: 3rd ELASTIC constants calculator
