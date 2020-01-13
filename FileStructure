@@ -1,0 +1,330 @@
+ELASTIC3RD
+├── doc
+│   └── Manual.pdf
+├── example
+│   ├── C
+│   │   ├── CASTEP
+│   │   │   ├── C.cell
+│   │   │   ├── C.param
+│   │   │   ├── INPUT
+│   │   │   ├── Result.txt
+│   │   │   └── test.py
+│   │   └── VASP
+│   │       ├── INCAR
+│   │       ├── INPUT
+│   │       ├── KPOINTS
+│   │       ├── POSCAR
+│   │       ├── Results.txt
+│   │       └── test.py
+│   ├── EEnergy.txt
+│   ├── Elastic3rdPost_SpeciMode.py
+│   ├── Elastic3rdPost_Whole.py
+│   ├── INPUT
+│   ├── Mg
+│   │   ├── INPUT
+│   │   ├── Mg.cell
+│   │   ├── Mg.param
+│   │   ├── Result.txt
+│   │   └── test.py
+│   ├── Si
+│   │   ├── CASTEP
+│   │   │   ├── INPUT
+│   │   │   ├── Result.txt
+│   │   │   ├── Si
+│   │   │   │   ├── EEnergy.txt
+│   │   │   │   ├── INPUT
+│   │   │   │   ├── Mode0
+│   │   │   │   │   ├── Energy_Mode.txt
+│   │   │   │   │   ├── Si.castep
+│   │   │   │   │   ├── Si.cell
+│   │   │   │   │   └── Si.param
+│   │   │   │   ├── Mode1
+│   │   │   │   │   ├── Energy_Mode.txt
+│   │   │   │   │   ├── Strain-2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-8.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   └── Strain8.0
+│   │   │   │   │       ├── Energy_Strain.txt
+│   │   │   │   │       ├── Si.castep
+│   │   │   │   │       ├── Si.cell
+│   │   │   │   │       └── Si.param
+│   │   │   │   ├── Mode2
+│   │   │   │   │   ├── Energy_Mode.txt
+│   │   │   │   │   ├── Strain-2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-8.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   └── Strain8.0
+│   │   │   │   │       ├── Energy_Strain.txt
+│   │   │   │   │       ├── Si.castep
+│   │   │   │   │       ├── Si.cell
+│   │   │   │   │       └── Si.param
+│   │   │   │   ├── Mode3
+│   │   │   │   │   ├── Energy_Mode.txt
+│   │   │   │   │   ├── Strain-2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-8.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   └── Strain8.0
+│   │   │   │   │       ├── Energy_Strain.txt
+│   │   │   │   │       ├── Si.castep
+│   │   │   │   │       ├── Si.cell
+│   │   │   │   │       └── Si.param
+│   │   │   │   ├── Mode4
+│   │   │   │   │   ├── Energy_Mode.txt
+│   │   │   │   │   ├── Strain-2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-8.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   └── Strain8.0
+│   │   │   │   │       ├── Energy_Strain.txt
+│   │   │   │   │       ├── Si.castep
+│   │   │   │   │       ├── Si.cell
+│   │   │   │   │       └── Si.param
+│   │   │   │   ├── Mode5
+│   │   │   │   │   ├── Energy_Mode.txt
+│   │   │   │   │   ├── Strain-2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain2.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain4.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain6.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   ├── Strain-8.0
+│   │   │   │   │   │   ├── Energy_Strain.txt
+│   │   │   │   │   │   ├── Si.castep
+│   │   │   │   │   │   ├── Si.cell
+│   │   │   │   │   │   └── Si.param
+│   │   │   │   │   └── Strain8.0
+│   │   │   │   │       ├── Energy_Strain.txt
+│   │   │   │   │       ├── Si.castep
+│   │   │   │   │       ├── Si.cell
+│   │   │   │   │       └── Si.param
+│   │   │   │   └── Mode6
+│   │   │   │       ├── Energy_Mode.txt
+│   │   │   │       ├── Strain-2.0
+│   │   │   │       │   ├── Energy_Strain.txt
+│   │   │   │       │   ├── Si.castep
+│   │   │   │       │   ├── Si.cell
+│   │   │   │       │   └── Si.param
+│   │   │   │       ├── Strain2.0
+│   │   │   │       │   ├── Energy_Strain.txt
+│   │   │   │       │   ├── Si.castep
+│   │   │   │       │   ├── Si.cell
+│   │   │   │       │   └── Si.param
+│   │   │   │       ├── Strain-4.0
+│   │   │   │       │   ├── Energy_Strain.txt
+│   │   │   │       │   ├── Si.castep
+│   │   │   │       │   ├── Si.cell
+│   │   │   │       │   └── Si.param
+│   │   │   │       ├── Strain4.0
+│   │   │   │       │   ├── Energy_Strain.txt
+│   │   │   │       │   ├── Si.castep
+│   │   │   │       │   ├── Si.cell
+│   │   │   │       │   └── Si.param
+│   │   │   │       ├── Strain-6.0
+│   │   │   │       │   ├── Energy_Strain.txt
+│   │   │   │       │   ├── Si.castep
+│   │   │   │       │   ├── Si.cell
+│   │   │   │       │   └── Si.param
+│   │   │   │       ├── Strain6.0
+│   │   │   │       │   ├── Energy_Strain.txt
+│   │   │   │       │   ├── Si.castep
+│   │   │   │       │   ├── Si.cell
+│   │   │   │       │   └── Si.param
+│   │   │   │       ├── Strain-8.0
+│   │   │   │       │   ├── Energy_Strain.txt
+│   │   │   │       │   ├── Si.castep
+│   │   │   │       │   ├── Si.cell
+│   │   │   │       │   └── Si.param
+│   │   │   │       └── Strain8.0
+│   │   │   │           ├── Energy_Strain.txt
+│   │   │   │           ├── Si.castep
+│   │   │   │           ├── Si.cell
+│   │   │   │           └── Si.param
+│   │   │   ├── Si.cell
+│   │   │   ├── Si.param
+│   │   │   └── test.py
+│   │   └── VASP
+│   │       ├── INCAR
+│   │       ├── INPUT
+│   │       ├── KPOINTS
+│   │       ├── POSCAR
+│   │       ├── Results.txt
+│   │       └── test.py
+│   ├── STRAINMODE
+│   └── test.py
+├── README
+├── FileStructure
+└── src
+    ├── elastic3rd
+    │   ├── crystal
+    │   │   ├── deform.py
+    │   │   ├── __init__.py
+    │   │   └── lattice.py
+    │   ├── elastic.py
+    │   ├── energy
+    │   │   ├── castep.py
+    │   │   ├── energyrun
+    │   │   ├── glue.py
+    │   │   ├── __init__.py
+    │   │   └── vasp.py
+    │   ├── esutils.py
+    │   ├── __init__.py
+    │   ├── post
+    │   │   ├── esfit.py
+    │   │   ├── __init__.py
+    │   │   └── post.py
+    │   └── symmetry
+    │       ├── __init__.py
+    │       ├── symdata.py
+    │       └── symmetry.py
+    └── setup.py

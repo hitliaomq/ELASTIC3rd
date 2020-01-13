@@ -1,0 +1,20 @@
+ SYSTEM =  Si 
+
+INCAR-basic
+   PREC   = Accurate
+   ENCUT  = 320 eV
+   ALGO = Fast
+   EDIFF  = 1E-5
+   ISMEAR = -5
+   ISPIN = 1
+   SIGMA = 0.1
+   NPAR = 2
+
+ Ionic Relaxation
+   ICHARG = 2
+   NSW    = 300
+   IBRION = 2
+   POTIM = 0.5
+   ISIF   = 2
+   LCHARG = .FALSE.
+   LWAVE  =  F

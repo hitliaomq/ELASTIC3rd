@@ -1,0 +1,1795 @@
+ Job started on host YOS-20180822FRE
+ at Fri May  3 03:36:00 2019
+
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Materials Studio CASTEP version 2017 R2         |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, E. L. Brown, M. S. McFly,        |
+ | J. Wilkins, B-C. Shih, P. J. P. Byrne           |
+ |                                                 |
+ | Copyright (c) 2000 - 2016                       |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ This version was compiled for i686-windows-msvc2013 on Dec 07 2016
+ Code version: 7217
+ Intel(R) Math Kernel Library Version 11.1.2 
+ Fundamental constants values: CODATA 2010
+ 
+License checkout of MS_castep successful
+ 
+ 
+ Pseudo atomic calculation performed for Si 3s2 3p2
+ 
+ Converged in 17 iterations to a total energy of -101.9015 eV
+ 
+ Calculation parallelised over 8 processes.
+ Data is distributed by k-point(8-way)
+
+ ************************************ Title ************************************
+ CASTEP calculation from Materials Studio
+
+ ***************************** General Parameters ******************************
+  
+ output verbosity                               : normal  (1)
+ write checkpoint data to                       : Si.check
+ type of calculation                            : geometry optimization
+ stress calculation                             : on
+ density difference calculation                 : off
+ electron localisation func (ELF) calculation   : off
+ Hirshfeld analysis                             : off
+ unlimited duration calculation
+ timing information                             : on
+ memory usage estimate                          : on
+ write final potential to formatted file        : off
+ write final density to formatted file          : off
+ write BibTeX reference list                    : on
+ write OTFG pseudopotential files               : on
+ write electrostatic potential file             : on
+ write bands file                               : on
+ checkpoint writing                             : both castep_bin and check files
+  
+ output         length unit                     : A
+ output           mass unit                     : amu
+ output           time unit                     : ps
+ output         charge unit                     : e
+ output           spin unit                     : hbar/2
+ output         energy unit                     : eV
+ output          force unit                     : eV/A
+ output       velocity unit                     : A/ps
+ output       pressure unit                     : GPa
+ output     inv_length unit                     : 1/A
+ output      frequency unit                     : cm-1
+ output force constant unit                     : eV/A**2
+ output         volume unit                     : A**3
+ output   IR intensity unit                     : (D/A)**2/amu
+ output         dipole unit                     : D
+ output         efield unit                     : eV/A/e
+ output        entropy unit                     : J/mol/K
+  
+ wavefunctions paging                           : none
+ random number generator seed                   : randomised (33601550)
+ data distribution                              : optimal for this architecture
+ optimization strategy                          : balance speed and memory
+
+ *********************** Exchange-Correlation Parameters ***********************
+  
+ using functional                               : Perdew Burke Ernzerhof
+ relativistic treatment                         : Koelling-Harmon
+ DFT+D: Semi-empirical dispersion correction    : off
+
+ ************************* Pseudopotential Parameters **************************
+  
+ pseudopotential representation                 : reciprocal space
+ <beta|phi> representation                      : reciprocal space
+ spin-orbit coupling                            : off
+
+ **************************** Basis Set Parameters *****************************
+  
+ plane wave basis set cut-off                   :   320.0000   eV
+ size of standard grid                          :     2.0000
+ size of   fine   grid                          :     3.0000
+ size of   fine   gmax                          :    27.4938   1/A
+ largest prime factor in FFT                    :          5
+ finite basis set correction                    : automatic
+ number of sample energies                      :          3
+           sample  spacing                      :     5.0000   eV
+
+ **************************** Electronic Parameters ****************************
+  
+ number of  electrons                           :  32.00    
+ net charge of system                           :  0.000    
+ treating system as non-spin-polarized
+ number of bands                                :         16
+
+ ********************* Electronic Minimization Parameters **********************
+  
+ Method: Treating system as non-metallic,
+         and number of  SD  steps               :          1
+         and number of  CG  steps               :          4
+  
+ total energy / atom convergence tol.           : 0.5000E-06   eV
+ eigen-energy convergence tolerance             : 0.2500E-06   eV
+ max force / atom convergence tol.              : ignored
+ convergence tolerance window                   :          3   cycles
+ max. number of SCF cycles                      :        100
+ periodic dipole correction                     : NONE
+
+ ************************** Density Mixing Parameters **************************
+  
+ density-mixing scheme                          : Pulay
+ max. length of mixing history                  :         20
+ charge density mixing amplitude                : 0.5000    
+ cut-off energy for mixing                      :  320.0       eV
+ charge density mixing g-vector                 :  1.500       1/A
+
+ ********************** Geometry Optimization Parameters ***********************
+  
+ optimization method                            : BFGS
+ variable cell method                           : fixed basis quality
+ max. number of steps                           :        100
+ estimated bulk modulus                         :  500.0       GPa
+ estimated <frequency>                          :  1668.       cm-1
+ geom line minimiser                            : on
+ with line minimiser tolerance                  :     0.4000
+ total energy convergence tolerance             : 0.5000E-05   eV/atom
+        max ionic |force| tolerance             : 0.1000E-01   eV/A
+ max ionic |displacement| tolerance             : 0.5000E-03   A
+   max |stress component| tolerance             : 0.2000E-01   GPa
+ convergence tolerance window                   :          2   steps
+ backup results every                           :          5   steps
+ write geom trajectory file                     : on
+
+ *******************************************************************************
+  
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)                      Reciprocal Lattice(1/A)
+   5.4318204   0.4233284   0.4233283        1.1699209  -0.0845855  -0.0845855
+   0.4233283   5.4318204   0.4233283       -0.0845855   1.1699209  -0.0845855
+   0.4233283   0.4233283   5.4318204       -0.0845855  -0.0845855   1.1699209
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    5.464713          alpha =   80.793104
+                    b =    5.464713          beta  =   80.793104
+                    c =    5.464713          gamma =   80.793104
+ 
+                       Current cell volume =  157.495553       A**3
+                                   density =    1.426605   AMU/A**3
+                                           =    2.368934     g/cm^3
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+                         Total number of ions in cell =    8
+                      Total number of species in cell =    1
+                        Max number of any one species =    8
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element    Atom        Fractional coordinates of atoms  x
+            x            Number           u          v          w      x
+            x----------------------------------------------------------x
+            x  Si           1         0.000000  -0.000000  -0.000000   x 
+            x  Si           2         0.000000   0.500000   0.500000   x 
+            x  Si           3         0.500000   0.000000   0.500000   x 
+            x  Si           4         0.500000   0.500000  -0.000000   x 
+            x  Si           5         0.750000   0.250000   0.750000   x 
+            x  Si           6         0.250000   0.250000   0.250000   x 
+            x  Si           7         0.250000   0.750000   0.750000   x 
+            x  Si           8         0.750000   0.750000   0.250000   x 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+                         No user defined ionic velocities
+ 
+                           -------------------------------
+                                   Details of Species
+                           -------------------------------
+ 
+                               Mass of species in AMU
+                                    Si   28.0849991
+ 
+                          Electric Quadrupole Moment (Barn)
+                                    Si    1.0000000 No Isotope Defined
+ 
+                          Files used for pseudopotentials:
+                                    Si D:\PROGRA~1\BIOVIA\MATERI~1.2\share\Resources\Quantum\Castep\Potentials\Si_00PBE.usp
+ 
+                           -------------------------------
+                              k-Points For BZ Sampling
+                           -------------------------------
+                       MP grid size for SCF calculation is  8  8  8
+                            with an offset of   0.000  0.000  0.000
+                       Number of kpoints used =           256
+ 
+                           -------------------------------
+                               Symmetry and Constraints
+                           -------------------------------
+ 
+                      Cell is a supercell containing 4 primitive cells
+                      Maximum deviation from symmetry =  0.00000         ANG
+ 
+                      Number of symmetry operations   =           1
+         There are no ionic constraints specified or generated for this cell
+                      Point group of crystal =     1: C1, 1, 1
+                      Space group of crystal =   166: R-3m, -R 3 2"
+ 
+             Set iprint > 1 for details on symmetry rotations/translations
+ 
+                         Centre of mass is NOT constrained
+ 
+                         Number of cell constraints= 6
+                         Cell constraints are:  0 0 0 0 0 0
+ 
+                         External pressure/stress (GPa)
+                          0.00000   0.00000   0.00000
+                                    0.00000   0.00000
+                                              0.00000
+  
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+| BLAS internal memory storage                          0.0 MB         0.0 MB |
+| Model and support data                               50.6 MB        31.0 MB |
+| Electronic energy minimisation requirements          46.0 MB         0.0 MB |
+| Force calculation requirements                       14.2 MB         0.0 MB |
+| Stress calculation requirements                      17.5 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process           96.6 MB        31.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+Calculating finite basis set correction with  3 cut-off energies.
+Calculating total energy with cut-off of  310.000 eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial   3.96915189E+002                                          1.79  <-- SCF
+      1  -7.42750872E+002                    1.42458258E+002       9.58  <-- SCF
+      2  -8.53191404E+002                    1.38050665E+001      15.37  <-- SCF
+      3  -8.56798568E+002                    4.50895499E-001      20.81  <-- SCF
+      4  -8.55900360E+002                   -1.12275972E-001      28.30  <-- SCF
+      5  -8.55570240E+002                   -4.12650166E-002      35.12  <-- SCF
+      6  -8.55585717E+002                    1.93464361E-003      43.12  <-- SCF
+      7  -8.55587776E+002                    2.57398563E-004      51.00  <-- SCF
+      8  -8.55588024E+002                    3.10019654E-005      57.77  <-- SCF
+      9  -8.55588032E+002                    9.36446362E-007      62.46  <-- SCF
+     10  -8.55588033E+002                    2.02655025E-007      67.14  <-- SCF
+     11  -8.55588034E+002                    5.35610808E-008      71.81  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -855.5880337954     eV
+(energy not corrected for finite basis set)
+ 
+Calculating total energy with cut-off of  315.000 eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.55588034E+002                                         74.04  <-- SCF
+      1  -8.55589650E+002                    2.02057355E-004      80.04  <-- SCF
+      2  -8.55589652E+002                    1.72015121E-007      84.82  <-- SCF
+      3  -8.55589653E+002                    1.84571597E-007      89.53  <-- SCF
+      4  -8.55589653E+002                    3.98335292E-008      94.21  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -855.5896534201     eV
+(energy not corrected for finite basis set)
+ 
+Calculating total energy with cut-off of  320.000 eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.55589653E+002                                         96.46  <-- SCF
+      1  -8.55591181E+002                    1.90885958E-004     102.52  <-- SCF
+      2  -8.55591182E+002                    1.37981141E-007     107.28  <-- SCF
+      3  -8.55591183E+002                    1.71585489E-007     112.09  <-- SCF
+      4  -8.55591183E+002                    3.14302158E-008     116.84  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -855.5911832386     eV
+(energy not corrected for finite basis set)
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =      -0.100042eV
+ Total energy corrected for finite basis set =    -855.591185 eV
+ 
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Model and support data                               54.9 MB        31.0 MB |
+| Electronic energy minimisation requirements          46.0 MB         0.0 MB |
+| Geometry minimisation requirements                   64.6 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process          165.5 MB        31.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.76066              0.75905              0.75535         *
+ * Si              2      0.76281              0.75972              0.75622         *
+ * Si              3      0.75611              0.75656              0.75820         *
+ * Si              4      0.75674              0.75749              0.75494         *
+ * Si              5     -0.75689             -0.75860             -0.75528         *
+ * Si              6     -0.76239             -0.75697             -0.75567         *
+ * Si              7     -0.76107             -0.75858             -0.75908         *
+ * Si              8     -0.75598             -0.75869             -0.75468         *
+ *                                                                                  *
+ ************************************************************************************
+ BFGS: finished iteration     0 with enthalpy= -8.55591183E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   0.000000E+000 |   5.000000E-006 |         eV | No  | <-- BFGS
+ |  |F|max   |   1.315648E+000 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   0.000000E+000 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          1 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.856600 |     -855.591183 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         1 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.000422   0.000421   0.000418   x
+            x  Si                2         0.000423   0.500421   0.500419   x
+            x  Si                3         0.500419   0.000419   0.500421   x
+            x  Si                4         0.500420   0.500420   0.000418   x
+            x  Si                5         0.749580   0.249579   0.749581   x
+            x  Si                6         0.249577   0.249581   0.249581   x
+            x  Si                7         0.249578   0.749580   0.749579   x
+            x  Si                8         0.749581   0.749579   0.249582   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.55346197E+002                                        120.93  <-- SCF
+      1  -8.55637466E+002                    3.64085895E-002     127.14  <-- SCF
+      2  -8.55637587E+002                    1.50785119E-005     135.30  <-- SCF
+      3  -8.55637612E+002                    3.22618193E-006     140.10  <-- SCF
+      4  -8.55637623E+002                    1.30762801E-006     144.94  <-- SCF
+      5  -8.55637623E+002                    3.51169491E-008     149.78  <-- SCF
+      6  -8.55637623E+002                    8.66868423E-009     154.64  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -855.6376231223     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.71102              0.70948              0.70625         *
+ * Si              2      0.71299              0.71021              0.70720         *
+ * Si              3      0.70670              0.70721              0.70870         *
+ * Si              4      0.70720              0.70802              0.70573         *
+ * Si              5     -0.70737             -0.70898             -0.70618         *
+ * Si              6     -0.71253             -0.70768             -0.70652         *
+ * Si              7     -0.71148             -0.70922             -0.70968         *
+ * Si              8     -0.70654             -0.70904             -0.70549         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.856600 |     -855.591183 | <-- min BFGS
+ | trial step |    1.000000 |    0.800725 |     -855.637623 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         1 with line minimization (lambda= 15.330581)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.006470   0.006453   0.006414   x
+            x  Si                2         0.006490   0.506458   0.506420   x
+            x  Si                3         0.506425   0.006430   0.506447   x
+            x  Si                4         0.506433   0.506441   0.006413   x
+            x  Si                5         0.743567   0.243549   0.743584   x
+            x  Si                6         0.243511   0.243569   0.243583   x
+            x  Si                7         0.243528   0.743555   0.743549   x
+            x  Si                8         0.743576   0.743547   0.243589   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.52601940E+002                                        158.72  <-- SCF
+      1  -8.55937632E+002                    4.16961459E-001     164.92  <-- SCF
+      2  -8.55962503E+002                    3.10881475E-003     173.35  <-- SCF
+      3  -8.55995134E+002                    4.07886587E-003     180.60  <-- SCF
+      4  -8.55996331E+002                    1.49707675E-004     187.47  <-- SCF
+      5  -8.55996226E+002                   -1.31226368E-005     194.33  <-- SCF
+      6  -8.55998141E+002                    2.39399720E-004     201.24  <-- SCF
+      7  -8.56007484E+002                    1.16785696E-003     206.11  <-- SCF
+      8  -8.56008277E+002                    9.91061925E-005     210.98  <-- SCF
+      9  -8.56008369E+002                    1.15295267E-005     215.83  <-- SCF
+     10  -8.56008405E+002                    4.45482600E-006     220.71  <-- SCF
+     11  -8.56008413E+002                    1.01079265E-006     225.58  <-- SCF
+     12  -8.56011108E+002                    3.36894486E-004     231.01  <-- SCF
+     13  -8.56011156E+002                    5.90525384E-006     235.86  <-- SCF
+     14  -8.56011159E+002                    4.83112757E-007     240.66  <-- SCF
+     15  -8.56011154E+002                   -6.14962358E-007     245.51  <-- SCF
+     16  -8.56013859E+002                    3.38039680E-004     250.41  <-- SCF
+     17  -8.56013872E+002                    1.61096567E-006     255.28  <-- SCF
+     18  -8.56013872E+002                    1.02314478E-007     260.05  <-- SCF
+     19  -8.56013874E+002                    1.92786843E-007     264.91  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0138740362     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.06390              0.03047              0.03419         *
+ * Si              2      0.06677              0.04115              0.03668         *
+ * Si              3      0.02445              0.04145              0.04180         *
+ * Si              4      0.03352              0.05032              0.04417         *
+ * Si              5     -0.03647             -0.04341             -0.04815         *
+ * Si              6     -0.05873             -0.03078             -0.02589         *
+ * Si              7     -0.06409             -0.03490             -0.03756         *
+ * Si              8     -0.02935             -0.05429             -0.04525         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.856600 |     -855.591183 | <-- min BFGS
+ | trial step |    1.000000 |    0.800725 |     -855.637623 | <-- min BFGS
+ |  line step |   15.330581 |    0.047959 |     -856.013874 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     1 with enthalpy= -8.56013874E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   5.283635E-002 |   5.000000E-006 |         eV | No  | <-- BFGS
+ |  |F|max   |   8.658584E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   7.020779E-002 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          2 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.048187 |     -856.013874 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         2 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.006870   0.006827   0.006788   x
+            x  Si                2         0.006892   0.506839   0.506796   x
+            x  Si                3         0.506794   0.006811   0.506830   x
+            x  Si                4         0.506808   0.506829   0.006795   x
+            x  Si                5         0.743190   0.243165   0.743199   x
+            x  Si                6         0.243114   0.243196   0.243214   x
+            x  Si                7         0.243129   0.743178   0.743171   x
+            x  Si                8         0.743204   0.743155   0.243207   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.55868106E+002                                        268.98  <-- SCF
+      1  -8.56015505E+002                    1.84248241E-002     275.20  <-- SCF
+      2  -8.56018662E+002                    3.94625325E-004     283.33  <-- SCF
+      3  -8.56020671E+002                    2.51125584E-004     289.41  <-- SCF
+      4  -8.56022229E+002                    1.94790731E-004     296.36  <-- SCF
+      5  -8.56022847E+002                    7.72416893E-005     301.14  <-- SCF
+      6  -8.56022874E+002                    3.35856945E-006     306.00  <-- SCF
+      7  -8.56022876E+002                    2.85058968E-007     310.82  <-- SCF
+      8  -8.56022876E+002                    4.24851591E-008     315.64  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0228764437     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.02760              0.01265              0.01875         *
+ * Si              2      0.02955              0.02254              0.03441         *
+ * Si              3      0.02091              0.01007              0.03424         *
+ * Si              4      0.02198              0.01163              0.01867         *
+ * Si              5     -0.02324             -0.01137             -0.03000         *
+ * Si              6     -0.02680             -0.01111             -0.02160         *
+ * Si              7     -0.03076             -0.01752             -0.03826         *
+ * Si              8     -0.01923             -0.01689             -0.01620         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.048187 |     -856.013874 | <-- min BFGS
+ | trial step |    1.000000 |    0.024820 |     -856.022876 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         2 with line minimization (lambda=  2.062160)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007294   0.007224   0.007186   x
+            x  Si                2         0.007319   0.507244   0.507195   x
+            x  Si                3         0.507186   0.007217   0.507237   x
+            x  Si                4         0.507206   0.507240   0.007201   x
+            x  Si                5         0.742789   0.242758   0.742790   x
+            x  Si                6         0.242692   0.242799   0.242822   x
+            x  Si                7         0.242705   0.742779   0.742769   x
+            x  Si                8         0.742809   0.742740   0.242801   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.55804115E+002                                        319.69  <-- SCF
+      1  -8.56022419E+002                    2.72878958E-002     325.70  <-- SCF
+      2  -8.56024667E+002                    2.80996243E-004     333.86  <-- SCF
+      3  -8.56024987E+002                    4.01191167E-005     339.07  <-- SCF
+      4  -8.56025007E+002                    2.49282141E-006     344.70  <-- SCF
+      5  -8.56025008E+002                    1.05662066E-007     349.50  <-- SCF
+      6  -8.56025008E+002                    2.98342084E-008     354.33  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0250084839     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.02172             -0.02766             -0.03179         *
+ * Si              2     -0.02237             -0.02379             -0.01626         *
+ * Si              3     -0.02772             -0.03157             -0.01865         *
+ * Si              4     -0.02896             -0.03591             -0.03269         *
+ * Si              5      0.02736              0.03053              0.02141         *
+ * Si              6      0.02385              0.02898              0.02737         *
+ * Si              7      0.01905              0.02871              0.01425         *
+ * Si              8      0.03052              0.03072              0.03636         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.048187 |     -856.013874 | <-- min BFGS
+ | trial step |    1.000000 |    0.024820 |     -856.022876 | <-- min BFGS
+ |  line step |    2.062160 |   -0.030015 |     -856.025008 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     2 with enthalpy= -8.56025008E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   1.391806E-003 |   5.000000E-006 |         eV | No  | <-- BFGS
+ |  |F|max   |   5.654301E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   8.666116E-003 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          3 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.030076 |     -856.025008 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         3 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.006985   0.006924   0.006885   x
+            x  Si                2         0.007008   0.506942   0.506900   x
+            x  Si                3         0.506888   0.006912   0.506937   x
+            x  Si                4         0.506906   0.506932   0.006897   x
+            x  Si                5         0.743090   0.243063   0.743092   x
+            x  Si                6         0.243001   0.243099   0.243119   x
+            x  Si                7         0.243013   0.743080   0.743065   x
+            x  Si                8         0.743108   0.743048   0.243107   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56192197E+002                                        358.38  <-- SCF
+      1  -8.56025213E+002                   -2.08729848E-002     364.48  <-- SCF
+      2  -8.56025287E+002                    9.28418735E-006     372.61  <-- SCF
+      3  -8.56025293E+002                    7.32721975E-007     377.46  <-- SCF
+      4  -8.56025296E+002                    4.02284278E-007     382.30  <-- SCF
+      5  -8.56025296E+002                    3.88875595E-008     387.02  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0252963726     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.01710              0.01025              0.00595         *
+ * Si              2      0.01651              0.01421              0.02129         *
+ * Si              3      0.00998              0.00691              0.01933         *
+ * Si              4      0.00899              0.00282              0.00555         *
+ * Si              5     -0.01058             -0.00797             -0.01658         *
+ * Si              6     -0.01492             -0.00907             -0.01027         *
+ * Si              7     -0.01965             -0.00930             -0.02321         *
+ * Si              8     -0.00743             -0.00785             -0.00206         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.030076 |     -856.025008 | <-- min BFGS
+ | trial step |    1.000000 |   -0.013067 |     -856.025296 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     3 with enthalpy= -8.56025296E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   3.598609E-005 |   5.000000E-006 |         eV | No  | <-- BFGS
+ |  |F|max   |   3.180689E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   3.310250E-003 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          4 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.013281 |     -856.025296 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         4 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007083   0.007014   0.006972   x
+            x  Si                2         0.007105   0.507034   0.506995   x
+            x  Si                3         0.506977   0.007001   0.507033   x
+            x  Si                4         0.506996   0.507020   0.006985   x
+            x  Si                5         0.742999   0.242974   0.742997   x
+            x  Si                6         0.242905   0.243009   0.243029   x
+            x  Si                7         0.242915   0.742991   0.742968   x
+            x  Si                8         0.743020   0.742956   0.243020   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.55978068E+002                                        391.08  <-- SCF
+      1  -8.56025401E+002                    5.91654290E-003     397.08  <-- SCF
+      2  -8.56025406E+002                    6.14399629E-007     402.09  <-- SCF
+      3  -8.56025406E+002                    9.25135691E-008     406.96  <-- SCF
+      4  -8.56025407E+002                    5.11993286E-008     411.83  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0254068154     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.00665              0.00052             -0.00350         *
+ * Si              2      0.00646              0.00444              0.01088         *
+ * Si              3      0.00010             -0.00248              0.00887         *
+ * Si              4     -0.00116             -0.00662             -0.00407         *
+ * Si              5     -0.00061              0.00154             -0.00634         *
+ * Si              6     -0.00467              0.00064             -0.00047         *
+ * Si              7     -0.00935              0.00003             -0.01270         *
+ * Si              8      0.00258              0.00192              0.00732         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.013281 |     -856.025296 | <-- min BFGS
+ | trial step |    1.000000 |    0.002088 |     -856.025407 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     4 with enthalpy= -8.56025407E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   1.380535E-005 |   5.000000E-006 |         eV | No  | <-- BFGS
+ |  |F|max   |   1.576791E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   1.032592E-003 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          5 ...
+================================================================================
+
+Writing analysis data to Si.castep_bin
+
+Writing model to Si.check
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.003079 |     -856.025407 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         5 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007104   0.007030   0.006985   x
+            x  Si                2         0.007126   0.507053   0.507019   x
+            x  Si                3         0.506993   0.007015   0.507056   x
+            x  Si                4         0.507011   0.507031   0.006999   x
+            x  Si                5         0.742983   0.242959   0.742976   x
+            x  Si                6         0.242885   0.242995   0.243014   x
+            x  Si                7         0.242892   0.742977   0.742943   x
+            x  Si                8         0.743006   0.742941   0.243009   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56015899E+002                                        416.30  <-- SCF
+      1  -8.56025411E+002                    1.18897320E-003     422.00  <-- SCF
+      2  -8.56025411E+002                    5.90056543E-008     426.85  <-- SCF
+      3  -8.56025411E+002                    1.73402928E-008     431.62  <-- SCF
+      4  -8.56025411E+002                    7.05654426E-009     436.41  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0254113634     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.00410             -0.00161             -0.00560         *
+ * Si              2      0.00423              0.00231              0.00819         *
+ * Si              3     -0.00232             -0.00437              0.00602         *
+ * Si              4     -0.00381             -0.00847             -0.00645         *
+ * Si              5      0.00188              0.00351             -0.00370         *
+ * Si              6     -0.00229              0.00267              0.00194         *
+ * Si              7     -0.00689              0.00179             -0.00984         *
+ * Si              8      0.00511              0.00418              0.00943         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.003079 |     -856.025407 | <-- min BFGS
+ | trial step |    1.000000 |    0.000478 |     -856.025411 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     5 with enthalpy= -8.56025411E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   5.684946E-007 |   5.000000E-006 |         eV | Yes | <-- BFGS
+ |  |F|max   |   1.214386E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   2.291169E-004 |   5.000000E-004 |          A | Yes | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          6 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.004379 |     -856.025411 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         6 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007113   0.007032   0.006982   x
+            x  Si                2         0.007133   0.507057   0.507031   x
+            x  Si                3         0.506993   0.007013   0.507067   x
+            x  Si                4         0.507012   0.507026   0.006996   x
+            x  Si                5         0.742982   0.242960   0.742968   x
+            x  Si                6         0.242879   0.242994   0.243013   x
+            x  Si                7         0.242881   0.742977   0.742929   x
+            x  Si                8         0.743007   0.742941   0.243016   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56023504E+002                                        440.52  <-- SCF
+      1  -8.56025415E+002                    2.38855292E-004     444.71  <-- SCF
+      2  -8.56025415E+002                    1.64307452E-008     449.55  <-- SCF
+      3  -8.56025415E+002                    5.49888025E-009     454.38  <-- SCF
+      4  -8.56025415E+002                    2.27366984E-009     459.22  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0254148874     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.00316             -0.00189             -0.00568         *
+ * Si              2      0.00373              0.00187              0.00722         *
+ * Si              3     -0.00268             -0.00410              0.00503         *
+ * Si              4     -0.00440             -0.00798             -0.00676         *
+ * Si              5      0.00234              0.00339             -0.00307         *
+ * Si              6     -0.00166              0.00277              0.00261         *
+ * Si              7     -0.00598              0.00155             -0.00859         *
+ * Si              8      0.00550              0.00439              0.00924         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.004379 |     -856.025411 | <-- min BFGS
+ | trial step |    1.000000 |    0.003845 |     -856.025415 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         6 with line minimization (lambda=  8.205357)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007176   0.007043   0.006959   x
+            x  Si                2         0.007186   0.507093   0.507118   x
+            x  Si                3         0.506998   0.006999   0.507145   x
+            x  Si                4         0.507015   0.506987   0.006976   x
+            x  Si                5         0.742973   0.242966   0.742910   x
+            x  Si                6         0.242833   0.242993   0.243004   x
+            x  Si                7         0.242805   0.742978   0.742827   x
+            x  Si                8         0.743015   0.742942   0.243062   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56014379E+002                                        463.26  <-- SCF
+      1  -8.56025431E+002                    1.38151984E-003     469.55  <-- SCF
+      2  -8.56025434E+002                    4.11288277E-007     474.38  <-- SCF
+      3  -8.56025434E+002                    6.32550559E-009     479.24  <-- SCF
+      4  -8.56025435E+002                    5.93945506E-008     484.09  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0254345097     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00163             -0.00407             -0.00708         *
+ * Si              2      0.00253              0.00042              0.00292         *
+ * Si              3     -0.00639             -0.00370             -0.00086         *
+ * Si              4     -0.01035             -0.00611             -0.01054         *
+ * Si              5      0.00678              0.00367              0.00056         *
+ * Si              6      0.00134              0.00404              0.00734         *
+ * Si              7     -0.00226             -0.00101             -0.00264         *
+ * Si              8      0.00999              0.00676              0.01030         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.004379 |     -856.025411 | <-- min BFGS
+ | trial step |    1.000000 |    0.003845 |     -856.025415 | <-- min BFGS
+ |  line step |    8.205357 |    0.001479 |     -856.025435 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         6 with quad minimization (lambda= 12.708413)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007215   0.007051   0.006945   x
+            x  Si                2         0.007219   0.507115   0.507172   x
+            x  Si                3         0.507001   0.006990   0.507193   x
+            x  Si                4         0.507017   0.506963   0.006963   x
+            x  Si                5         0.742967   0.242969   0.742873   x
+            x  Si                6         0.242804   0.242992   0.242998   x
+            x  Si                7         0.242758   0.742979   0.742764   x
+            x  Si                8         0.743021   0.742942   0.243091   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56018610E+002                                        488.22  <-- SCF
+      1  -8.56025439E+002                    8.53550772E-004     494.49  <-- SCF
+      2  -8.56025441E+002                    3.23698340E-007     499.36  <-- SCF
+      3  -8.56025443E+002                    1.70106662E-007     504.24  <-- SCF
+      4  -8.56025444E+002                    1.47638972E-007     509.08  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0254439791     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00407             -0.00584             -0.00838         *
+ * Si              2      0.00249             -0.00104              0.00087         *
+ * Si              3     -0.00871             -0.00359             -0.00361         *
+ * Si              4     -0.01427             -0.00505             -0.01306         *
+ * Si              5      0.00979              0.00388              0.00191         *
+ * Si              6      0.00251              0.00540              0.01077         *
+ * Si              7     -0.00060             -0.00223              0.00051         *
+ * Si              8      0.01286              0.00848              0.01099         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.004379 |     -856.025411 | <-- min BFGS
+ | trial step |    1.000000 |    0.003845 |     -856.025415 | <-- min BFGS
+ |  line step |    8.205357 |    0.001479 |     -856.025435 | <-- min BFGS
+ |  quad step |   12.708413 |    0.000349 |     -856.025444 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     6 with enthalpy= -8.56025444E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   4.076968E-006 |   5.000000E-006 |         eV | Yes | <-- BFGS
+ |  |F|max   |   1.998954E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   1.312018E-003 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          7 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.004760 |     -856.025444 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         7 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007254   0.007031   0.006883   x
+            x  Si                2         0.007250   0.507124   0.507243   x
+            x  Si                3         0.506971   0.006942   0.507251   x
+            x  Si                4         0.506982   0.506886   0.006902   x
+            x  Si                5         0.742992   0.243008   0.742837   x
+            x  Si                6         0.242782   0.243022   0.243024   x
+            x  Si                7         0.242701   0.743009   0.742677   x
+            x  Si                8         0.743068   0.742978   0.243181   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56031294E+002                                        513.23  <-- SCF
+      1  -8.56025472E+002                   -7.27765894E-004     519.47  <-- SCF
+      2  -8.56025478E+002                    7.76912045E-007     524.35  <-- SCF
+      3  -8.56025480E+002                    2.12878690E-007     529.22  <-- SCF
+      4  -8.56025481E+002                    2.34840774E-007     534.04  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0254814761     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00516             -0.00416             -0.00570         *
+ * Si              2      0.00517              0.00115              0.00116         *
+ * Si              3     -0.00805              0.00164             -0.00503         *
+ * Si              4     -0.01613              0.00138             -0.01260         *
+ * Si              5      0.01000             -0.00036              0.00060         *
+ * Si              6      0.00183              0.00245              0.01183         *
+ * Si              7     -0.00071             -0.00894              0.00234         *
+ * Si              8      0.01304              0.00684              0.00741         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.004760 |     -856.025444 | <-- min BFGS
+ | trial step |    1.000000 |    0.003306 |     -856.025481 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         7 with line minimization (lambda=  3.272846)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007343   0.006986   0.006744   x
+            x  Si                2         0.007321   0.507145   0.507404   x
+            x  Si                3         0.506903   0.006832   0.507383   x
+            x  Si                4         0.506903   0.506712   0.006764   x
+            x  Si                5         0.743050   0.243097   0.742755   x
+            x  Si                6         0.242734   0.243093   0.243084   x
+            x  Si                7         0.242572   0.743077   0.742480   x
+            x  Si                8         0.743175   0.743059   0.243385   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56038622E+002                                        538.13  <-- SCF
+      1  -8.56025494E+002                   -1.64089802E-003     544.46  <-- SCF
+      2  -8.56025512E+002                    2.24034809E-006     549.84  <-- SCF
+      3  -8.56025513E+002                    1.15034092E-007     554.71  <-- SCF
+      4  -8.56025517E+002                    4.62195323E-007     559.59  <-- SCF
+      5  -8.56025520E+002                    3.99578221E-007     564.41  <-- SCF
+      6  -8.56025523E+002                    3.25986717E-007     569.22  <-- SCF
+      7  -8.56025525E+002                    3.17115415E-007     574.07  <-- SCF
+      8  -8.56025527E+002                    2.34404640E-007     578.87  <-- SCF
+      9  -8.56025529E+002                    2.00904737E-007     583.72  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0255287950     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00857              0.00005              0.00132         *
+ * Si              2      0.00954              0.00337             -0.00084         *
+ * Si              3     -0.00524              0.01496             -0.00982         *
+ * Si              4     -0.01862              0.01623             -0.01098         *
+ * Si              5      0.00893             -0.01021             -0.00114         *
+ * Si              6      0.00099             -0.00516              0.01420         *
+ * Si              7      0.00112             -0.02280              0.00987         *
+ * Si              8      0.01185              0.00357             -0.00261         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.004760 |     -856.025444 | <-- min BFGS
+ | trial step |    1.000000 |    0.003306 |     -856.025481 | <-- min BFGS
+ |  line step |    3.272846 |   -0.001251 |     -856.025529 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     7 with enthalpy= -8.56025529E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   1.060198E-005 |   5.000000E-006 |         eV | No  | <-- BFGS
+ |  |F|max   |   2.702632E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   2.151456E-003 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          8 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.002854 |     -856.025529 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         8 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007289   0.006986   0.006781   x
+            x  Si                2         0.007284   0.507123   0.507328   x
+            x  Si                3         0.506909   0.006866   0.507312   x
+            x  Si                4         0.506905   0.506770   0.006792   x
+            x  Si                5         0.743050   0.243074   0.742801   x
+            x  Si                6         0.242768   0.243079   0.243087   x
+            x  Si                7         0.242637   0.743054   0.742575   x
+            x  Si                8         0.743158   0.743047   0.243324   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56029984E+002                                        587.81  <-- SCF
+      1  -8.56025537E+002                   -5.55901103E-004     594.15  <-- SCF
+      2  -8.56025538E+002                    1.87697052E-007     599.00  <-- SCF
+      3  -8.56025539E+002                    2.00601506E-008     603.79  <-- SCF
+      4  -8.56025539E+002                    6.72812126E-008     608.58  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0255391718     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00314             -0.00050              0.00009         *
+ * Si              2      0.01124              0.00328              0.00458         *
+ * Si              3     -0.00451              0.01084             -0.00377         *
+ * Si              4     -0.01571              0.01188             -0.00986         *
+ * Si              5      0.00800             -0.00725             -0.00524         *
+ * Si              6     -0.00269             -0.00358              0.01162         *
+ * Si              7     -0.00351             -0.01826              0.00281         *
+ * Si              8      0.01032              0.00360             -0.00023         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.002854 |     -856.025529 | <-- min BFGS
+ | trial step |    1.000000 |   -0.000121 |     -856.025539 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     8 with enthalpy= -8.56025539E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   1.297095E-006 |   5.000000E-006 |         eV | Yes | <-- BFGS
+ |  |F|max   |   2.202428E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   6.594312E-004 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          9 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.005814 |     -856.025539 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         9 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007290   0.006980   0.006765   x
+            x  Si                2         0.007300   0.507126   0.507344   x
+            x  Si                3         0.506894   0.006867   0.507316   x
+            x  Si                4         0.506875   0.506768   0.006765   x
+            x  Si                5         0.743069   0.243076   0.742791   x
+            x  Si                6         0.242763   0.243083   0.243109   x
+            x  Si                7         0.242625   0.743041   0.742565   x
+            x  Si                8         0.743183   0.743061   0.243345   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56028013E+002                                        612.68  <-- SCF
+      1  -8.56025550E+002                   -3.07883149E-004     617.22  <-- SCF
+      2  -8.56025551E+002                    1.19737355E-007     622.10  <-- SCF
+      3  -8.56025551E+002                    5.89385623E-008     626.92  <-- SCF
+      4  -8.56025552E+002                    5.01458692E-008     631.66  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0255518686     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00232              0.00034              0.00095         *
+ * Si              2      0.01082              0.00398              0.00464         *
+ * Si              3     -0.00361              0.01089             -0.00327         *
+ * Si              4     -0.01378              0.01198             -0.00834         *
+ * Si              5      0.00675             -0.00749             -0.00520         *
+ * Si              6     -0.00290             -0.00436              0.00997         *
+ * Si              7     -0.00375             -0.01778              0.00231         *
+ * Si              8      0.00880              0.00243             -0.00106         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.005814 |     -856.025539 | <-- min BFGS
+ | trial step |    1.000000 |    0.005031 |     -856.025552 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         9 with line minimization (lambda=  7.417321)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007296   0.006937   0.006667   x
+            x  Si                2         0.007404   0.507143   0.507445   x
+            x  Si                3         0.506799   0.006876   0.507340   x
+            x  Si                4         0.506688   0.506749   0.006588   x
+            x  Si                5         0.743186   0.243085   0.742726   x
+            x  Si                6         0.242733   0.243107   0.243255   x
+            x  Si                7         0.242551   0.742955   0.742502   x
+            x  Si                8         0.743344   0.743148   0.243477   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56042327E+002                                        635.74  <-- SCF
+      1  -8.56025589E+002                   -2.09236135E-003     642.04  <-- SCF
+      2  -8.56025598E+002                    1.19340400E-006     647.20  <-- SCF
+      3  -8.56025597E+002                   -1.91251196E-007     652.05  <-- SCF
+      4  -8.56025598E+002                    1.25153639E-007     656.87  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0255975956     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.00153              0.00466              0.00662         *
+ * Si              2      0.01141              0.00917              0.00613         *
+ * Si              3      0.00305              0.01189             -0.00039         *
+ * Si              4     -0.00383              0.01123              0.00000         *
+ * Si              5     -0.00157             -0.00952             -0.00491         *
+ * Si              6     -0.00450             -0.00769              0.00042         *
+ * Si              7     -0.00716             -0.01750             -0.00182         *
+ * Si              8      0.00107             -0.00223             -0.00604         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.005814 |     -856.025539 | <-- min BFGS
+ | trial step |    1.000000 |    0.005031 |     -856.025552 | <-- min BFGS
+ |  line step |    7.417321 |    0.001150 |     -856.025598 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     9 with enthalpy= -8.56025598E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   7.302978E-006 |   5.000000E-006 |         eV | No  | <-- BFGS
+ |  |F|max   |   1.899475E-002 |   1.000000E-002 |       eV/A | No  | <-- BFGS
+ |  |dR|max  |   1.776631E-003 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration         10 ...
+================================================================================
+
+Writing analysis data to Si.castep_bin
+
+Writing model to Si.check
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.005048 |     -856.025598 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration        10 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007332   0.006948   0.006643   x
+            x  Si                2         0.007532   0.507201   0.507556   x
+            x  Si                3         0.506766   0.006943   0.507384   x
+            x  Si                4         0.506575   0.506801   0.006494   x
+            x  Si                5         0.743238   0.243037   0.742638   x
+            x  Si                6         0.242670   0.243075   0.243333   x
+            x  Si                7         0.242457   0.742824   0.742430   x
+            x  Si                8         0.743430   0.743172   0.243522   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56014532E+002                                        661.29  <-- SCF
+      1  -8.56025626E+002                    1.38680418E-003     667.53  <-- SCF
+      2  -8.56025632E+002                    8.07939346E-007     672.52  <-- SCF
+      3  -8.56025633E+002                    3.57390963E-008     677.37  <-- SCF
+      4  -8.56025634E+002                    1.23798435E-007     682.22  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0256336985     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1      0.00008              0.00253              0.00354         *
+ * Si              2      0.00392              0.00625              0.00096         *
+ * Si              3      0.00143              0.00471             -0.00246         *
+ * Si              4      0.00008              0.00394              0.00177         *
+ * Si              5     -0.00176             -0.00373              0.00112         *
+ * Si              6     -0.00021             -0.00374             -0.00168         *
+ * Si              7     -0.00318             -0.00778             -0.00011         *
+ * Si              8     -0.00036             -0.00219             -0.00315         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.005048 |     -856.025598 | <-- min BFGS
+ | trial step |    1.000000 |    0.001357 |     -856.025634 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration    10 with enthalpy= -8.56025634E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   4.512867E-006 |   5.000000E-006 |         eV | Yes | <-- BFGS
+ |  |F|max   |   8.402967E-003 |   1.000000E-002 |       eV/A | Yes | <-- BFGS
+ |  |dR|max  |   1.105978E-003 |   5.000000E-004 |          A | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration         11 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.002926 |     -856.025634 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration        11 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007335   0.006965   0.006666   x
+            x  Si                2         0.007565   0.507223   0.507567   x
+            x  Si                3         0.506774   0.006986   0.507381   x
+            x  Si                4         0.506562   0.506849   0.006496   x
+            x  Si                5         0.743237   0.243003   0.742622   x
+            x  Si                6         0.242654   0.243048   0.243338   x
+            x  Si                7         0.242443   0.742768   0.742434   x
+            x  Si                8         0.743431   0.743158   0.243496   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -8.56016720E+002                                        686.30  <-- SCF
+      1  -8.56025639E+002                    1.11498812E-003     692.44  <-- SCF
+      2  -8.56025641E+002                    1.46114455E-007     697.31  <-- SCF
+      3  -8.56025641E+002                    5.96398737E-008     702.13  <-- SCF
+      4  -8.56025641E+002                    4.66401463E-008     706.93  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -856.0256414663     eV
+(energy not corrected for finite basis set)
+ 
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00008              0.00063              0.00014         *
+ * Si              2     -0.00012              0.00390             -0.00074         *
+ * Si              3     -0.00084             -0.00009             -0.00278         *
+ * Si              4      0.00053              0.00013              0.00048         *
+ * Si              5     -0.00004              0.00045              0.00295         *
+ * Si              6      0.00143             -0.00111             -0.00089         *
+ * Si              7     -0.00111             -0.00218              0.00021         *
+ * Si              8      0.00022             -0.00174              0.00062         *
+ *                                                                                  *
+ ************************************************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.002926 |     -856.025634 | <-- min BFGS
+ | trial step |    1.000000 |    0.000299 |     -856.025641 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration    11 with enthalpy= -8.56025641E+002 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   9.709656E-007 |   5.000000E-006 |         eV | Yes | <-- BFGS
+ |  |F|max   |   3.974234E-003 |   1.000000E-002 |       eV/A | Yes | <-- BFGS
+ |  |dR|max  |   3.244041E-004 |   5.000000E-004 |          A | Yes | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+ BFGS: Geometry optimization completed successfully.
+
+================================================================================
+ BFGS: Final Configuration:
+================================================================================
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element         Atom        Fractional coordinates of atoms  x
+            x                 Number           u          v          w      x
+            x---------------------------------------------------------------x
+            x  Si                1         0.007335   0.006965   0.006666   x
+            x  Si                2         0.007565   0.507223   0.507567   x
+            x  Si                3         0.506774   0.006986   0.507381   x
+            x  Si                4         0.506562   0.506849   0.006496   x
+            x  Si                5         0.743237   0.243003   0.742622   x
+            x  Si                6         0.242654   0.243048   0.243338   x
+            x  Si                7         0.242443   0.742768   0.742434   x
+            x  Si                8         0.743431   0.743158   0.243496   x
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+ BFGS: Final Enthalpy     = -8.56025641E+002 eV
+ BFGS: Final <frequency>  =     728.58158 cm-1
+ 
+ ************************************** Forces **************************************
+ *                                                                                  *
+ *                           Cartesian components (eV/A)                            *
+ * -------------------------------------------------------------------------------- *
+ *                         x                    y                    z              *
+ *                                                                                  *
+ * Si              1     -0.00008              0.00063              0.00014         *
+ * Si              2     -0.00012              0.00390             -0.00074         *
+ * Si              3     -0.00084             -0.00009             -0.00278         *
+ * Si              4      0.00053              0.00013              0.00048         *
+ * Si              5     -0.00004              0.00045              0.00295         *
+ * Si              6      0.00143             -0.00111             -0.00089         *
+ * Si              7     -0.00111             -0.00218              0.00021         *
+ * Si              8      0.00022             -0.00174              0.00062         *
+ *                                                                                  *
+ ************************************************************************************
+ 
+ ***************** Stress Tensor *****************
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x     -3.267906     10.819062     10.832761  *
+ *  y     10.819062     -3.341019     10.752789  *
+ *  z     10.832761     10.752789     -3.333453  *
+ *                                               *
+ *  Pressure:    3.3141                          *
+ *                                               *
+ *************************************************
+
+Writing analysis data to Si.castep_bin
+
+Writing model to Si.check
+ 
+ A BibTeX formatted list of references used in this run has been written to 
+ Si.bib
+ 
+Initialisation time =      0.64 s
+Calculation time    =    717.85 s
+Finalisation time   =      0.55 s
+Total time          =    719.04 s
+  
+Overall parallel efficiency rating: Excellent (99%)                             
+  
+Data was distributed by:-
+k-point (8-way); efficiency rating: Excellent (99%)                             

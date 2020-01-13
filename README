@@ -1,0 +1,69 @@
++=============================================================+
+| EEEEE L       A   SSSSS TTTTT IIIII CCCCC 33333 RRRRR DDD   |
+| E     L      A A  S       T     I   C         3 R   R D  D  |
+| EEEE  L     A   A SSSSS   T     I   C      3333 RRRRR D   D |
+| E     L     AAAAA     S   T     I   C         3 R  R  D  D  |
+| EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |
++-------------------------------------------------------------+
+|             Version: ELASTIC3PY  version 2.4.6              |
+|                Date: 2019-05-18                             |
+|              Author: Liao Mingqing                          |
+|              E_mail: liaomq1900127@163.com                  |
+|     FGMS @ Harbin Institute of Technology(HIT)              |
+|    URL:https://github.com/hitliaomq/ELASTIC3rd              |
+|Please Cite:                                                 |
+| Mingqing Liao,ELASTIC3rd,(2018).doi:10.5281/zenodo.2525580  |
++=============================================================+
+
+FUNCTIONS
+================
+Elastic3rd is an open source academic free software
+It is designed for calculating third-order elastic constan(TOECs)
+   of arbitrary symmetry.
+
+FEATURES
+================
+1. It can calculate the TOECs for arbitrary 3D crystal symmetry, 
+   from isotropic to triclinic system.
+2. This code is well modularized. Thus, the energy can be 
+   calculatedusing other energy-calculate packages(only CASTEP 
+   and VASP interfaces are provided in the original code) only 
+   by writing few functions. The details of this function are 
+   listed in the manual.
+3. This code is written by python, so it supports multi-systems
+   (windows and linux), which is dependent on your first
+   principles code.
+4. It supplies the continue mode, which will be quite useful 
+   when your job is interrupted by unexpected crash.
+
+TODO
+================
+1. Now, it only support strain-energy method, the strain-stress 
+   method, which is more efficient is under development.
+2. Find the symmetry automatically
+
+
+REQUIRES
+================
+  python(only 2.7.x was tested), numpy, scipy, matplotlib
+
+INSTALL
+================
+  Just run "python setup.py install"
+
+GETTING STARTED
+================
+When the input files of first-principles code(e.g. *.cell and 
+   *.param for CASTEP) and INPUT file are prepared, then open 
+   python in the destination folder, run the following code:
+
+     import elastic3rd.elastic
+     elastic3rd.elastic.elastic3()
+   or
+     using the test.py file provide in the example folder
+     python test.py
+
+
+FILE STRUCTURE
+================
+See the FileStructure

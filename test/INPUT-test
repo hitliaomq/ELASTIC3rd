@@ -1,0 +1,11 @@
+BaseName        Si
+CalMode         W
+FlagSE          E
+Continue        0
+CrystalType     c1
+Ord             3
+EnergyCode      castep
+EnergyRun       1
+MaxStrain       8.00
+STEPS           9
+NP              8

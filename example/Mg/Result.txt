@@ -1,0 +1,1210 @@
++=============================================================+
+| EEEEE L       A   SSSSS TTTTT IIIII CCCCC 33333 RRRRR DDD   |
+| E     L      A A  S       T     I   C         3 R   R D  D  |
+| EEEE  L     A   A SSSSS   T     I   C      3333 RRRRR D   D |
+| E     L     AAAAA     S   T     I   C         3 R  R  D  D  |
+| EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |
++-------------------------------------------------------------+
+|             Version: ELASTIC3PY  version 2.0                |
+|                Date: 2019-01-27                             |
+|              Author: Liao Mingqing                          |
+|              E_mail: liaomq1900127@163.com                  |
+|     FGMS @ Harbin Institute of Technology(HIT)              |
+|    URL:https://github.com/hitliaomq/ELASTIC3rd              |
+|Please Cite:                                                 |
+| Mingqing Liao,ELASTIC3rd,(2018).doi:10.5281/zenodo.2525580  |
++=============================================================+
+===================The input parameters===================
+The Runing mode is : NEW
+The BaseName is : Mg
+The crystal symmetry is : h1
+The order of elastic is : 3.0
+The code for calculating the energy : CASTEP
+The maximum of the strain : 6.0
+The steps run in every mode : 7.0
+The core used in energy calculate : 9.0
+
+====================Crystal Structure====================
+BaseVec:
+     2.7681356950     -1.5981978602     0.0000001269
+     -0.0000000000     3.1963743345     -0.0000000228
+     -0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.245353  90.000  90.000  120.000
+Volume : 46.4108766976
+
+Energy of undeformed structure:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9144701870  -71.5844932392  -187945.1322886442  -44919.9675427754
+
+==================Deformed Crystal========================
+----------------------------------------------------------
+Start calculating Mode 1
+Start calculating Strain -6.0 in Mode 1
+[[0.88 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.5967414578     -1.5981978602     0.0000001269
+     0.0000000000     3.1963743345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.049148  3.196374  5.245353  90.000  90.000  121.611
+Volume : 43.5372614979
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8690124960  -71.5828227009  -187940.7462892180  -44918.9192636875
+End of Strain -6.0 in Mode 1
+
+Start calculating Strain -4.0 in Mode 1
+[[0.92 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.6551024853     -1.5981978602     0.0000001269
+     0.0000000000     3.1963743345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.099001  3.196374  5.245353  90.000  90.000  121.045
+Volume : 44.5157490982
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8948515530  -71.5837722682  -187943.2393786531  -44919.5151264009
+End of Strain -4.0 in Mode 1
+
+Start calculating Strain -2.0 in Mode 1
+[[0.96 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7122079966     -1.5981978602     0.0000001269
+     0.0000000000     3.1963743345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.148064  3.196374  5.245353  90.000  90.000  120.509
+Volume : 45.4731865697
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9092746630  -71.5843023074  -187944.6309968984  -44919.8477311651
+End of Strain -2.0 in Mode 1
+
+Start calculating Strain 0.0 in Mode 1
+End of Strain 0.0 in Mode 1
+
+Start calculating Strain 2.0 in Mode 1
+[[1.04 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.8229555850     -1.5981978602     0.0000001269
+     0.0000000000     3.1963743345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.243966  3.196374  5.245353  90.000  90.000  119.516
+Volume : 47.3299931848
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9096203430  -71.5843150109  -187944.6643499405  -44919.8557027340
+End of Strain 2.0 in Mode 1
+
+Start calculating Strain 4.0 in Mode 1
+[[1.08 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.8767309996     -1.5981978602     0.0000001269
+     0.0000000000     3.1963743345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.290869  3.196374  5.245353  90.000  90.000  119.055
+Volume : 48.2315978784
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8989916420  -71.5839244135  -187943.6388364254  -44919.6105991059
+End of Strain 4.0 in Mode 1
+
+Start calculating Strain 6.0 in Mode 1
+[[1.12 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.9295194577     -1.5981978602     0.0000001269
+     0.0000000000     3.1963743345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.337113  3.196374  5.245353  90.000  90.000  118.615
+Volume : 49.1166551481
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8855858030  -71.5834317584  -187942.3453698883  -44919.3014531644
+End of Strain 6.0 in Mode 1
+
+End of Mode 1
+
+----------------------------------------------------------
+Start calculating Mode 2
+Start calculating Strain -6.0 in Mode 2
+[[1.   0.   0.  ]
+ [0.   0.88 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7681356950     -1.4992424862     0.0000001269
+     0.0000000000     2.9984649106     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.148063  2.998465  5.245353  90.000  90.000  118.440
+Volume : 43.5372614979
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8646179220  -71.5826612034  -187940.3222773816  -44918.8179224199
+End of Strain -6.0 in Mode 2
+
+Start calculating Strain -4.0 in Mode 2
+[[1.   0.   0.  ]
+ [0.   0.92 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7681356950     -1.5329375357     0.0000001269
+     0.0000000000     3.0658545588     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.164249  3.065855  5.245353  90.000  90.000  118.977
+Volume : 44.5157490982
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8929792710  -71.5837034631  -187943.0587309432  -44919.4719505593
+End of Strain -4.0 in Mode 2
+
+Start calculating Strain -2.0 in Mode 2
+[[1.   0.   0.  ]
+ [0.   0.96 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7681356950     -1.5659077062     0.0000001269
+     0.0000000000     3.1317944586     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.180353  3.131794  5.245353  90.000  90.000  119.496
+Volume : 45.4731865697
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9089435230  -71.5842901382  -187944.5990467527  -44919.8400948966
+End of Strain -2.0 in Mode 2
+
+Start calculating Strain 0.0 in Mode 2
+End of Strain 0.0 in Mode 2
+
+Start calculating Strain 2.0 in Mode 2
+[[1.   0.   0.  ]
+ [0.   1.04 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7681356950     -1.6298484152     0.0000001269
+     0.0000000000     3.2596750209     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.212317  3.259675  5.245353  90.000  90.000  120.489
+Volume : 47.3299931848
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9095558950  -71.5843126425  -187944.6581316552  -44919.8542165281
+End of Strain 2.0 in Mode 2
+
+Start calculating Strain 4.0 in Mode 2
+[[1.   0.   0.  ]
+ [0.   1.08 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7681356950     -1.6608959367     0.0000001269
+     0.0000000000     3.3217696485     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.228181  3.321770  5.245353  90.000  90.000  120.964
+Volume : 48.2315978784
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8994746200  -71.5839421627  -187943.6854367076  -44919.6217368413
+End of Strain 4.0 in Mode 2
+
+Start calculating Strain 6.0 in Mode 2
+[[1.   0.   0.  ]
+ [0.   1.12 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7681356950     -1.6913736336     0.0000001269
+     0.0000000000     3.3827246345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.243967  3.382725  5.245353  90.000  90.000  121.426
+Volume : 49.1166551481
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8872330460  -71.5834922934  -187942.5043046404  -44919.3394394843
+End of Strain 6.0 in Mode 2
+
+End of Mode 2
+
+----------------------------------------------------------
+Start calculating Mode 3
+Start calculating Strain -6.0 in Mode 3
+[[1.   0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.88]]
+BaseVec:
+     2.7681356950     -1.5981978602     0.0000001191
+     0.0000000000     3.1963743345     -0.0000000214
+     0.0000000000     0.0000000000     4.9205777442
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  4.920578  90.000  90.000  120.000
+Volume : 43.5372614979
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8721942420  -71.5829396279  -187941.0532809685  -44918.9926364814
+End of Strain -6.0 in Mode 3
+
+Start calculating Strain -4.0 in Mode 3
+[[1.   0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.92]]
+BaseVec:
+     2.7681356950     -1.5981978602     0.0000001217
+     0.0000000000     3.1963743345     -0.0000000218
+     0.0000000000     0.0000000000     5.0311663330
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.031166  90.000  90.000  120.000
+Volume : 44.5157490982
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8963541090  -71.5838274861  -187943.3843532352  -44919.5497761598
+End of Strain -4.0 in Mode 3
+
+Start calculating Strain -2.0 in Mode 3
+[[1.   0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.96]]
+BaseVec:
+     2.7681356950     -1.5981978602     0.0000001244
+     0.0000000000     3.1963743345     -0.0000000223
+     0.0000000000     0.0000000000     5.1393758380
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.139376  90.000  90.000  120.000
+Volume : 45.4731865697
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9093041220  -71.5843033900  -187944.6338392592  -44919.8484105057
+End of Strain -2.0 in Mode 3
+
+Start calculating Strain 0.0 in Mode 3
+End of Strain 0.0 in Mode 3
+
+Start calculating Strain 2.0 in Mode 3
+[[1.   0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.04]]
+BaseVec:
+     2.7681356950     -1.5981978602     0.0000001294
+     0.0000000000     3.1963743345     -0.0000000232
+     0.0000000000     0.0000000000     5.3492319702
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.349232  90.000  90.000  120.000
+Volume : 47.3299931848
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9101871790  -71.5843358417  -187944.7190412879  -44919.8687742806
+End of Strain 2.0 in Mode 3
+
+Start calculating Strain 4.0 in Mode 3
+[[1.   0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.08]]
+BaseVec:
+     2.7681356950     -1.5981978602     0.0000001319
+     0.0000000000     3.1963743345     -0.0000000237
+     0.0000000000     0.0000000000     5.4511312591
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.451131  90.000  90.000  120.000
+Volume : 48.2315978784
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8996751890  -71.5839495334  -187943.7047886699  -44919.6263620716
+End of Strain 4.0 in Mode 3
+
+Start calculating Strain 6.0 in Mode 3
+[[1.   0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.12]]
+BaseVec:
+     2.7681356950     -1.5981978602     0.0000001343
+     0.0000000000     3.1963743345     -0.0000000241
+     0.0000000000     0.0000000000     5.5511603596
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.551160  90.000  90.000  120.000
+Volume : 49.1166551481
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8837641170  -71.5833648127  -187942.1696039492  -44919.2594440941
+End of Strain 6.0 in Mode 3
+
+End of Mode 3
+
+----------------------------------------------------------
+Start calculating Mode 4
+Start calculating Strain -6.0 in Mode 4
+[[0.88 0.   0.  ]
+ [0.   0.88 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.5967414578     -1.4992424862     0.0000001269
+     0.0000000000     2.9984649106     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+2.998465  2.998465  5.245353  90.000  90.000  120.000
+Volume : 40.8415714939
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.7904239190  -71.5799346257  -187933.1636459723  -44917.1069683418
+End of Strain -6.0 in Mode 4
+
+Start calculating Strain -4.0 in Mode 4
+[[0.92 0.   0.  ]
+ [0.   0.92 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.6551024853     -1.5329375357     0.0000001269
+     0.0000000000     3.0658545588     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.065855  3.065855  5.245353  90.000  90.000  120.000
+Volume : 42.6980065618
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8637559870  -71.5826295279  -187940.2391133156  -44918.7980457299
+End of Strain -4.0 in Mode 4
+
+Start calculating Strain -2.0 in Mode 4
+[[0.96 0.   0.  ]
+ [0.   0.96 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.7122079966     -1.5659077062     0.0000001269
+     0.0000000000     3.1317944586     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.131795  3.131794  5.245353  90.000  90.000  120.000
+Volume : 44.5544416297
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9022316960  -71.5840434833  -187943.9514540413  -44919.6853165140
+End of Strain -2.0 in Mode 4
+
+Start calculating Strain 0.0 in Mode 4
+End of Strain 0.0 in Mode 4
+
+Start calculating Strain 2.0 in Mode 4
+[[1.04 0.   0.  ]
+ [0.   1.04 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.8229555850     -1.6298484152     0.0000001269
+     0.0000000000     3.2596750209     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.259675  3.259675  5.245353  90.000  90.000  120.000
+Volume : 48.2673117655
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9039578950  -71.5841069199  -187944.1180068876  -44919.7251236022
+End of Strain 2.0 in Mode 4
+
+Start calculating Strain 4.0 in Mode 4
+[[1.08 0.   0.  ]
+ [0.   1.08 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.8767309996     -1.6608959367     0.0000001269
+     0.0000000000     3.3217696485     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.321770  3.321770  5.245353  90.000  90.000  120.000
+Volume : 50.1237468334
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8784865770  -71.5831708668  -187941.6603988641  -44919.1377411502
+End of Strain 4.0 in Mode 4
+
+Start calculating Strain 6.0 in Mode 4
+[[1.12 0.   0.  ]
+ [0.   1.12 0.  ]
+ [0.   0.   1.  ]]
+BaseVec:
+     2.9295194577     -1.6913736336     0.0000001269
+     0.0000000000     3.3827246345     -0.0000000228
+     0.0000000000     0.0000000000     5.2453534997
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.382725  3.382725  5.245353  90.000  90.000  120.000
+Volume : 51.9801819013
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8409370180  -71.5817909468  -187938.0374180086  -44918.2718278889
+End of Strain 6.0 in Mode 4
+
+End of Mode 4
+
+----------------------------------------------------------
+Start calculating Mode 5
+Start calculating Strain -6.0 in Mode 5
+[[0.88 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.88]]
+BaseVec:
+     2.5967414578     -1.5981978602     0.0000001191
+     0.0000000000     3.1963743345     -0.0000000214
+     0.0000000000     0.0000000000     4.9205777442
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.049148  3.196374  4.920578  90.000  90.000  121.611
+Volume : 40.8415714939
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8093269880  -71.5806293003  -187934.9875144523  -44917.5428833981
+End of Strain -6.0 in Mode 5
+
+Start calculating Strain -4.0 in Mode 5
+[[0.92 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.92]]
+BaseVec:
+     2.6551024853     -1.5981978602     0.0000001217
+     0.0000000000     3.1963743345     -0.0000000218
+     0.0000000000     0.0000000000     5.0311663330
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.099001  3.196374  5.031166  90.000  90.000  121.045
+Volume : 42.6980065618
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8679149380  -71.5827823664  -187940.6403909937  -44918.8939534028
+End of Strain -4.0 in Mode 5
+
+Start calculating Strain -2.0 in Mode 5
+[[0.96 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.96]]
+BaseVec:
+     2.7122079966     -1.5981978602     0.0000001244
+     0.0000000000     3.1963743345     -0.0000000223
+     0.0000000000     0.0000000000     5.1393758380
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.148064  3.196374  5.139376  90.000  90.000  120.509
+Volume : 44.5544416297
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9022691630  -71.5840448602  -187943.9550690564  -44919.6861805234
+End of Strain -2.0 in Mode 5
+
+Start calculating Strain 0.0 in Mode 5
+End of Strain 0.0 in Mode 5
+
+Start calculating Strain 2.0 in Mode 5
+[[1.04 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.04]]
+BaseVec:
+     2.8229555850     -1.5981978602     0.0000001294
+     0.0000000000     3.1963743345     -0.0000000232
+     0.0000000000     0.0000000000     5.3492319702
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.243966  3.196374  5.349232  90.000  90.000  119.516
+Volume : 48.2673117655
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9042900690  -71.5841191270  -187944.1500567991  -44919.7327837154
+End of Strain 2.0 in Mode 5
+
+Start calculating Strain 4.0 in Mode 5
+[[1.08 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.08]]
+BaseVec:
+     2.8767309996     -1.5981978602     0.0000001319
+     0.0000000000     3.1963743345     -0.0000000237
+     0.0000000000     0.0000000000     5.4511312591
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.290869  3.196374  5.451131  90.000  90.000  119.055
+Volume : 50.1237468334
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8774128730  -71.5831314089  -187941.5568022004  -44919.1129809517
+End of Strain 4.0 in Mode 5
+
+Start calculating Strain 6.0 in Mode 5
+[[1.12 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.12]]
+BaseVec:
+     2.9295194577     -1.5981978602     0.0000001343
+     0.0000000000     3.1963743345     -0.0000000241
+     0.0000000000     0.0000000000     5.5511603596
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.337113  3.196374  5.551160  90.000  90.000  118.615
+Volume : 51.9801819013
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8381195070  -71.5816874052  -187937.7655695852  -44918.2068545522
+End of Strain 6.0 in Mode 5
+
+End of Mode 5
+
+----------------------------------------------------------
+Start calculating Mode 6
+Start calculating Strain -6.0 in Mode 6
+[[0.88 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.94]]
+BaseVec:
+     2.5967414578     -1.5981978602     0.0000001230
+     0.0000000000     3.1963743345     -0.0000000221
+     0.0000000000     0.0000000000     5.0855589011
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.049148  3.196374  5.085559  90.000  90.000  121.611
+Volume : 42.2109411221
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8497606210  -71.5821152080  -187938.8887660829  -44918.4753049750
+End of Strain -6.0 in Mode 6
+
+Start calculating Strain -4.0 in Mode 6
+[[0.92 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.96]]
+BaseVec:
+     2.6551024853     -1.5981978602     0.0000001244
+     0.0000000000     3.1963743345     -0.0000000223
+     0.0000000000     0.0000000000     5.1393758380
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.099001  3.196374  5.139376  90.000  90.000  121.045
+Volume : 43.6163483233
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8858111620  -71.5834400401  -187942.3671137214  -44919.3066500656
+End of Strain -4.0 in Mode 6
+
+Start calculating Strain -2.0 in Mode 6
+[[0.96 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   0.98]]
+BaseVec:
+     2.7122079966     -1.5981978602     0.0000001256
+     0.0000000000     3.1963743345     -0.0000000225
+     0.0000000000     0.0000000000     5.1926350411
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.148064  3.196374  5.192635  90.000  90.000  120.509
+Volume : 45.0161580199
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9070094960  -71.5842190641  -187944.4124415573  -44919.7954951816
+End of Strain -2.0 in Mode 6
+
+Start calculating Strain 0.0 in Mode 6
+End of Strain 0.0 in Mode 6
+
+Start calculating Strain 2.0 in Mode 6
+[[1.04 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.02]]
+BaseVec:
+     2.8229555850     -1.5981978602     0.0000001282
+     0.0000000000     3.1963743345     -0.0000000230
+     0.0000000000     0.0000000000     5.2975473574
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.243966  3.196374  5.297547  90.000  90.000  119.516
+Volume : 47.8009499903
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9080415050  -71.5842569897  -187944.5120152660  -44919.8192938707
+End of Strain 2.0 in Mode 6
+
+Start calculating Strain 4.0 in Mode 6
+[[1.08 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.04]]
+BaseVec:
+     2.8767309996     -1.5981978602     0.0000001294
+     0.0000000000     3.1963743345     -0.0000000232
+     0.0000000000     0.0000000000     5.3492319702
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.290869  3.196374  5.349232  90.000  90.000  119.055
+Volume : 49.1867717508
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8909239430  -71.5836279313  -187942.8604219831  -44919.4245535773
+End of Strain 4.0 in Mode 6
+
+Start calculating Strain 6.0 in Mode 6
+[[1.12 0.   0.  ]
+ [0.   1.   0.  ]
+ [0.   0.   1.06]]
+BaseVec:
+     2.9295194577     -1.5981978602     0.0000001307
+     0.0000000000     3.1963743345     -0.0000000235
+     0.0000000000     0.0000000000     5.4004219592
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.337113  3.196374  5.400422  90.000  90.000  118.615
+Volume : 50.5686915168
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8662560840  -71.5827214047  -187940.4803359506  -44918.8556993270
+End of Strain 6.0 in Mode 6
+
+End of Mode 6
+
+----------------------------------------------------------
+Start calculating Mode 7
+Start calculating Strain -6.0 in Mode 7
+[[ 0.88  0.    0.  ]
+ [ 0.    1.   -0.12]
+ [ 0.   -0.12  1.  ]]
+BaseVec:
+     2.5967414578     -1.5953080675     0.0960657004
+     0.0000000000     3.1905947739     -0.1921298847
+     0.0000000000     -0.3152913077     5.2358690519
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.049148  3.196374  5.245353  96.892  86.394  121.611
+Volume : 43.2226565304
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8249578430  -71.5812037233  -187936.4956623488  -44917.9033394191
+End of Strain -6.0 in Mode 7
+
+Start calculating Strain -4.0 in Mode 7
+[[ 0.92  0.    0.  ]
+ [ 0.    1.   -0.08]
+ [ 0.   -0.08  1.  ]]
+BaseVec:
+     2.6551024853     -1.5969167413     0.0639793273
+     0.0000000000     3.1938121045     -0.1279575676
+     0.0000000000     -0.2099824631     5.2411487961
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.099001  3.196374  5.245353  94.589  87.635  121.045
+Volume : 44.3730700482
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8757590190  -71.5830706309  -187941.3972295838  -44919.0748421786
+End of Strain -4.0 in Mode 7
+
+Start calculating Strain -2.0 in Mode 7
+[[ 0.96  0.    0.  ]
+ [ 0.    1.   -0.04]
+ [ 0.   -0.04  1.  ]]
+BaseVec:
+     2.7122079966     -1.5978780632     0.0319704814
+     0.0000000000     3.1957347402     -0.0639403039
+     0.0000000000     -0.1049280661     5.2443039041
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.148064  3.196374  5.245353  92.292  88.836  120.509
+Volume : 45.4367934574
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9035821890  -71.5840931129  -187944.0817567776  -44919.7164596174
+End of Strain -2.0 in Mode 7
+
+Start calculating Strain 0.0 in Mode 7
+End of Strain 0.0 in Mode 7
+
+Start calculating Strain 2.0 in Mode 7
+[[1.04 0.   0.  ]
+ [0.   1.   0.04]
+ [0.   0.04 1.  ]]
+BaseVec:
+     2.8229555850     -1.5978780582     -0.0319702276
+     0.0000000000     3.1957347393     0.0639402584
+     0.0000000000     0.1049280661     5.2443039041
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.243966  3.196374  5.245353  87.708  91.129  119.516
+Volume : 47.2921140325
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9047530660  -71.5841361418  -187944.1947292084  -44919.7434606781
+End of Strain 2.0 in Mode 7
+
+Start calculating Strain 4.0 in Mode 7
+[[1.08 0.   0.  ]
+ [0.   1.   0.08]
+ [0.   0.08 1.  ]]
+BaseVec:
+     2.8767309996     -1.5969167311     -0.0639790737
+     0.0000000000     3.1938121027     0.1279575221
+     0.0000000000     0.2099824631     5.2411487961
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.290869  3.196374  5.245353  85.411  92.227  119.055
+Volume : 48.077009026
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8838942340  -71.5833695944  -187942.1821583283  -44919.2624446629
+End of Strain 4.0 in Mode 7
+
+Start calculating Strain 6.0 in Mode 7
+[[1.12 0.   0.  ]
+ [0.   1.   0.12]
+ [0.   0.12 1.  ]]
+BaseVec:
+     2.9295194577     -1.5953080523     -0.0960654470
+     0.0000000000     3.1905947712     0.1921298392
+     0.0000000000     0.3152913077     5.2358690519
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.337113  3.196374  5.245353  83.108  93.295  118.615
+Volume : 48.7617328777
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8544979970  -71.5822893032  -187939.3458532767  -44918.5845514432
+End of Strain 6.0 in Mode 7
+
+End of Mode 7
+
+----------------------------------------------------------
+Start calculating Mode 8
+Start calculating Strain -6.0 in Mode 8
+[[ 0.88  0.   -0.12]
+ [ 0.    1.    0.  ]
+ [-0.12  0.    1.  ]]
+BaseVec:
+     2.5910556014     -1.5981978602     -0.1717468624
+     0.0000000014     3.1963743345     -0.0000000227
+     -0.3254441868     0.0000000000     5.2352477896
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.049148  3.196374  5.245353  90.000  96.254  121.611
+Volume : 43.1795782551
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8377769420  -71.5816748162  -187937.7325170948  -44918.1989548170
+End of Strain -6.0 in Mode 8
+
+Start calculating Strain -4.0 in Mode 8
+[[ 0.92  0.   -0.08]
+ [ 0.    1.    0.  ]
+ [-0.08  0.    1.  ]]
+BaseVec:
+     2.6526911591     -1.5981978602     -0.1131316301
+     0.0000000009     3.1963743345     -0.0000000228
+     -0.2143739044     0.0000000000     5.2409710137
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.099001  3.196374  5.245353  90.000  94.098  121.045
+Volume : 44.3606414869
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8757858140  -71.5830716156  -187941.3998149077  -44919.0754600859
+End of Strain -4.0 in Mode 8
+
+Start calculating Strain -2.0 in Mode 8
+[[ 0.96  0.   -0.04]
+ [ 0.    1.    0.  ]
+ [-0.04  0.    1.  ]]
+BaseVec:
+     2.7116310573     -1.5981978602     -0.0559392304
+     0.0000000005     3.1963743345     -0.0000000228
+     -0.1059997543     0.0000000000     5.2442823522
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.148064  3.196374  5.245353  90.000  92.016  120.509
+Volume : 45.4352764451
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9040022180  -71.5841085487  -187944.1222834060  -44919.7261457147
+End of Strain -2.0 in Mode 8
+
+Start calculating Strain 0.0 in Mode 8
+End of Strain 0.0 in Mode 8
+
+Start calculating Strain 2.0 in Mode 8
+[[1.04 0.   0.04]
+ [0.   1.   0.  ]
+ [0.04 0.   1.  ]]
+BaseVec:
+     2.8224230498     -1.5981978602     0.0548305653
+     -0.0000000005     3.1963743345     -0.0000000228
+     0.1038984586     0.0000000000     5.2443244033
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.243966  3.196374  5.245353  90.000  88.044  119.516
+Volume : 47.293571484
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9054945290  -71.5841633901  -187944.2662694961  -44919.7605592183
+End of Strain 2.0 in Mode 8
+
+Start calculating Strain 4.0 in Mode 8
+[[1.08 0.   0.08]
+ [0.   1.   0.  ]
+ [0.08 0.   1.  ]]
+BaseVec:
+     2.8746775151     -1.5981978602     0.1086760518
+     -0.0000000009     3.1963743345     -0.0000000228
+     0.2059305273     0.0000000000     5.2413095649
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.290869  3.196374  5.245353  90.000  86.142  119.055
+Volume : 48.0884770944
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8865048600  -71.5834655331  -187942.4340453882  -44919.3226471189
+End of Strain 4.0 in Mode 8
+
+Start calculating Strain 6.0 in Mode 8
+[[1.12 0.   0.12]
+ [0.   1.   0.  ]
+ [0.12 0.   1.  ]]
+BaseVec:
+     2.9250564759     -1.5981978602     0.1616445165
+     -0.0000000013     3.1963743345     -0.0000000227
+     0.3063007233     0.0000000000     5.2364026969
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.337113  3.196374  5.245353  90.000  84.287  118.615
+Volume : 48.7998837344
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8602470330  -71.5825005763  -187939.9005507997  -44918.7171273414
+End of Strain 6.0 in Mode 8
+
+End of Mode 8
+
+----------------------------------------------------------
+Start calculating Mode 9
+Start calculating Strain -6.0 in Mode 9
+[[ 1.    0.    0.  ]
+ [ 0.    1.   -0.12]
+ [ 0.   -0.12  0.88]]
+BaseVec:
+     2.7681356950     -1.5951187764     0.0991591560
+     0.0000000000     3.1902161938     -0.1983167689
+     0.0000000000     -0.3254441868     4.9098036028
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  4.920578  97.349  86.333  120.000
+Volume : 43.1795782551
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8142473150  -71.5808101189  -187935.4622537302  -44917.6563488159
+End of Strain -6.0 in Mode 9
+
+Start calculating Strain -4.0 in Mode 9
+[[ 1.    0.    0.  ]
+ [ 0.    1.   -0.08]
+ [ 0.   -0.08  0.92]]
+BaseVec:
+     2.7681356950     -1.5968625732     0.0653173429
+     0.0000000000     3.1937037689     -0.1306335904
+     0.0000000000     -0.2143739044     5.0265971093
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.031166  94.784  87.610  120.000
+Volume : 44.3606414869
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8748353150  -71.5830366854  -187941.3081057167  -44919.0535410618
+End of Strain -4.0 in Mode 9
+
+Start calculating Strain -2.0 in Mode 9
+[[ 1.    0.    0.  ]
+ [ 0.    1.   -0.04]
+ [ 0.   -0.04  0.96]]
+BaseVec:
+     2.7681356950     -1.5978714967     0.0322970096
+     0.0000000000     3.1957216071     -0.0645933608
+     0.0000000000     -0.1059997543     5.1382825979
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.139376  92.340  88.830  120.000
+Volume : 45.4352764451
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9037171430  -71.5840980724  -187944.0947778562  -44919.7195717301
+End of Strain -2.0 in Mode 9
+
+Start calculating Strain 0.0 in Mode 9
+End of Strain 0.0 in Mode 9
+
+Start calculating Strain 2.0 in Mode 9
+[[1.   0.   0.  ]
+ [0.   1.   0.04]
+ [0.   0.04 1.04]]
+BaseVec:
+     2.7681356950     -1.5978843041     -0.0316565157
+     0.0000000000     3.1957472310     0.0633128434
+     0.0000000000     0.1038984586     5.3482228619
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.349232  87.752  91.124  120.000
+Volume : 47.293571484
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9061975320  -71.5841892250  -187944.3340989588  -44919.7767708500
+End of Strain 2.0 in Mode 9
+
+Start calculating Strain 4.0 in Mode 9
+[[1.   0.   0.  ]
+ [0.   1.   0.08]
+ [0.   0.08 1.08]]
+BaseVec:
+     2.7681356950     -1.5969657156     -0.0627444912
+     0.0000000000     3.1939100708     0.1254883828
+     0.0000000000     0.2059305273     5.4472400922
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.451131  85.585  92.206  120.000
+Volume : 48.0884770944
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8877756910  -71.5835122352  -187942.5566619117  -44919.3519531732
+End of Strain 4.0 in Mode 9
+
+Start calculating Strain 6.0 in Mode 9
+[[1.   0.   0.  ]
+ [0.   1.   0.12]
+ [0.   0.12 1.12]]
+BaseVec:
+     2.7681356950     -1.5954706479     -0.0933261137
+     0.0000000000     3.1909199598     0.1866512227
+     0.0000000000     0.3063007233     5.5427034202
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.196375  3.196374  5.551160  83.489  93.250  120.000
+Volume : 48.7998837344
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8649560790  -71.5826736304  -187940.3549045647  -44918.8257205043
+End of Strain 6.0 in Mode 9
+
+End of Mode 9
+
+----------------------------------------------------------
+Start calculating Mode 10
+Start calculating Strain -6.0 in Mode 10
+[[ 1.   -0.12  0.  ]
+ [-0.12  1.    0.  ]
+ [ 0.    0.    0.88]]
+BaseVec:
+     2.8591960314     -1.7616970598     0.0000001191
+     -0.1921298620     3.1905947726     -0.0000000214
+     0.0000000000     0.0000000000     4.9205777442
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.358359  3.196374  4.920578  90.000  90.000  125.085
+Volume : 43.2226565304
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8423727970  -71.5818437106  -187938.1759495911  -44918.3049377339
+End of Strain -6.0 in Mode 10
+
+Start calculating Strain -4.0 in Mode 10
+[[ 1.   -0.08  0.  ]
+ [-0.08  1.    0.  ]
+ [ 0.    0.    0.92]]
+BaseVec:
+     2.8298959429     -1.7077309933     0.0000001217
+     -0.1279575448     3.1938121036     -0.0000000218
+     0.0000000000     0.0000000000     5.0311663330
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.305247  3.196374  5.031166  90.000  90.000  123.404
+Volume : 44.3730700482
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8821599480  -71.5833058606  -187942.0148252052  -44919.2224510841
+End of Strain -4.0 in Mode 10
+
+Start calculating Strain -2.0 in Mode 10
+[[ 1.   -0.04  0.  ]
+ [-0.04  1.    0.  ]
+ [ 0.    0.    0.96]]
+BaseVec:
+     2.7995521453     -1.6532518549     0.0000001244
+     -0.0639402811     3.1957347398     -0.0000000223
+     0.0000000000     0.0000000000     5.1393758380
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.251267  3.196374  5.139376  90.000  90.000  121.710
+Volume : 45.4367934574
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9036639400  -71.5840961172  -187944.0896445482  -44919.7183448400
+End of Strain -2.0 in Mode 10
+
+Start calculating Strain 0.0 in Mode 10
+End of Strain 0.0 in Mode 10
+
+Start calculating Strain 2.0 in Mode 10
+[[1.   0.04 0.  ]
+ [0.04 1.   0.  ]
+ [0.   0.   1.04]]
+BaseVec:
+     2.7356114363     -1.5425042665     0.0000001294
+     0.0639402811     3.1957347398     -0.0000000232
+     0.0000000000     0.0000000000     5.3492319702
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.140524  3.196374  5.349232  90.000  90.000  118.271
+Volume : 47.2921140325
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.9033633910  -71.5840850723  -187944.0606459846  -44919.7114140165
+End of Strain 2.0 in Mode 10
+
+Start calculating Strain 4.0 in Mode 10
+[[1.   0.08 0.  ]
+ [0.08 1.   0.  ]
+ [0.   0.   1.08]]
+BaseVec:
+     2.7019375420     -1.4861024791     0.0000001319
+     0.1279575448     3.1938121036     -0.0000000237
+     0.0000000000     0.0000000000     5.4511312591
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.083661  3.196374  5.451131  90.000  90.000  116.517
+Volume : 48.077009026
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8769168940  -71.5831131820  -187941.5089475126  -44919.1015434061
+End of Strain 4.0 in Mode 10
+
+Start calculating Strain 6.0 in Mode 10
+[[1.   0.12 0.  ]
+ [0.12 1.   0.  ]
+ [0.   0.   1.12]]
+BaseVec:
+     2.6670648840     -1.4289190600     0.0000001343
+     0.1921298620     3.1905947726     -0.0000000241
+     0.0000000000     0.0000000000     5.5511603596
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.025730  3.196374  5.551160  90.000  90.000  114.735
+Volume : 48.7617328777
+
+Energy:
+       eV             Hartree            kJ/mol            kcal/mol
+-1947.8369296300  -71.5816436781  -187937.6507639335  -44918.1794153412
+End of Strain 6.0 in Mode 10
+
+End of Mode 10
+
+
+==================Post Processing========================
+[[  36.08519028 -130.69076102]
+ [  37.4360536  -180.21153178]
+ [  35.13491417  -92.34666332]
+ [  94.57109434 -403.10142392]
+ [  87.63682859 -232.44452518]
+ [  54.55729297 -132.42066001]
+ [  72.35042464 -234.73645215]
+ [  64.4763408  -188.56843075]
+ [  71.85997232 -400.85020012]
+ [  72.57033546   51.41550011]]
+[11 12 13 33 44]
+[67.51601713 28.41858301 20.07000335 69.67281429 17.72238558]
+[111 112 113 123 133 144 155 222 333 344]
+[ -784.1445661   -240.76144341    97.32167306   -46.44049036
+  -116.13587476   -52.02284557   -28.93883486 -1081.26919068
+  -554.0799799   -154.2517684 ]
+========================!!!END!!!=========================
