@@ -10,6 +10,13 @@ The perl version for CASTEP in Materials Studio were shown in <https://github.co
 
 <img src="https://github.com/hitliaomq/ELASTIC3rd/blob/master/Elastic3rd_LOGO.png" width="305" height="177"></img>
 
+## Features
+
+- Support all classes of crystal, from cubic to triclinic
+- Support CASTEP (windows or linux, under Materials Studio) and VASP
+- Support Python2 and Python3
+- Support pip installation
+
 ## Install
 
 **pip**
