@@ -30,7 +30,7 @@ jobs:
     - name: Install Package
       run: |
         python setup.py install
-    - name: Test with pytest
-      run: |
-        pip install pytest
-        pytest ./test/testforutils.py
+    #- name: Test with pytest
+    #  run: |
+    #    pip install pytest
+    #    pytest ./test/testforutils.py
