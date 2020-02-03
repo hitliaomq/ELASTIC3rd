@@ -26,8 +26,8 @@ def get_cijall(coef_fit, coef, Ord = 3, flag_se = "e"):
             a = math.factorial(i)
         elif flag_se == "s":
             pass
-        exec('NumCoef = coef.coef' + str(i) + '.shape[0]')
-        exec('RankCoef = np.linalg.matrix_rank(coef.coef' + str(i) + ')')
+        NumCoef = eval('coef.coef' + str(i) + '.shape[0]')
+        RankCoef = eval('np.linalg.matrix_rank(coef.coef' + str(i) + ')')
         if NumCoef == RankCoef:
             exec('C.C' + str(int(i)) + '= np.linalg.solve(coef.coef' + str(i) + ', a*coef_fit[:, i - 2])')
         else:

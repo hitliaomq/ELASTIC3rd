@@ -89,6 +89,12 @@ def yfitfun(x, c, flag_se = "e", flag_ord = 3):
         [c2, c3, c4, c5] = c
     elif flag_ord == 6:
         [c2, c3, c4, c5, c6] = c
+    elif flag_ord == 7:
+        [c2, c3, c4, c5, c6, c7] = c
+    elif flag_ord == 8:
+        [c2, c3, c4, c5, c6, c7, c8] = c
+    elif flag_ord == 9:
+        [c2, c3, c4, c5, c6, c7, c8, c9] = c
     else:
         [c2, c3] = c
     flag_se = flag_se.lower()

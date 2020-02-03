@@ -35,7 +35,7 @@ def DeleteFiles(path, remainDirsList, filesList):
     dirsList = os.listdir(path)
     for f in dirsList:
         if f not in remainDirsList:
-            filePath = os.path.join(path,f)
+            filepath = os.path.join(path,f)
             if os.path.isdir(filepath):
                 shutil.rmtree(filepath, True)
         if f in filesList:
