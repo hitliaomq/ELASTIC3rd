@@ -19,8 +19,7 @@ if len(argv) > 1:
 else:
     INPUT = "INPUT"
 if not os.path.isfile(INPUT):
-    print("ERROR:" + INPUT + "file not exists")
-    return
+    raise Exception("ERROR:" + INPUT + "file not exists")
 
 INPUT = "INPUT"
 ParaIn = esutils.read_input(INPUT)
