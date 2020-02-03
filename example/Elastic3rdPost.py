@@ -26,6 +26,8 @@ INPUT = "INPUT"
 ParaIn = esutils.read_input(INPUT)
 eglue = __import__("energy." + ParaIn['EnergyCode'], fromlist = ParaIn['EnergyCode'])
 
+BaseName = ParaIn['BaseName']
+
 BaseVec = eglue.get_base_vec(BaseName)
 V0 = crylat.print_lattice(BaseVec)
 
