@@ -1,4 +1,7 @@
 #### [![DOI](https://zenodo.org/badge/162978272.svg)](https://zenodo.org/badge/latestdoi/162978272)
+![](https://github.com/hitliaomq/ELASTIC3rd/workflows/.github/workflows/install.yml/badge.svg)
+
+
 
 # ELASTIC3rd
 
