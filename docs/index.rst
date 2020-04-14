@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. |logo| image:: Elastic3rd_LOGO_NoBG.png
+.. |logo| image:: Elastic3rd_LOGO.png
           :height: 30pt
           :width: 30pt
           :alt: Logo
