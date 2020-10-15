@@ -154,6 +154,9 @@ def elastic3(INPUT = "INPUT"):
 
 
 def getparam(ParaIn, dstpath, StrainOrMode):
+    '''
+    Get the parameters for calculations
+    '''
     flag_se = ParaIn['FlagSE'].lower()
     flag_continue = 0
     if ParaIn['Continue']:

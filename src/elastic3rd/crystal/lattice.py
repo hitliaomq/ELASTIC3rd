@@ -5,6 +5,19 @@ import math
 import numpy as np
 
 def volume_crystal(a, b, c, alpha = 90, beta = 90, gamma = 90):
+    '''
+    Calculate volume according to lattic parameters
+    Parameters
+    ----------
+        a, b, c: float
+            The length of the lattic
+        alpha, beta, gamma: float
+            The angle of the lattice
+    Return
+    ------
+        V: float
+            The volume of the crystal
+    '''
     alpha = math.radians(alpha)
     beta = math.radians(beta)
     gamma = math.radians(gamma)
@@ -16,6 +29,17 @@ def volume_crystal(a, b, c, alpha = 90, beta = 90, gamma = 90):
     return V
 
 def base_vec2ABC(BaseVec):
+    '''
+    Calculate the lattic parameters accordint the crystal vector
+    Parameter
+    ---------
+        BaseVec: np.ndarray
+            The crystal vector
+    Return
+    ------
+        ABC: np.ndarray
+            The lattice prameters, in the order of a, b, c, alpha, beta, gamma
+    '''
     #Note: the base vector is vertical-based
     va = BaseVec[0, :]
     vb = BaseVec[1, :]
@@ -30,6 +54,17 @@ def base_vec2ABC(BaseVec):
     return ABC
 
 def ABC2base_vec(ABC):
+    '''
+    Calculate the crystal vector by lattice parameters
+    Parameter
+    ------
+        ABC: np.ndarray
+            The lattice prameters, in the order of a, b, c, alpha, beta, gamma
+    Return
+    ---------
+        BaseVec: np.ndarray
+            The crystal vector
+    '''
     (a, b, c, alpha, beta, gamma) = ABC
     alpha = math.radians(alpha)
     beta = math.radians(beta)
@@ -47,6 +82,16 @@ def ABC2base_vec(ABC):
     return BaseVec
 
 def vec_ang(va, vb):
+    '''
+    Calculate the angle between tow vectors
+    Parameters
+        va, vb: 1D np.ndarray
+            The vectore
+    Return
+    ------
+        alpha: float
+            The angle between va and vb, note in degree
+    '''
     #Note: The angle is in degree
     a = np.linalg.norm(va, ord=2)
     b = np.linalg.norm(vb, ord=2)
@@ -54,6 +99,16 @@ def vec_ang(va, vb):
     return alpha
 
 def print_base_vec(BaseVec):
+    '''
+    Print crystal vector
+    Parameter
+    ---------
+        BaseVec: 2D list
+            The crystal vector
+    Return
+    ------
+        None
+    '''
     str_i = "    "
     for i in range(0,3):
         BaseVeci = []
@@ -63,6 +118,15 @@ def print_base_vec(BaseVec):
     #print("\n")
 
 def print_ABC(ABC):
+    '''
+    Print lattice parameters
+    Parameter
+    ---------
+        ABC: list
+            The lattice paramters
+    Return
+        None
+    '''
     print("    a         b         c      alpha   beta    gamma")
     ABC_str = []
     for i in range(0, 6):
@@ -74,6 +138,16 @@ def print_ABC(ABC):
     print("  ".join(ABC_str))
 
 def print_lattice(BaseVec):
+    '''
+    Print both crystal vector and lattice parameters
+    Parameter
+    ---------
+        BaseVec: np.ndarray
+            Crystal vector
+    Return
+        V0: float
+            The volume of crystal
+    '''
     print("BaseVec:")
     print_base_vec(BaseVec)
 
@@ -84,14 +158,4 @@ def print_lattice(BaseVec):
     V0 = volume_crystal(ABC[0], ABC[1], ABC[2], ABC[3], ABC[4], ABC[5])
     print("Volume : " + str(V0) + "\n")
     return V0
-#test
-'''
-BaseVec = np.array([[1, 0, 0], [0, 2, 0], [0, 0, 3]])
-BaseVec = BaseVec.T
-print BaseVec
-abc = base_vec2ABC(BaseVec)
-BaseVec2 = ABC2base_vec(abc)
-print BaseVec2
-BVSHAPE = BaseVec2.shape
-print BVSHAPE
-'''
+
