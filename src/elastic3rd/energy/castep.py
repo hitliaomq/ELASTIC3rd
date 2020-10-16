@@ -8,6 +8,16 @@ import numpy as np
 import elastic3rd.energy.glue as glue
 
 def get_base_vec(BaseName):
+    '''
+    Get the base vector from cell file
+    Parameter
+    --------
+        BaseName: str
+            The filename of the cell file (without ext)
+    Return
+        BaseVec: np.ndarray
+            The crystal vector
+    '''
     BaseVec = np.zeros((3, 3))
     FileName = BaseName + ".cell"
     fopen = open(FileName, 'r')
@@ -31,6 +41,17 @@ def get_base_vec(BaseName):
     return BaseVec
 
 def write_base_vec(BaseName, BaseVec):
+    '''
+    Write Base vector to cell file(update cell file by base vector)
+    Parameter
+    --------
+        BaseName: str
+            The filename of the cell file (without ext)
+        BaseVec: np.ndarray
+            The crystal vector
+    Return
+        None
+    '''
     FileName = BaseName + ".cell"
     fopen = open(FileName, 'r')
     tmpopen = open('tmpfile', 'a')
@@ -61,6 +82,20 @@ def write_base_vec(BaseName, BaseVec):
     os.rename('tmpfile', FileName)
 
 def run(NP, BaseName):
+    '''
+    Run string for CASTEP. 
+        Note: this string is for Materials Studio's version
+    Parameters
+    ----------
+        BaseName: str
+            The filename of the cell and param file (without ext)
+        NP: int
+            NP is the total cores
+    Return
+    ------
+        RunStr: str
+            The string for calling first principles code
+    '''
     plat = platform.platform().split("-")[0].lower()
     if plat == "windows":
         #print("Windows")
@@ -70,6 +105,17 @@ def run(NP, BaseName):
     return RunStr
 
 def get_energy(BaseName):
+    '''
+    Get the energy from castep file
+    Parameter
+    ---------
+        BaseName: str
+            The filename of the cell and param file (without ext)
+    Return
+    ------
+        energy: float
+            energy in multi unit
+    '''
     FileName = BaseName + ".castep"
     fopen = open(FileName, 'r')
     for eachline in fopen:
@@ -85,6 +131,18 @@ def get_energy(BaseName):
     return Energy
 
 def copy_files(BaseName, Path):
+    '''
+    Copy required files(cell, param, RunCASTEP.sh/bat file) for run CASTEP
+    Parameters
+    ----------
+        BaseName: str
+            The filename of the cell and param file (without ext)
+        Path: path-like str
+            The destination folder to store the files
+    Return
+    ------
+        None
+    '''
     #TODO: need to be improved
     plat = platform.platform().split("-")[0].lower()
     shutil.copyfile(BaseName + ".cell", Path + "/" + BaseName + ".cell")

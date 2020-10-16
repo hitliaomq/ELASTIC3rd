@@ -22,10 +22,11 @@ import numpy as np
 import shutil
 import sys
 import os
+import importlib
 
-INPUT = "INPUT"
-ParaIn = esutils.read_input(INPUT)
-eglue = __import__("energy." + ParaIn['EnergyCode'], fromlist = ParaIn['EnergyCode'])
+#INPUT = "INPUT"
+#ParaIn = esutils.read_input(INPUT)
+#eglue = __import__("energy." + ParaIn['EnergyCode'], fromlist = ParaIn['EnergyCode'])
 
 #CrystalType = "cubic"
 
@@ -34,15 +35,16 @@ def elastic3(INPUT = "INPUT"):
     esutils.print_logo()
 
     #Read INPUT
-    #ParaIn = esutils.read_input(INPUT)    
+    ParaIn = esutils.read_input(INPUT)    
     print("===================The input parameters===================")
     esutils.print_parain(ParaIn)
 
     flag_se = ParaIn['FlagSE'].lower()
+    EnergyCode = ParaIn['EnergyCode'].lower()
 
     #Import glue as eglue
 
-    #eglue = __import__("energy." + ParaIn['EnergyCode'], fromlist = ParaIn['EnergyCode'])
+    eglue = importlib.import_module('elastic3rd.energy.{}'.format(EnergyCode))
 
     #Deform mode this is for cubic
     #TODO : for any symmtry
@@ -156,8 +158,32 @@ def elastic3(INPUT = "INPUT"):
 def getparam(ParaIn, dstpath, StrainOrMode):
     '''
     Get the parameters for calculations
+    Parameters
+    ----------
+        ParaIn: dict
+            The input parameter dict
+        dstpath: str
+            The destination path
+        StrainOrMode: str
+            Strain or Mode
+    Return
+    ------
+        flag_se: str
+            e or s. e for strain-energy method, s for strain-stress method
+        flag_continue: 0 or 1
+            0 or 1. 0 for current mode or strain is not calculated yet, 1 for calculated
+        BaseName: str
+            The basename, is taken from ParaIn directely
+        RunStr: str
+            Get the string for running the first principles code.
+        PreName: str
+            The pre of the filename of result file. It is contraled by the flag_se.
+                If flag_se='e', PreName='Energy', else PreName='Stress'
     '''
     flag_se = ParaIn['FlagSE'].lower()
+    EnergyCode = ParaIn['EnergyCode'].lower()
+
+    eglue = importlib.import_module('elastic3rd.energy.{}'.format(EnergyCode))
     flag_continue = 0
     if ParaIn['Continue']:
         flag_continue = esutils.iscontinue(dstpath, StrainOrMode, flag_se)    
@@ -175,6 +201,23 @@ def getparam(ParaIn, dstpath, StrainOrMode):
     return (flag_se, flag_continue, BaseName, RunStr, PreName)
 
 def get_continue_mode_e(ModePath, E, Modei, flag_se = "e"):
+    '''
+    Get the energy or stress of previous mode folder
+    Parameters
+    ----------
+        ModePath: str
+            The path or the current
+        E: np.ndarray, size: n_strain x n_mode
+            The initial of result. It can be determined by the number of strainmodes and steps.
+        Modei: int
+            The ith mode
+        flag_se: str
+            s or e. e for strain-energy method and s for strain-stress method
+    Return
+    ------
+        E: np.ndarray
+            The updated E
+    '''
     os.chdir(ModePath)
     Efilename = ''
     if flag_se == "e":
@@ -194,6 +237,23 @@ def get_continue_mode_e(ModePath, E, Modei, flag_se = "e"):
     return E
 
 def get_continue_strain_e(Efilename, flag_se, strain, Modei):
+    '''
+    Get the energy or stress of previous mode folder
+    Parameters
+    ----------
+        Efilename: str
+            The filename of the energy file
+        strain: float
+            the strain, e.g. 3.0
+        Modei: int
+            The ith mode
+        flag_se: str
+            s or e. e for strain-energy method and s for strain-stress method
+    Return
+    ------
+        E0: np.ndarray
+            The energy of current strain
+    '''
     if flag_se == "e":
         if Modei == 0.:
             print("The energy of undistorted structure was calculated previously.")
@@ -205,7 +265,21 @@ def get_continue_strain_e(Efilename, flag_se, strain, Modei):
     E0 = np.loadtxt(Efilename)
     return E0
 
-def get_org_strain_e(BaseName, flag_se):
+def get_org_strain_e(BaseName, flag_se='e', EnergyCode='vasp'):
+    '''
+    Get the energy from first principles codes and pring it.
+    Parameters
+    ----------
+        BaseName: str
+            The basename, the name of the cell file or param file(for CASTEP)
+        flag_se: str
+            s or e. e for strain-energy method and s for strain-stress method
+    Return
+    ------
+        E0: list
+            The energy of current strain. in multi unit
+    '''
+    eglue = importlib.import_module('elastic3rd.energy.{}'.format(EnergyCode))
     E0 = 0
     if flag_se == "e":
         E0 = eglue.get_energy(BaseName)
@@ -215,11 +289,35 @@ def get_org_strain_e(BaseName, flag_se):
         pass
     return E0
 
-def get_strain_e(ParaIn, dstpath, StrainMode, BaseVec, strain = 0.0, Modei = 0):
+def get_strain_e(ParaIn, dstpath, StrainMode, BaseVec, strain=0.0, Modei=0):
+    '''
+    In the strain folder, run first principles code and get the energy
+    Parameters
+    ----------
+        ParaIn: dict
+            The dict of input parameters
+        dstpath: str
+            The destination path 
+        StrainMode: 3D np.ndarray, size: nx3x3
+            The strain mode.
+        BaseVec: np.ndarray
+            The crystal vector
+        strain: float
+            The value of the strain. e.g. 0.03
+        Modei: int
+            The ith strain mode. When modei=0, it means the undeformed structure
+    Return
+    ------
+        E0: list
+            The energy of current strain. in multi unit
+    '''
     StrainOrMode = "Strain"
     if Modei == 0:
         StrainOrMode = "Mode"
     (flag_se, flag_continue, BaseName, RunStr, PreName) = getparam(ParaIn, dstpath, StrainOrMode)
+    EnergyCode = ParaIn['EnergyCode'].lower()
+
+    eglue = importlib.import_module('elastic3rd.energy.{}'.format(EnergyCode))
     #BaseVec = eglue.get_base_vec(BaseName)
     Efilename = PreName + "_" + StrainOrMode + ".txt"
 
@@ -243,7 +341,7 @@ def get_strain_e(ParaIn, dstpath, StrainMode, BaseVec, strain = 0.0, Modei = 0):
             crylat.print_lattice(BaseVecNew) 
             eglue.write_base_vec(BaseName, BaseVecNew)
         os.system(RunStr + ">> FP_OUT")
-        E0 = get_org_strain_e(BaseName, flag_se)
+        E0 = get_org_strain_e(BaseName, flag_se, EnergyCode=EnergyCode)
         print(E0)
         np.savetxt(Efilename, E0)    
         if Modei == 0:
