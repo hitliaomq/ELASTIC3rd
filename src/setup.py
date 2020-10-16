@@ -22,13 +22,13 @@ setup(
     license = "GPL3",
     platforms = ['linux', 'windows'],
     keywords = ['physics', 'materials', 'elastic constants'],
-    packages = ['elastic3rd', 'elastic3rd.crystal', 'elastic3rd.energy', 'elastic3rd.post', 'elastic3rd.symmetry'],
+    packages = ['elastic3rd', 'elastic3rd.crystal', 'elastic3rd.energy', 'elastic3rd.post', 'elastic3rd.symmetry', 'elastic3rd.scripts'],
     package_dir = {'elastic3rd': 'elastic3rd', 'elastic3rd.energy' : 'elastic3rd/energy', 
                    'elastic3rd.symmetry' : 'elastic3rd/symmetry', 'elastic3rd.crystal' : 'elastic3rd/crystal', 
-                   'elastic3rd.post' : 'elastic3rd/post'},
+                   'elastic3rd.post' : 'elastic3rd/post', 'elastic3rd.scripts': 'elastic3rd/scripts'},
     package_data = {'elastic3rd.energy' : ['energyrun']},
     install_requires = ['numpy', 'scipy', 'matplotlib'],
-    
+
     entry_points={
         'console_scripts': [
             'elastic3rd = elastic3rd.scripts.run_elastic3rd:run_e3rd',

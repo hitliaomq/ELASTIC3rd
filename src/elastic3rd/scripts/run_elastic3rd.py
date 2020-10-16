@@ -2,6 +2,7 @@
 # This is the script run elastic3rd in the terminal
 # Simply run     elastic3rd
 import argparse
+import sys
 from elastic3rd import __version__
 import elastic3rd.elastic
 

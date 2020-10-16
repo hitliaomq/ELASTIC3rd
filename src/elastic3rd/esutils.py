@@ -210,7 +210,7 @@ def print_logo():
     print("| E     L     AAAAA     S   T     I   C         3 R  R  D  D  |")
     print("| EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |")
     print("+-------------------------------------------------------------+")
-    print("|             Version: ELASTIC3RD  version 2.4.2              |")
+    print("|             Version: ELASTIC3RD  version 2.5.0              |")
     print("|                Date: 2019-05-26                             |")
     print("|              Author: Liao Mingqing                          |")
     print("|              E_mail: liaomq1900127@163.com                  |")
