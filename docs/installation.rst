@@ -4,12 +4,10 @@ Installation
 
 Requirements
 ============
-
   python, numpy, scipy, matplotlib
 
 Installation
 ============
-
 - by pip
 
   ``pip install elastic3rd``

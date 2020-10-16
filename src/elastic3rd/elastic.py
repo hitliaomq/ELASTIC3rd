@@ -131,7 +131,7 @@ def elastic3(INPUT = "INPUT"):
                     if flag_se == "e":
                         E[j, i-1] = Eij[0]
                         print("Energy:")
-                        esutils.print_e(Eij)
+                        #esutils.print_e(Eij)
                     elif flag_se == "s":
                         pass
                     os.chdir("../../../")
@@ -342,7 +342,6 @@ def get_strain_e(ParaIn, dstpath, StrainMode, BaseVec, strain=0.0, Modei=0):
             eglue.write_base_vec(BaseName, BaseVecNew)
         os.system(RunStr + ">> FP_OUT")
         E0 = get_org_strain_e(BaseName, flag_se, EnergyCode=EnergyCode)
-        print(E0)
         np.savetxt(Efilename, E0)    
         if Modei == 0:
             os.chdir("../../")
