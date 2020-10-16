@@ -28,6 +28,13 @@ setup(
                    'elastic3rd.post' : 'elastic3rd/post'},
     package_data = {'elastic3rd.energy' : ['energyrun']},
     install_requires = ['numpy', 'scipy', 'matplotlib'],
+    
+    entry_points={
+        'console_scripts': [
+            'elastic3rd = elastic3rd.scripts.run_elastic3rd:run_e3rd',
+        ]
+    },
+
     #long_description = read('README.md'),    
     classifiers = [
         "Development Status :: 4 - Beta",
