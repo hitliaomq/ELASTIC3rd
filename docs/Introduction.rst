@@ -2,7 +2,7 @@
 Introduction
 ============
 
-This is an open source code to calculate the higher order elastic constants(HOECs) from first principles.
+Elastic3rd is an open source code to calculate the higher order elastic constants(HOECs) of materials from first principles.
 
 Features
 --------

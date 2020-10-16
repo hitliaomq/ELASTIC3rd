@@ -2,6 +2,18 @@
 Installation
 ============
 
-Install the package with pip::
+Requirements
+============
 
-    $ pip install read-the-docs-template
+  python, numpy, scipy, matplotlib
+
+Installation
+============
+
+- by pip
+
+  ``pip install elastic3rd``
+
+- by `setup.py`
+  
+  Download the code and entre the folder `ELASTIC3rd/src`, and then run ``python setup.py install``
