@@ -34,4 +34,4 @@ def run_e3rd():
     args.func(args)
 
 if __name__ == '__main__':
-    run_dfttk()
+    run_e3rd()
