@@ -17,6 +17,7 @@ Contents:
    :maxdepth: 2
 
    Introduction
+   Installation <installation>
    Get Started <GetStart>
    Theory Background <Theory>
    Examples
@@ -24,8 +25,38 @@ Contents:
    API
 
    *
-Citing
+
+REQUIREMENTS
+============
+
+  python, numpy, scipy, matplotlib
+
+INSTALLATION
+============
+
+- by pip
+
+  ``pip install elastic3rd``
+
+- by `setup.py`
+  
+  Download the code and entre the folder `ELASTIC3rd/src`, and then run ``python setup.py install``
+
+GET STARTED
+===========
+
+- Prepare the `INPUT` file and the input file for first principlec code
+- Enter the folder
+- Simply run ``elastic3rd run``
+
+CITING
 ======
+
+Mingqing Liao, Yong Liu, Puchang Cui e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles submitted to computer physics communication (2020)
+
+and give the following link: `Elastic3rd <https://github.com/hitliaomq/ELASTIC3rd>`_
+
+.. _Elastic3rd: https://github.com/hitliaomq/ELASTIC3rd
 
 Author Information
 ==================

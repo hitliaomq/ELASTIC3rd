@@ -13,14 +13,14 @@ The perl version for CASTEP in Materials Studio were shown in <https://github.co
 
 <img src="https://github.com/hitliaomq/ELASTIC3rd/blob/master/docs/Elastic3rd_LOGO.png" width="305" height="177"></img>
 
-## Features
+## FEATURES
 
 - Support all classes of crystal, from cubic to triclinic
 - Support CASTEP (windows or linux, under Materials Studio) and VASP
 - Support Python2 and Python3
 - Support pip installation
 
-## Install
+## INSTALL
 
 **pip**
 
@@ -32,13 +32,14 @@ pip install elastic3rd
 
 - Download this code and decompress it
 - Change you current path to ELASTIC3RD/src folder
-- run as the following
-
-```python
-python setup.py install
-```
+- run `python setup.py install`
 
 
+## GET STARTED
+
+- Prepare the `INPUT` file and the input file for first principlec code
+- Enter the folder
+- Simply run `elastic3rd run`
 
 
 
@@ -48,5 +49,4 @@ Mingqing Liao. (2018, December 24). hitliaomq/ELASTIC3rd: ELASTIC3rd. Zenodo. ht
 
 or
 
-Mingqing Liao, Yong Liu, Puchang Cui  e.t. al. Elastic3rd: A tool for calculating third-order elastic
-constants from first principles *submitted to computer physics communication*  (2020)
+Mingqing Liao, Yong Liu, Puchang Cui  e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles *submitted to computer physics communication*  (2020)
