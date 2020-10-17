@@ -41,3 +41,17 @@ There are several ways to submit the job.
 
 Post
 ----
+
+There are several ways to do the post processing.
+
+- Using `elastic3rd post` command
+
+Assumpt that the current folder is the folder where the job has been submitted. When enter the current folder, the user can do the post process by `elastic3rd post` to get the SOECs and TOECs. For more options, please run `elastic3rd post -h`.
+
+- Using `Elastic3rdPost.py` script
+
+Change some parameters (e.g. `Flag_Ord`) by the user, then run `python Elastic3rdPost.py`
+
+- By calling the `post` or `post_single` or `post_mode` from `elastic3rd.post.post`
+
+Ref `Elastic3rdPost.py`
