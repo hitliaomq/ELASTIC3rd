@@ -2,18 +2,30 @@
 Examples
 ========
 
-For examples, please ref `example` folder. (Please read README file in each sub folder in example folder)
+Submit jobs
+-----------
 
-Note: For CASTEP, the user should copy `RunCASTEP.bat` or `RunCASTEP.sh` in their Materils Studio installation folder.
+There are several examples in `example` folder.
 
-For VASP, the user should provide the `POTCAR` file
+For Si and C, both VASP and CASTEP input files are prepared in the folder, and for Mg, only CASTEP input file is prepared.
 
-After the user provide the above files, just run `runElastic3rd.py` file by `python runElastic3rd.py`
+The user can run these examples by following steps
 
-If the user want to save the log into file, please run `python runElastic3rd.py >> Result.txt`
+1.  For copy right, the author can't provide the RunCASTEP.bat or RunCASTEP.sh (for CASTEP) and POTCAR (for VASP) files. The user should provide these file in the current folder.
 
-If the user want to run Elastic3rd in queue system, the following is an example. Please note that it assume the python and vasp is exists in the `PATH`
+- For CASTEP, the user should copy `RunCASTEP.bat` or `RunCASTEP.sh` in their Materils Studio installation folder.
 
+- For VASP, the user should provide the `POTCAR` file
+
+2. Submit the job
+
+There are several ways to submit the job.
+
+- Using `elastic3rd run` command.
+
+- Using the `runElastic3rd.py` (in `example` folder) script by running `python runElastic3rd.py`. If the user want to save the log into file, please run `python runElastic3rd.py >> Result.txt`
+
+- Submit jobs in queue system. If the user want to run Elastic3rd in queue system, the following is an example. Please note that it assume the python and vasp is exists in the `PATH`
 
 .. code::
 
@@ -26,3 +38,6 @@ If the user want to run Elastic3rd in queue system, the following is an example.
     cd $PBS_O_WORKDIR
      
     python runElastic3rd.py
+
+Post
+----

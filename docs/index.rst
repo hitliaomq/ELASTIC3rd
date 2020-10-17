@@ -19,8 +19,6 @@
    Get Started <GetStart>
    Theory Background <Theory>
    Examples <examples>
-   FAQ
-   API
 
    *
 
