@@ -2,7 +2,7 @@
 Examples
 ========
 
-For examples, please ref `example` folder.
+For examples, please ref `example` folder. (Please read README file in each sub folder in example folder)
 
 Note: For CASTEP, the user should copy `RunCASTEP.bat` or `RunCASTEP.sh` in their Materils Studio installation folder.
 

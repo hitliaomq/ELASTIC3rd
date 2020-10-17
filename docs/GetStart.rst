@@ -81,6 +81,16 @@ If the user want to use other first principles code to calculate the energy of s
 
 - Then in the INPUT file, the file can call the code by specify "EnergyCode  QE"
 
+Post
+====
+
+The SOECs and TOECs (only taking second and third order effect into consideration) are printed in the log file on the screen.
+
+If the author want to taken higher-order effect into consideration, the user can run `elastic3rd post` command in the folder where the job submitted or use `Elastic3rdPost.py` script in the `example` folder
+
+For `elastic3rd post` command, please use `-h` for detail help.
+
+For test, the user can run `elastic3rd post` in the `example/Si/CASTEP` folder directly.
 
 Outputs
 =======
