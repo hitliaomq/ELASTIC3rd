@@ -15,7 +15,8 @@ If the user want to save the log into file, please run `python runElastic3rd.py 
 If the user want to run Elastic3rd in queue system, the following is an example. Please note that it assume the python and vasp is exists in the `PATH`
 
 
-::
+.. code::
+
     #PBS -l nodes=1:ppn=24
 
     #PBS -l walltime=48:00:00
