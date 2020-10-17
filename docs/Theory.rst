@@ -47,9 +47,3 @@ For each strain mode, we only adjust the amplitude. Hence, we can express the st
     \frac{E-E_0}{V_0} = \frac{1}{2} A_2 \eta^2 + \frac{1}{6} A_3 \eta^3 + O(\eta^4)
 
 Finally, we can choose different strain modes, then get different equations about TOECs and SOECs. By solving the equations, we can get the value of SOECs and TOECs.
-
-.. |eq1| image:: Eq-1.png
-.. |eq2| image:: Eq-2.png
-.. |eq3| image:: Eq-3.png
-.. |eq4| image:: Eq-4.png
-.. |eq5| image:: Eq-5.png
