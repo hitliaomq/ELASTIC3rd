@@ -1,0 +1,9 @@
+To run this example
+
+1. Copy the POTCAR of Si to current folder
+
+2. Run the following command
+    python runElastic3rd.py
+
+   If you want to save the log into files, please run the following command instead
+    python runElastic3rd.py >> Result.txt
