@@ -34,7 +34,7 @@ def post(args):
         elif os.path.exists(os.path.join(BaseName, 'EEnergy.txt')):
             ENERGY = os.path.join(BaseName, 'EEnergy.txt')
         else:
-            raise FileNotFoundError('The energy file not exists in both current folder or the BaseName folder, please specify it by -e parameter.')
+            raise ValueError('The energy file not exists in both current folder or the BaseName folder, please specify it by -e parameter.')
     if VOLUME is None:
         if ParaIn['FlagSE'].lower() == 's':
             VOLUME = 1.0
@@ -48,7 +48,7 @@ def post(args):
                 try:
                     BaseVec = eglue.get_base_vec(BaseName)
                 except Exception as e:
-                    raise FileNotFoundError('The structure file not found, pleas provide the strucutre file in current folder or provide the volume by -v parameter.')
+                    raise ValueError('The structure file not found, pleas provide the strucutre file in current folder or provide the volume by -v parameter.')
             VOLUME = crylat.print_lattice(BaseVec)
 
     if STRAINMODE:

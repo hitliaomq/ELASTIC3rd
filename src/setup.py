@@ -13,7 +13,7 @@ except ImportError :
 
 setup(
     name = "ELASTIC3rd",
-    version = "2.4.2",
+    version = "2.5.1",
     description = "Claculate 3rd order elastic constants for crystals",
     author = "Mingqing Liao",
     author_email = "liaomq1900127@163.com",
