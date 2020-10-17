@@ -1,10 +1,9 @@
-BaseName        C
+BaseName        Si
 Continue        0           #Continue(1) or not(0)
-CalMode         W           #W for whole, S for specific
-CrystalType     c1          #Specific the crystal type
+CrystalType     c1      #Specific the crystal type
 Ord             3           #The order of crystal, now its only for 3rd
 EnergyCode      CASTEP      #The code to calculate the energy
 EnergyRun       1           # 1 for default(CASTEP: RunCASTEP, VASP: vasp_std), 0 for manual
-MaxStrain       6           #The maximum strain in each deform mode, in unit %
-STEPS           7           #The steps in each mode, if it is even, STEPS = STEPS + 1, if it is odd, STEPS = STEPS
+MaxStrain       8           #The maximum strain in each deform mode, in unit %
+STEPS           9           #The steps in each mode, if it is even, STEPS = STEPS + 1, if it is odd, STEPS = STEPS
 NP              8           #The number of core

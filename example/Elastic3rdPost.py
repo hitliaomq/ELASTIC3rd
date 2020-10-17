@@ -32,7 +32,7 @@ V0 = crylat.print_lattice(BaseVec)
 
 V0 = 163.193194972   #The volume of undeformed structure
 Flag_Fig = 1
-Flag_Ord = 4
+Flag_Ord = 3
 EEnergy = "EEnergy.txt"
 
 #Post for a given symmetry, no specific the strain mode
@@ -40,8 +40,10 @@ EEnergy = "EEnergy.txt"
 print(C2)
 print(C3)
 
+'''
 #Post for some specific the strain mode
 STRAINMODE = "STRAINMODE"
 (C2, C3) = espost.post_mode(V0, Flag_Fig, Flag_Ord, EEnergy, INPUT, STRAINMODE)
 print(C2)
 print(C3)
+'''
