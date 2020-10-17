@@ -54,6 +54,10 @@ First principles inputs
 .. _`VASP files`: https://www.vasp.at/wiki/index.php/Category:Input_Files
 
 
+Calculation
+===========
+
+
 Outputs
 =======
 
@@ -110,3 +114,22 @@ Log file
 --------
 
 By default, the log file is not saved, but print in the screen. And it can be saved by re-direction.
+
+It can be divided into four parts
+
+- Part1: the logo part
+|log1| 
+
+- Part2: the result of intial structure
+|log2|
+
+- Part3: the result of different strains and strain modes
+|log3|
+
+- Part4: the post process part
+|log4|
+
+.. |log1| image:: Output-1.png
+.. |log2| image:: Output-2.png
+.. |log3| image:: Output-3.png
+.. |log4| image:: Output-4.png
