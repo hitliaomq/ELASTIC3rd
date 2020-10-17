@@ -57,6 +57,30 @@ First principles inputs
 Calculation
 ===========
 
+Using CASTEP or VASP
+--------------------
+Currently, Elastic3rd support CASTEP and VASP to calculate the energy or stress. Hence, the user can call vasp or castep by setting the INPUT file.
+
+Note: The CASTEP is tested using the CASTEP module in Materials Studio. By default, the user should provide RunCASTEP.bat (windows) or RunCASTEP.sh (linux) in current folder. Usually, this file loacted in `Materials_Studio_ install_path\etc\CASTEP\bin`
+
+For VASP, it runs vasp by `mpirun -np NP vasp_std`. So, please ensure that mpirun and vasp_std can be found in yout PATH.
+
+Using other first principles code
+---------------------------------
+If the user want to use other first principles code to calculate the energy of stress, the user only need to prepare the following thing:
+
+- write a python file named with the code's name(e.g. qe.py, lower required) under elastic3rd/energy/
+  
+  In this file, the user need to write the following functions
+
+  - get_base_vec(BaseName): this function get the lattice vector from the code's input file
+  - write_base_vec(BaseName, BaseVec): this function write out the lattice vector to the code's input file
+  - run(NP, BaseName): this function return the string to run the code
+  - get_energy(BaseName): this function get the energy from the code's output file
+  - copy_files(BaseName, Path): this function copy the required files of the code
+
+- Then in the INPUT file, the file can call the code by specify "EnergyCode  QE"
+
 
 Outputs
 =======
