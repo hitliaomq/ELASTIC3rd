@@ -11,8 +11,6 @@
 |logo| ELASTIC3rd: 3rd ELASTIC constants calculator
 ==============================================================================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
