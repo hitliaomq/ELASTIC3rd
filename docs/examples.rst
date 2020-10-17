@@ -51,6 +51,7 @@ Assumpt that the current folder is the folder where the job has been submitted. 
 For test, the user can run elastic3rd post in the `example/Si/CASTEP` folder directly. It should print the following lines in the screen.
 
 .. code::
+
     ELASTIC3RD version: 2.5.1
     Copyright © FGMS @ HIT
 
@@ -76,6 +77,7 @@ Change some parameters (e.g. `Flag_Ord`) by the user, then run `python Elastic3r
 By running this script, it will print the following thing in the screen and show some figures of fitting result (here only show 1 figure)
 
 .. code::
+
     BaseVec:
          5.4647128853     0.0000000210     -0.0000000454
          -0.0000000000     5.4647128382     -0.0000000222
