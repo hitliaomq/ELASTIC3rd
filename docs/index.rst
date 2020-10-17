@@ -16,10 +16,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   Introduction <introduction>
+   Introduction <Introduction>
    Installation <installation>
    Get Started <GetStart>
-   Theory Background <theory>
+   Theory Background <Theory>
    Examples <examples>
    FAQ
    API
