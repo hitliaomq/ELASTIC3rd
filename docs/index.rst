@@ -19,7 +19,7 @@ Contents:
    Introduction <introduction>
    Installation <installation>
    Get Started <GetStart>
-   Theory Background <Theory>
+   Theory Background <theory>
    Examples <examples>
    FAQ
    API
