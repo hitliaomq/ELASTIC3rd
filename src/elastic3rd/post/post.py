@@ -197,7 +197,7 @@ def escoef(CrystalType, Ord):
         coef2, StrainMode = essym.gen_strain_mode(CrystalType, Ord)
         return coef2
 
-def post_mode(V0, Flag_Fig = 1, Flag_Ord = 3, EEnergy = "EEnergy.txt", INPUT = "INPUT", STRAINMODE = "STRAINMODE"):
+def post_mode(V0, Flag_Fig=1, Flag_Ord=3, EEnergy="EEnergy.txt", INPUT="INPUT", STRAINMODE="STRAINMODE"):
     '''
     Post process by specify strain modes
     Parameters
@@ -228,7 +228,7 @@ def post_mode(V0, Flag_Fig = 1, Flag_Ord = 3, EEnergy = "EEnergy.txt", INPUT = "
     (C2, C3) = post_single(StrainList/100., E, StrainIn, V0, Flag_Fig, Flag_Ord, INPUT)
     return (C2, C3)
 
-def post_single(x, E, StrainIn, V0, Flag_Fig = 1, Flag_Ord = 3, INPUT = "INPUT"):
+def post_single(x, E, StrainIn, V0, Flag_Fig=1, Flag_Ord=3, INPUT="INPUT"):
     '''
     Post process for a single strain mode
     Parameters
@@ -278,7 +278,7 @@ def post_single(x, E, StrainIn, V0, Flag_Fig = 1, Flag_Ord = 3, INPUT = "INPUT")
         (C2, C3) = get_cij(coef_fit, coef2, coef3, flag_se)
     return (C2, C3)
 
-def post(V0, Flag_Fig = 1, Flag_Ord = 3, EEnergy = "EEnergy.txt", INPUT = "INPUT"):
+def post(V0, Flag_Fig=1, Flag_Ord=3, EEnergy="EEnergy.txt", INPUT="INPUT"):
     '''
     Post function for elastic3rd using INPUT and Energy file
     Parameters
