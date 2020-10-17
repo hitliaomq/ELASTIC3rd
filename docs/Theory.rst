@@ -5,7 +5,7 @@ Theory Background
 The strain-energy method to calculate TOECs is based on the conituumn elasticity theory. The base equation is as follows (note: the Einstein summation notation is used in the following equations):
 
 .. math::
-    \frac{E - E_0}{V_0} = \frac{1}{2!} C_{ijkl} \eta_{ij} \eta_{kl} + \frac{1}{3!} C_{ijklmn} \eta_{ij} \eta_{kl} \eta_{mn} + ...
+    $$E=E_{0}+\frac{1}{2 !} V_{0} C_{i j k} \eta_{i j} \eta_{H}+\frac{1}{3 !} V_{0} C_{i j k l m n} \eta_{i j} \eta_{k l} \eta_{m n}$$
 
 Where :
 - *E* is the energy of the deformed structure
