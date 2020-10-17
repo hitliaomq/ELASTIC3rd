@@ -65,27 +65,9 @@ The structure of outputs
 ------------------------
 All the output are stored in the folder named BaseName, of which the value is set in INPUT file. The following is the structure of the results.
 
-```
-BaseName
-|INPUT
-|EEnergy.txt
-|__Mode0
-|__Mode1
-  |__Strain1
-     |__Energy_Strain.txt
-     |__...
-  |__Strain2
-     |__...
-  |__Strain3
-  |__...
-  |__Energy_Mode.txt
-|__Mode2
-  |__Strain1
-  |__Strain2
-  |__Strain3
-  |__......
-|__......
-```
+|FileStructure|
+
+.. |FileStructure| image:: Output-FileStructure.png
 
 Output files
 ------------
