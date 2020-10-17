@@ -34,12 +34,15 @@ The F is the deformation gradient, and can be expressed by the lattic vector of 
 when using symmetrical strain, the deformation gradient can be expressed by the Lagrangian strain.
 
 .. math::
-    F = Q \sqrt{\lamda} Q^T
-    Y = 2\eta + I
-    Q = (y_1, y_2, y_3)
-    \lamda = diag(\lamda_1, \lamda_2, \lamda_3)
+    F = Q \sqrt{\lambda} Q^T
 
-where :math:`y_i` and :math:`\lamda_i` are the eigenvector and eigenvalue of **Y**, I is the identity matrix.
+    Y = 2\eta + I
+
+    Q = (y_1, y_2, y_3)
+
+    \lambda = diag(\lambda_1, \lambda_2, \lambda_3)
+
+where :math:`y_i` and :math:`\lambda_i` are the eigenvector and eigenvalue of **Y**, I is the identity matrix.
 
 For each strain mode, we only adjust the amplitude. Hence, we can express the strain as a function of strain amplitude :math:`\eta`, then we have
 
