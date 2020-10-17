@@ -6,6 +6,9 @@ The strain-energy method to calculate TOECs is based on the conituumn elasticity
 
 |eq1|
 
+.. math::
+    `E=E_{0}+\frac{1}{2 !} V_{0} C_{i j k} \eta_{i j} \eta_{k t}+\frac{1}{3 !} V_{0} C_{i j k t m n} \eta_{i j} \eta_{k i} \eta_{m n}`
+
 Where
 
 - :math:`E` is the energy of the deformed structure
