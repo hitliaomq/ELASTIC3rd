@@ -17,9 +17,13 @@ If the user want to run Elastic3rd in queue system, the following is an example.
 
 ::
     #PBS -l nodes=1:ppn=24
+
     #PBS -l walltime=48:00:00
+
     #PBS -l pmem=8gb
+
     #PBS -A open
+    
     #PBS -j oe
 
     cd $PBS_O_WORKDIR
