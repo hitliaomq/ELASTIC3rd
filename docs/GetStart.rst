@@ -131,21 +131,122 @@ Log file
 
 By default, the log file is not saved, but print in the screen. And it can be saved by re-direction.
 
-It can be divided into four parts
+It can be divided into five parts
 
 - Part1: the logo part
-|log1| 
 
-- Part2: the result of intial structure
-|log2|
+.. code::
 
-- Part3: the result of different strains and strain modes
-|log3|
+    +=============================================================+
+    | EEEEE L       A   SSSSS TTTTT IIIII CCCCC 33333 RRRRR DDD   |
+    | E     L      A A  S       T     I   C         3 R   R D  D  |
+    | EEEE  L     A   A SSSSS   T     I   C      3333 RRRRR D   D |
+    | E     L     AAAAA     S   T     I   C         3 R  R  D  D  |
+    | EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |
+    +-------------------------------------------------------------+
+    |             Version: ELASTIC3PY  version 2.0                |
+    |                Date: 2019-01-27                             |
+    |              Author: Liao Mingqing                          |
+    |              E_mail: liaomq1900127@163.com                  |
+    |     FGMS @ Harbin Institute of Technology(HIT)              |
+    |    URL:https://github.com/hitliaomq/ELASTIC3rd              |
+    |Please Cite:                                                 |
+    | Mingqing Liao,ELASTIC3rd,(2018).doi:10.5281/zenodo.2525580  |
+    +=============================================================+
 
-- Part4: the post process part
-|log4|
+- Part2: The summary of the calculation
 
-.. |log1| image:: Output-1.png
-.. |log2| image:: Output-2.png
-.. |log3| image:: Output-3.png
-.. |log4| image:: Output-4.png
+.. code::
+  
+    ===================The input parameters===================
+    The Runing mode is : NEW
+    The BaseName is : Si
+    The crystal symmetry is : c1
+    The order of elastic is : 3.0
+    The code for calculating the energy : CASTEP
+    The maximum of the strain : 8.0
+    The steps run in every mode : 9.0
+    The core used in energy calculate : 8.0
+
+
+- Part3: the result of intial structure
+
+.. code::
+
+    ====================Crystal Structure====================
+    BaseVec:
+         5.4647128853     0.0000000210     -0.0000000454
+         -0.0000000000     5.4647128382     -0.0000000222
+         0.0000000000     0.0000000000     5.4647129020
+    Lattice Parameter:
+        a         b         c      alpha   beta    gamma
+    5.464713  5.464713  5.464713  90.000  90.000  90.000
+    Volume : 163.193194972
+
+    Energy of undeformed structure:
+           eV             Hartree            kJ/mol            kcal/mol
+    -858.6574758785  -31.5550611783  -82847.8330874176  -19801.1085892908
+
+- Part4: the result of different strains and strain modes
+
+.. code::
+
+    ==================Deformed Crystal========================
+    ----------------------------------------------------------
+    Start calculating Mode 1
+    Start calculating Strain -8.0 in Mode 1
+    [[0.84 0.   0.  ]
+     [0.   1.   0.  ]
+     [0.   0.   1.  ]]
+    BaseVec:
+         5.0084920896     0.0000000210     -0.0000000454
+         0.0000000000     5.4647128382     -0.0000000222
+         0.0000000000     0.0000000000     5.4647129020
+    Lattice Parameter:
+        a         b         c      alpha   beta    gamma
+    5.008492  5.464713  5.464713  90.000  90.000  90.000
+    Volume : 149.569033772
+
+    Energy:
+           eV             Hartree            kJ/mol            kcal/mol
+    -858.0935122952  -31.5343359114  -82793.4188860286  -19788.1032822074
+    End of Strain -8.0 in Mode 1
+
+    Start calculating Strain -6.0 in Mode 1
+    [[0.88 0.   0.  ]
+     [0.   1.   0.  ]
+     [0.   0.   1.  ]]
+    BaseVec:
+         5.1263550880     0.0000000210     -0.0000000454
+         0.0000000000     5.4647128382     -0.0000000222
+         0.0000000000     0.0000000000     5.4647129020
+    Lattice Parameter:
+        a         b         c      alpha   beta    gamma
+    5.126355  5.464713  5.464713  90.000  90.000  90.000
+    Volume : 153.088786718
+
+    Energy:
+           eV             Hartree            kJ/mol            kcal/mol
+    -858.3477769585  -31.5436799598  -82817.9516909908  -19793.9667636885
+    End of Strain -6.0 in Mode 1
+
+                          ...
+
+
+- Part5: the post process part
+
+.. code::
+
+    ==================Post Processing========================
+    [[   77.22101104  -117.3314942 ]
+     [  217.27559666  -670.1092832 ]
+     [  218.38708611    26.16025079]
+     [  227.66199634  -632.04346098]
+     [  424.89246809 -1747.12822498]
+     [  439.3186686   -408.3765645 ]]
+    [11 12 44]
+    [153.05111127  65.0171889   73.22518077]
+    [111 112 123 144 155 456]
+    [-703.9889652  -435.4462948   -88.79485798   71.7458725  -257.35598339
+      -51.04707056]
+    ========================!!!END!!!=========================
