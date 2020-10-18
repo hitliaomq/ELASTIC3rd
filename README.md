@@ -51,4 +51,4 @@ Mingqing Liao. (2018, December 24). hitliaomq/ELASTIC3rd: ELASTIC3rd. Zenodo. ht
 
 or
 
-Mingqing Liao, Yong Liu, Puchang Cui  e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles *submitted to computer physics communication*  (2020)
+Mingqing Liao, Yong Liu, Shun-li Shang  e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles *submitted to computer physics communication*  (2020)
