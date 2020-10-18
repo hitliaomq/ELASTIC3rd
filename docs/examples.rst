@@ -2,6 +2,48 @@
 Examples
 ========
 
+Help on the `elastic3rd` command
+--------------------------------
+
+There are two command to submit jobs or do post process.
+
+- `elastic3rd run` command
+
+.. code::
+    
+    ELASTIC3RD version: 2.5.1
+    Copyright © FGMS @ HIT
+
+    usage: elastic3rd run [-h] [-i INPUT]
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -i INPUT, --input INPUT
+                            The input file for Elastic3rd. Default: 'INPUT'
+
+- `elastic3rd post` command
+
+.. code::
+    
+    ELASTIC3RD version: 2.5.1
+    Copyright © FGMS @ HIT
+
+    usage: elastic3rd post [-h] [-n N] [-i INPUT] [-sm STRAINMODE] [-fig FIG] [-v VOLUME] [-e ENERGY]
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -n N, --n N           The order of elastic constant taken into consideration in the post process. Default: 3
+      -i INPUT, --input INPUT
+                            The input file for Elastic3rd. Default: 'INPUT'
+      -sm STRAINMODE, --strainmode STRAINMODE
+                            The strainmode file for Elastic3rd, None means using the code to generate it. Default: None
+      -fig FIG, --fig FIG   Show the fitting fig. Default: 0
+      -v VOLUME, --volume VOLUME
+                            The volume of initial structure. Default: None
+      -e ENERGY, --energy ENERGY
+                            The file of the energy result. If None, it will try to find in current folder or in the
+                            BaseName folder. Default: None
+
 Submit jobs
 -----------
 
