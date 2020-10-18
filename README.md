@@ -7,7 +7,8 @@
 
 Calculate the 2nd and 3rd elastic constant.
 
-[Online Help](https://elastic3rd.readthedocs.io/) (Under writing)
+[Elastic3rd Manual, Online Version](https://elastic3rd.readthedocs.io/)
+[Elastic3rd Manual, PDF Version](https://github.com/hitliaomq/ELASTIC3rd/blob/master/docs/elastic3rd-manual-readthedocs.pdf)
 
 The perl version for CASTEP in Materials Studio were shown in <https://github.com/hitliaomq/MaterialPOST/tree/master/ScriptsForCASTEP/Elastic>
 
