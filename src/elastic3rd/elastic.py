@@ -31,6 +31,8 @@ import importlib
 #CrystalType = "cubic"
 
 def elastic3(INPUT = "INPUT"):
+    #This is the main function for calculation
+    
     #Print LOGO
     esutils.print_logo()
 
@@ -42,16 +44,15 @@ def elastic3(INPUT = "INPUT"):
     flag_se = ParaIn['FlagSE'].lower()
     EnergyCode = ParaIn['EnergyCode'].lower()
 
-    #Import glue as eglue
-
+    #Import first principles code module according to the EnergyCode settings in INPUT file
     eglue = importlib.import_module('elastic3rd.energy.{}'.format(EnergyCode))
 
-    #Deform mode this is for cubic
-    #TODO : for any symmtry
+    #Get some parameter's value from INPUT
     CrystalType = ParaIn['CrystalType']
     Ord = ParaIn['Ord']
     CalMode = ParaIn['CalMode'].lower()
-    #StrainMode = []
+    
+    #Get the strain modes according to symmetry and order, the strain-stress method is under development
     if CalMode == 's':
         StrainIn = esutils.read_strainmode()
         if flag_se == "e":
@@ -64,12 +65,12 @@ def elastic3(INPUT = "INPUT"):
         elif flag_se == "s":
             pass
 
-    #Mode_index = range(1, 7)
-
+    #Get the strain list
     StrainList = esutils.gen_strain_list(ParaIn)
     n_Strain = len(StrainList)
     n_Mode = StrainMode.shape[0]
-    #n_Mode = len(Mode_index)
+
+    #Init the energy
     E = np.zeros((n_Strain, n_Mode))
     if flag_se == "s":
         E = np.zeros((n_Strain, 6*n_Mode))
@@ -85,7 +86,6 @@ def elastic3(INPUT = "INPUT"):
     else:
         RunStr = energy.glue.run()
 
-    #os.system(RunStr)
     #Get the base vector
     BaseVec = eglue.get_base_vec(BaseName)
     print("====================Crystal Structure====================")
@@ -94,44 +94,48 @@ def elastic3(INPUT = "INPUT"):
     #Calculate the energy of undeformed structure
     #    creat the folder Mode0
     dstpath = BaseName + "/Mode0"
-
     E0 = get_strain_e(ParaIn, dstpath, StrainMode, BaseVec)
     if CalMode == 's':
         shutil.copyfile("STRAINMODE", BaseName + "/STRAINMODE")
-    #print("\n")
 
+    #Begin the calculation of deformed structure
     print("\n==================Deformed Crystal========================")
-    
-    #print E
+
+    #Do a loop over the strain modes
     for i in range(1, n_Mode + 1):
         print("----------------------------------------------------------")
         print("Start calculating Mode " + str(i))
         flag_continue = 0
+
+        #Judge if this mode has been calculated or not
         ModePath = BaseName + "/Mode" + str(i)
         if ParaIn['Continue']:
             flag_continue = esutils.iscontinue(ModePath, "Mode", flag_se)
         if flag_continue:
+            #Calculated previously
             E = get_continue_mode_e(ModePath, E, i, flag_se)
         else:
+            #Not calculated yet, new calculations
             print(os.getcwd())
             esutils.creat_folder(ModePath)
-            #os.chdir(ModePath)
+            #Do a loop over strain list
             for j in range(0, n_Strain):
                 print("Start calculating Strain " + str(StrainList[j]) + " in Mode " + str(i))
                 if j == int(n_Strain/2):
+                    #This is the un-deformed structure
                     if flag_se == "e":
                         E[j, i-1] = E0[0]
                     elif flag_se == "s":
                         pass
                 else:
+                    #Deformed structure
                     StrainPath = ModePath + "/Strain" + str(StrainList[j])
                     Strain = StrainList[j]/100.0
-                    #print os.getcwd()
+                    #The judge on the continue mode is done in the following function
                     Eij = get_strain_e(ParaIn, StrainPath, StrainMode, BaseVec, Strain, i)
                     if flag_se == "e":
                         E[j, i-1] = Eij[0]
                         print("Energy:")
-                        #esutils.print_e(Eij)
                     elif flag_se == "s":
                         pass
                     os.chdir("../../../")
@@ -141,7 +145,11 @@ def elastic3(INPUT = "INPUT"):
                 np.savetxt(Efilename_Mode, E[:, i-1])
             os.chdir("../../")
         print("End of Mode " + str(i) + "\n")
+
+    #Sve the energy
     np.savetxt(BaseName + "/EEnergy.txt", E)
+
+    ##Post process
     print("\n==================Post Processing========================")
     coef_fit = espost.get_coef(StrainList/100., E, V0, flag_se, 3)
     print(coef_fit)
