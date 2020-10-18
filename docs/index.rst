@@ -25,7 +25,7 @@
 Citing
 ======
 
-Mingqing Liao, Yong Liu, Puchang Cui e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles submitted to computer physics communication (2020)
+Mingqing Liao, Yong Liu, Shun-li Shang e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles submitted to computer physics communication (2020)
 
 and give the following link: `Elastic3rd <https://github.com/hitliaomq/ELASTIC3rd>`_
 

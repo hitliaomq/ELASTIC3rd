@@ -1,0 +1,452 @@
+ELASTIC3rd
+©¦  .gitattributes
+©¦  .gitignore
+©¦  AUTHORS.rst
+©¦  FileStructure.txt
+©¦  INPUT
+©¦  LICENSE
+©¦  README
+©¦  README.md
+©¦  requirements.txt
+©¦  setup.py
+©¦  STRAINMODE
+©¦  
+©À©¤.github
+©¦  ©¸©¤workflows
+©¦          install.yml
+©¦          pythonpackage.yml
+©¦          
+©À©¤docs
+©¦      API.rst
+©¦      authors.rst
+©¦      conf.py
+©¦      contributing.rst
+©¦      elastic3rd-manual-readthedocs.pdf
+©¦      Elastic3rd_LOGO.png
+©¦      examples.rst
+©¦      FAQ.rst
+©¦      GetStart.rst
+©¦      index.rst
+©¦      installation.rst
+©¦      Introduction.rst
+©¦      make.bat
+©¦      Makefile
+©¦      Output-FileStructure.png
+©¦      readme.rst
+©¦      Si-CASTEP-FITTING-SM1.png
+©¦      Theory.rst
+©¦      
+©À©¤example
+©¦  ©¦  EEnergy.txt
+©¦  ©¦  Elastic3rdPost.py
+©¦  ©¦  INPUT
+©¦  ©¦  runElastic3rd.py
+©¦  ©¦  Si.cell
+©¦  ©¦  Si.param
+©¦  ©¦  STRAINMODE
+©¦  ©¦  
+©¦  ©À©¤C
+©¦  ©¦  ©À©¤CASTEP
+©¦  ©¦  ©¦      C.cell
+©¦  ©¦  ©¦      C.param
+©¦  ©¦  ©¦      INPUT
+©¦  ©¦  ©¦      README
+©¦  ©¦  ©¦      Result.txt
+©¦  ©¦  ©¦      runElastic3rd.py
+©¦  ©¦  ©¦      
+©¦  ©¦  ©¸©¤VASP
+©¦  ©¦          INCAR
+©¦  ©¦          INPUT
+©¦  ©¦          KPOINTS
+©¦  ©¦          POSCAR
+©¦  ©¦          README
+©¦  ©¦          Results.txt
+©¦  ©¦          runElastic3rd.py
+©¦  ©¦          
+©¦  ©À©¤Mg
+©¦  ©¦      INPUT
+©¦  ©¦      Mg.cell
+©¦  ©¦      Mg.param
+©¦  ©¦      README
+©¦  ©¦      Result.txt
+©¦  ©¦      runElastic3rd.py
+©¦  ©¦      
+©¦  ©¸©¤Si
+©¦      ©À©¤CASTEP
+©¦      ©¦  ©¦  INPUT
+©¦      ©¦  ©¦  README
+©¦      ©¦  ©¦  Result.txt
+©¦      ©¦  ©¦  runElastic3rd.py
+©¦      ©¦  ©¦  Si.cell
+©¦      ©¦  ©¦  Si.param
+©¦      ©¦  ©¦  test.py
+©¦      ©¦  ©¦  
+©¦      ©¦  ©¸©¤Si
+©¦      ©¦      ©¦  EEnergy.txt
+©¦      ©¦      ©¦  INPUT
+©¦      ©¦      ©¦  
+©¦      ©¦      ©À©¤Mode0
+©¦      ©¦      ©¦      Energy_Mode.txt
+©¦      ©¦      ©¦      Si.castep
+©¦      ©¦      ©¦      Si.cell
+©¦      ©¦      ©¦      Si.param
+©¦      ©¦      ©¦      
+©¦      ©¦      ©À©¤Mode1
+©¦      ©¦      ©¦  ©¦  Energy_Mode.txt
+©¦      ©¦      ©¦  ©¦  
+©¦      ©¦      ©¦  ©À©¤Strain-2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-8.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©¸©¤Strain8.0
+©¦      ©¦      ©¦          Energy_Strain.txt
+©¦      ©¦      ©¦          Si.castep
+©¦      ©¦      ©¦          Si.cell
+©¦      ©¦      ©¦          Si.param
+©¦      ©¦      ©¦          
+©¦      ©¦      ©À©¤Mode2
+©¦      ©¦      ©¦  ©¦  Energy_Mode.txt
+©¦      ©¦      ©¦  ©¦  
+©¦      ©¦      ©¦  ©À©¤Strain-2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-8.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©¸©¤Strain8.0
+©¦      ©¦      ©¦          Energy_Strain.txt
+©¦      ©¦      ©¦          Si.castep
+©¦      ©¦      ©¦          Si.cell
+©¦      ©¦      ©¦          Si.param
+©¦      ©¦      ©¦          
+©¦      ©¦      ©À©¤Mode3
+©¦      ©¦      ©¦  ©¦  Energy_Mode.txt
+©¦      ©¦      ©¦  ©¦  
+©¦      ©¦      ©¦  ©À©¤Strain-2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-8.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©¸©¤Strain8.0
+©¦      ©¦      ©¦          Energy_Strain.txt
+©¦      ©¦      ©¦          Si.castep
+©¦      ©¦      ©¦          Si.cell
+©¦      ©¦      ©¦          Si.param
+©¦      ©¦      ©¦          
+©¦      ©¦      ©À©¤Mode4
+©¦      ©¦      ©¦  ©¦  Energy_Mode.txt
+©¦      ©¦      ©¦  ©¦  
+©¦      ©¦      ©¦  ©À©¤Strain-2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-8.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©¸©¤Strain8.0
+©¦      ©¦      ©¦          Energy_Strain.txt
+©¦      ©¦      ©¦          Si.castep
+©¦      ©¦      ©¦          Si.cell
+©¦      ©¦      ©¦          Si.param
+©¦      ©¦      ©¦          
+©¦      ©¦      ©À©¤Mode5
+©¦      ©¦      ©¦  ©¦  Energy_Mode.txt
+©¦      ©¦      ©¦  ©¦  
+©¦      ©¦      ©¦  ©À©¤Strain-2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain-8.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain2.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain4.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©À©¤Strain6.0
+©¦      ©¦      ©¦  ©¦      Energy_Strain.txt
+©¦      ©¦      ©¦  ©¦      Si.castep
+©¦      ©¦      ©¦  ©¦      Si.cell
+©¦      ©¦      ©¦  ©¦      Si.param
+©¦      ©¦      ©¦  ©¦      
+©¦      ©¦      ©¦  ©¸©¤Strain8.0
+©¦      ©¦      ©¦          Energy_Strain.txt
+©¦      ©¦      ©¦          Si.castep
+©¦      ©¦      ©¦          Si.cell
+©¦      ©¦      ©¦          Si.param
+©¦      ©¦      ©¦          
+©¦      ©¦      ©¸©¤Mode6
+©¦      ©¦          ©¦  Energy_Mode.txt
+©¦      ©¦          ©¦  
+©¦      ©¦          ©À©¤Strain-2.0
+©¦      ©¦          ©¦      Energy_Strain.txt
+©¦      ©¦          ©¦      Si.castep
+©¦      ©¦          ©¦      Si.cell
+©¦      ©¦          ©¦      Si.param
+©¦      ©¦          ©¦      
+©¦      ©¦          ©À©¤Strain-4.0
+©¦      ©¦          ©¦      Energy_Strain.txt
+©¦      ©¦          ©¦      Si.castep
+©¦      ©¦          ©¦      Si.cell
+©¦      ©¦          ©¦      Si.param
+©¦      ©¦          ©¦      
+©¦      ©¦          ©À©¤Strain-6.0
+©¦      ©¦          ©¦      Energy_Strain.txt
+©¦      ©¦          ©¦      Si.castep
+©¦      ©¦          ©¦      Si.cell
+©¦      ©¦          ©¦      Si.param
+©¦      ©¦          ©¦      
+©¦      ©¦          ©À©¤Strain-8.0
+©¦      ©¦          ©¦      Energy_Strain.txt
+©¦      ©¦          ©¦      Si.castep
+©¦      ©¦          ©¦      Si.cell
+©¦      ©¦          ©¦      Si.param
+©¦      ©¦          ©¦      
+©¦      ©¦          ©À©¤Strain2.0
+©¦      ©¦          ©¦      Energy_Strain.txt
+©¦      ©¦          ©¦      Si.castep
+©¦      ©¦          ©¦      Si.cell
+©¦      ©¦          ©¦      Si.param
+©¦      ©¦          ©¦      
+©¦      ©¦          ©À©¤Strain4.0
+©¦      ©¦          ©¦      Energy_Strain.txt
+©¦      ©¦          ©¦      Si.castep
+©¦      ©¦          ©¦      Si.cell
+©¦      ©¦          ©¦      Si.param
+©¦      ©¦          ©¦      
+©¦      ©¦          ©À©¤Strain6.0
+©¦      ©¦          ©¦      Energy_Strain.txt
+©¦      ©¦          ©¦      Si.castep
+©¦      ©¦          ©¦      Si.cell
+©¦      ©¦          ©¦      Si.param
+©¦      ©¦          ©¦      
+©¦      ©¦          ©¸©¤Strain8.0
+©¦      ©¦                  Energy_Strain.txt
+©¦      ©¦                  Si.castep
+©¦      ©¦                  Si.cell
+©¦      ©¦                  Si.param
+©¦      ©¦                  
+©¦      ©¸©¤VASP
+©¦              INCAR
+©¦              INPUT
+©¦              KPOINTS
+©¦              POSCAR
+©¦              README
+©¦              Results.txt
+©¦              runElastic3rd.py
+©¦              
+©À©¤src
+©¦  ©¦  setup.py
+©¦  ©¦  
+©¦  ©¸©¤elastic3rd
+©¦      ©¦  elastic.py
+©¦      ©¦  esutils.py
+©¦      ©¦  __init__.py
+©¦      ©¦  
+©¦      ©À©¤crystal
+©¦      ©¦      deform.py
+©¦      ©¦      lattice.py
+©¦      ©¦      __init__.py
+©¦      ©¦      
+©¦      ©À©¤energy
+©¦      ©¦      castep.py
+©¦      ©¦      energyrun
+©¦      ©¦      glue.py
+©¦      ©¦      vasp.py
+©¦      ©¦      __init__.py
+©¦      ©¦      
+©¦      ©À©¤post
+©¦      ©¦      esfit.py
+©¦      ©¦      post.py
+©¦      ©¦      __init__.py
+©¦      ©¦      
+©¦      ©À©¤scripts
+©¦      ©¦      run_elastic3rd.py
+©¦      ©¦      __init__.py
+©¦      ©¦      
+©¦      ©¸©¤symmetry
+©¦              symdata.py
+©¦              symmetry.py
+©¦              __init__.py
+©¦              
+©¸©¤test
+        EEnergy.txt
+        INPUT
+        Si.cell
+        Si.param
+        STRAINMODE
+        testforpost.py
+        testforsymmetry.py
+        testforutils.py
+        
