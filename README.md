@@ -47,8 +47,9 @@ pip install elastic3rd
 
 ## Please Cite
 
-Mingqing Liao. (2018, December 24). hitliaomq/ELASTIC3rd: ELASTIC3rd. Zenodo. http://doi.org/10.5281/zenodo.2525580
+Mingqing Liao, Yong Liu, Shun-Li Shang et al. Elastic3rd: A tool for calculating third-order elastic constants from first-principles calculations,
+Computer Physics Communications, 2020, in press:107777
 
-or
+and give the following link:
 
-Mingqing Liao, Yong Liu, Shun-li Shang  e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles *submitted to computer physics communication*  (2020)
+https://github.com/hitliaomq/ELASTIC3rd
