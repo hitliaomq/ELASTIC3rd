@@ -48,7 +48,7 @@ pip install elastic3rd
 ## Please Cite
 
 Mingqing Liao, Yong Liu, Shun-Li Shang et al. Elastic3rd: A tool for calculating third-order elastic constants from first-principles calculations,
-Computer Physics Communications, 2020, in press:107777.  [DOI:https://doi.org/10.1016/j.cpc.2020.107777](https://doi.org/10.1016/j.cpc.2020.107777)
+Computer Physics Communications, 261 (2021) 107777.  [DOI:https://doi.org/10.1016/j.cpc.2020.107777](https://doi.org/10.1016/j.cpc.2020.107777)
 
 and give the following link:
 
