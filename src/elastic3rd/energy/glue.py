@@ -17,7 +17,7 @@ def write_energyrun(RunStr):
         None
     '''
     EPath = os.path.dirname(__file__)
-    FileName = EPath + "\energyrun"
+    FileName = os.path.join(EPath + "energyrun")
     fopen = open(FileName, 'w')
     fopen.write(RunStr)
     fopen.close()
@@ -34,7 +34,7 @@ def run():
             The command calling first principles code.
     '''
     EPath = os.path.dirname(__file__)
-    FileName = EPath + "\energyrun"
+    FileName = os.path.join(EPath + "energyrun")
     fopen = open(FileName, 'r')
     for eachline in fopen:
         eachline = eachline.strip("\n")
