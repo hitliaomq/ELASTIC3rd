@@ -151,15 +151,19 @@ def elastic3(INPUT = "INPUT"):
 
     ##Post process
     print("\n==================Post Processing========================")
-    coef_fit = espost.get_coef(StrainList/100., E, V0, flag_se, 3)
+    coef_fit = espost.get_coef(StrainList/100., E, V0, flag_se, Ord, ec_order=Ord)
     print(coef_fit)
     coef2 = coef_e.coef2
-    coef3 = coef_e.coef3
-    (C2, C3) = espost.get_cij(coef_fit, coef2, coef3, flag_se)
+    if Ord > 2:
+        coef3 = coef_e.coef3
+    else:
+        coef3 = None
+    (C2, C3) = espost.get_cij(coef_fit, coef2, coef3, flag_se, flag_ord=Ord)
     essym.print_cijk(CrystalType, 2)
     print(C2)
-    essym.print_cijk(CrystalType, 3)
-    print(C3)
+    if Ord > 2:
+        essym.print_cijk(CrystalType, 3)
+        print(C3)
     print("========================!!!END!!!=========================")
 
 

@@ -37,7 +37,7 @@ def esfun_3rd(x, c2, c3):
     return y
 
 ## FITTING
-def esfit(x, y, flag_se = "e", flag_ord = 3):
+def esfit(x, y, flag_se = "e", flag_ord = 3, ec_order=3):
     '''
     Fitting the function for HOECs according to order and it will print the fitting result and correspondint errors
     Parameter
@@ -56,8 +56,22 @@ def esfit(x, y, flag_se = "e", flag_ord = 3):
             The covariance of the fitting
     '''
     flag_se = flag_se.lower()
+    if ec_order == 3:
+        if flag_ord == 2:
+            pass
     if flag_se == "e":
-        coef, pcov = eval('curve_fit(esfun_energy_' + str(flag_ord) + ', x, y)')
+        if ec_order == 3:
+            if flag_ord == 2:
+                coef, pcov = curve_fit(esfun_energy_3_2, x, y)
+            elif flag_ord == 1:
+                coef, pcov = curve_fit(esfun_energy_3_1, x, y)
+            else:
+                coef, pcov = eval('curve_fit(esfun_energy_' + str(flag_ord) + ', x, y)')
+        else:
+            if flag_ord < ec_order:
+                raise ValueError
+            else:
+                coef, pcov = eval('curve_fit(esfun_energy_' + str(flag_ord) + ', x, y)')
     elif flag_se == "s":
         pass
     return (coef, pcov)
@@ -67,10 +81,13 @@ def esfit(x, y, flag_se = "e", flag_ord = 3):
 def esfun_energy_3(x, c2, c3):
     y = c2 * x ** 2 + c3 * x ** 3
     return y
-def esfun_energy_2(x, c2, c3):
+def esfun_energy_2(x, c2):
+    y = c2 * x ** 2
+    return y
+def esfun_energy_3_2(x, c2, c3):
     y = c2 * x + c3 * x ** 2
     return y
-def esfun_energy_1(x, c2, c3):
+def esfun_energy_3_1(x, c2, c3):
     y = c2 + c3 * x
     return y
 def esfun_energy_4(x, c2, c3, c4):
@@ -93,7 +110,7 @@ def esfun_energy_9(x, c2, c3, c4, c5, c6, c7, c8, c9):
     return y
 
 ## PLOT
-def yfitfun(x, c, flag_se = "e", flag_ord = 3):
+def yfitfun(x, c, flag_se = "e", flag_ord = 3, ec_order=3):
     '''
     General function for calculating energy/stress according to strain and elastic constants
     Parameters
@@ -124,14 +141,28 @@ def yfitfun(x, c, flag_se = "e", flag_ord = 3):
     elif flag_ord == 9:
         [c2, c3, c4, c5, c6, c7, c8, c9] = c
     else:
-        [c2, c3] = c
+        if ec_order == 3:
+            [c2, c3] = c
+        else:
+            if flag_ord == 3:
+                [c2, c3] = c
+            elif flag_ord == 2:
+                c2 = c
+            else:
+                raise ValueError
     flag_se = flag_se.lower()
     if flag_se == "e":
         #exec('')
         if flag_ord == 1:
-            yfit = esfun_energy_1(x, c2, c3)
+            if ec_order == 3:
+                yfit = esfun_energy_3_1(x, c2, c3)
+            else:
+                raise ValueError
         elif flag_ord == 2:
-            yfit = esfun_energy_2(x, c2, c3)
+            if ec_order == 3:
+                yfit = esfun_energy_3_2(x, c2, c3)
+            else:
+                yfit = esfun_energy_2(x, c2)
         elif flag_ord == 3:
             yfit = esfun_energy_3(x, c2, c3)
         elif flag_ord == 4:
@@ -176,7 +207,7 @@ def esplot(x, y, coef, V0=None, flag_se = "e", flag_ord = 3):
     #xstep = (xmax - xmin)/n
     xfit = np.linspace(xmin, xmax, n)
     if flag_se == "e":
-        yfit = V0/eVpmol2GPa*yfitfun(xfit, coef, flag_se, flag_ord)
+        yfit = V0/eVpmol2GPa*yfitfun(xfit, coef, flag_se, flag_ord, ec_order=flag_ord)
     elif flag_se == "s":
         pass
     plotori = plt.plot(x, y, '*', label = 'original data')

@@ -7,7 +7,7 @@ import elastic3rd.symmetry.symmetry as essym
 import elastic3rd.esutils as esutils
 import math
 
-def get_cij(coef_fit, coef2, coef3, flag_se):
+def get_cij(coef_fit, coef2, coef3, flag_se, flag_ord=3):
     '''
     Get the elastic constant by the fitting parameters
     Parameters
@@ -29,13 +29,22 @@ def get_cij(coef_fit, coef2, coef3, flag_se):
                    if the number of coefficient less than the number of independent equations, then solved by Least squares method
     '''
     flag_se = flag_se.lower()
-    if flag_se == "e":
-        C3 = np.linalg.solve(coef3, 6.0*coef_fit[:, 1])
-        #C2 = np.linalg.solve(coef2[[0, 1, 6], [0, 1, 6]], 2.0*coef_fit[[0, 1, 6], 0])
-        C2 = np.linalg.lstsq(coef2, 2.0*coef_fit[:, 0], rcond = None)[0]
-        #print C2
-    elif flag_se == "s":
-        pass
+    if flag_ord > 2:
+        if flag_se == "e":
+            C3 = np.linalg.solve(coef3, 6.0*coef_fit[:, 1])
+            #C2 = np.linalg.solve(coef2[[0, 1, 6], [0, 1, 6]], 2.0*coef_fit[[0, 1, 6], 0])
+            C2 = np.linalg.lstsq(coef2, 2.0*coef_fit[:, 0], rcond = None)[0]
+            #print C2
+        elif flag_se == "s":
+            pass
+    elif flag_ord == 2:
+        if flag_se == "e":
+            C2 = np.linalg.lstsq(coef2, 2.0*coef_fit[:, 0], rcond = None)[0]
+            C3 = None
+        elif flag_se == "s":
+            pass
+    else:
+        raise ValueError
     return (C2, C3)
 
 def get_cijall(coef_fit, coef, Ord = 3, flag_se = "e"):
@@ -115,7 +124,7 @@ def get_coef_2nd(s, e, V0):
         coef_2nd[i] = coefi
     return coef_2nd
 
-def get_coef(s, e, V0, flag_se, flag):
+def get_coef(s, e, V0, flag_se, flag, ec_order=3):
     '''
     Get the fitted coefficients by fitting
     Parameters
@@ -130,6 +139,8 @@ def get_coef(s, e, V0, flag_se, flag):
             The flag for strain-stress method(s) or strain-energy method(e)
         flag: int
             The order of the polynomial
+        ec_order: int
+            The order of the elastic constants
     Return
     ------
         coef_fit: np.ndarray
@@ -153,22 +164,24 @@ def get_coef(s, e, V0, flag_se, flag):
             ei = (ei - e0)/V0*eVpmol2GPa
         elif flag_se == "s":
             pass
-        if flag > 2:
-            (coefi, pcovi) = esfit.esfit(s, ei, flag_se, flag)
-        else:
-            s2 = s
-            s2[n_d] = 1
-            if flag == 1:
-                e2 = ei/s2/s2
-                s2 = np.delete(s2, n_d)
-                e2 = np.delete(e2, n_d)
-                (coefi, pcovi) = esfit.esfit(s2, e2, flag_se, flag)
-            elif flag == 2:
-                e2 = ei/s2
-                #s2 = np.delete(s2, n_d)
-                #e2 = np.delete(e2, n_d)
-                s2[n_d] = 0
-                (coefi, pcovi) = esfit.esfit(s2, e2, flag_se, flag)
+        if ec_order == 3:
+            if flag > 2:
+                (coefi, pcovi) = esfit.esfit(s, ei, flag_se, flag, ec_order=ec_order)
+            else:
+                s2 = s
+                s2[n_d] = 1
+                if flag == 1:
+                    e2 = ei/s2/s2
+                    s2 = np.delete(s2, n_d)
+                    e2 = np.delete(e2, n_d)
+                    (coefi, pcovi) = esfit.esfit(s2, e2, flag_se, flag, ec_order=ec_order)
+                elif flag == 2:
+                    e2 = ei/s2
+                    #s2 = np.delete(s2, n_d)
+                    #e2 = np.delete(e2, n_d)
+                    s2[n_d] = 0
+                    (coefi, pcovi) = esfit.esfit(s2, e2, flag_se, flag, ec_order=ec_order)
+        elif ec_order == 2:
         coef_fit[i, :] = coefi
     #if flag == 4:
     #    coef_fit = np.delete(coef_fit, -1, 1)
@@ -260,7 +273,7 @@ def post_single(x, E, StrainIn, V0, Flag_Fig=1, Flag_Ord=3, INPUT="INPUT"):
         Cij_mode, coef_e, StrainMode = essym.CoefForSingleMode(CrystalType, Ord, StrainIn)
     elif flag_se == "s":
         pass
-    coef_fit = get_coef(x, E, V0, flag_se, Flag_Ord)
+    coef_fit = get_coef(x, E, V0, flag_se, Flag_Ord, ec_order=Ord)
     if Flag_Fig == 1:
         esfit.multiesplot(x, E, coef_fit, flag_se, Flag_Ord, V0)
     #print coef_fit
@@ -308,7 +321,7 @@ def post(V0, Flag_Fig=1, Flag_Ord=3, EEnergy="EEnergy.txt", INPUT="INPUT"):
         coef_e, StrainMode = essym.gen_strain_mode(CrystalType, Ord)
     elif flag_se == "s":
         pass
-    coef_fit = get_coef(StrainList/100., E, V0, flag_se, Flag_Ord)
+    coef_fit = get_coef(StrainList/100., E, V0, flag_se, Flag_Ord, ec_order=Ord)
     #print coef_fit
     coef2 = coef_e.coef2
     coef3 = coef_e.coef3
