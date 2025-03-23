@@ -56,9 +56,6 @@ def esfit(x, y, flag_se = "e", flag_ord = 3, ec_order=3):
             The covariance of the fitting
     '''
     flag_se = flag_se.lower()
-    if ec_order == 3:
-        if flag_ord == 2:
-            pass
     if flag_se == "e":
         if ec_order == 3:
             if flag_ord == 2:
