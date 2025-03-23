@@ -182,6 +182,7 @@ def get_coef(s, e, V0, flag_se, flag, ec_order=3):
                     s2[n_d] = 0
                     (coefi, pcovi) = esfit.esfit(s2, e2, flag_se, flag, ec_order=ec_order)
         elif ec_order == 2:
+            (coefi, pcovi) = esfit.esfit(s, ei, flag_se, flag, ec_order=ec_order)
         coef_fit[i, :] = coefi
     #if flag == 4:
     #    coef_fit = np.delete(coef_fit, -1, 1)
