@@ -1,0 +1,623 @@
+elastic3rd.elastic is imported
++=============================================================+
+| EEEEE L       A   SSSSS TTTTT IIIII CCCCC 33333 RRRRR DDD   |
+| E     L      A A  S       T     I   C         3 R   R D  D  |
+| EEEE  L     A   A SSSSS   T     I   C      3333 RRRRR D   D |
+| E     L     AAAAA     S   T     I   C         3 R  R  D  D  |
+| EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |
++-------------------------------------------------------------+
+|             Version: ELASTIC3RD  version 7.0.1              |
+|                Date: 2024-12-25                             |
+|              Author: Liao Mingqing                          |
+|              E_mail: liaomq1900127@163.com                  |
+|     FGMS @ Harbin Institute of Technology(HIT)              |
+|  Jiangsu University of Science and Technolgy(JUST)          |
+|    URL:https://github.com/hitliaomq/ELASTIC3rd              |
+|Please Cite:                                                 |
+|M.Q. Liao, et al., Elastic3rd: A tool for calculating third- |
+|  order elastic constants from first-principles calculations.|
+|  Computer Physics Communications 261 (2021) 107777          |
+|If the strain-stress method is used, please also cite:       |
+|M.Q. Liao, et al., A high-efficient strain-stress method for |
+|  calculating higher- order elastic constants from first-    |
+|  principles.                                                |
+|  Computer Physics Communications 280 (2022) 108478          |
++=============================================================+
+===================The input parameters===================
+The Runing mode is : CONTINUE
+The BaseName is : C
+The Method used here is: Strain-Stress method
+The strain mode(s) is(are) specified.
+The crystal symmetry is : c1
+The order of elastic is : 3
+The code for calculating the energy : MATTERSIM
+The maximum of the strain : 6.0
+The steps run in every mode : 13
+The core used in energy calculate : 8
+
+elastic3rd.elastic is imported
++=============================================================+
+| EEEEE L       A   SSSSS TTTTT IIIII CCCCC 33333 RRRRR DDD   |
+| E     L      A A  S       T     I   C         3 R   R D  D  |
+| EEEE  L     A   A SSSSS   T     I   C      3333 RRRRR D   D |
+| E     L     AAAAA     S   T     I   C         3 R  R  D  D  |
+| EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |
++-------------------------------------------------------------+
+|             Version: ELASTIC3RD  version 7.0.1              |
+|                Date: 2024-12-25                             |
+|              Author: Liao Mingqing                          |
+|              E_mail: liaomq1900127@163.com                  |
+|     FGMS @ Harbin Institute of Technology(HIT)              |
+|  Jiangsu University of Science and Technolgy(JUST)          |
+|    URL:https://github.com/hitliaomq/ELASTIC3rd              |
+|Please Cite:                                                 |
+|M.Q. Liao, et al., Elastic3rd: A tool for calculating third- |
+|  order elastic constants from first-principles calculations.|
+|  Computer Physics Communications 261 (2021) 107777          |
+|If the strain-stress method is used, please also cite:       |
+|M.Q. Liao, et al., A high-efficient strain-stress method for |
+|  calculating higher- order elastic constants from first-    |
+|  principles.                                                |
+|  Computer Physics Communications 280 (2022) 108478          |
++=============================================================+
+===================The input parameters===================
+The Runing mode is : CONTINUE
+The BaseName is : C
+The Method used here is: Strain-Stress method
+The strain mode(s) is(are) specified.
+The crystal symmetry is : c1
+The order of elastic is : 3
+The code for calculating the energy : MATTERSIM
+The maximum of the strain : 6.0
+The steps run in every mode : 13
+The core used in energy calculate : 8
+
+elastic3rd.elastic is imported
++=============================================================+
+| EEEEE L       A   SSSSS TTTTT IIIII CCCCC 33333 RRRRR DDD   |
+| E     L      A A  S       T     I   C         3 R   R D  D  |
+| EEEE  L     A   A SSSSS   T     I   C      3333 RRRRR D   D |
+| E     L     AAAAA     S   T     I   C         3 R  R  D  D  |
+| EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |
++-------------------------------------------------------------+
+|             Version: ELASTIC3RD  version 7.0.1              |
+|                Date: 2024-12-25                             |
+|              Author: Liao Mingqing                          |
+|              E_mail: liaomq1900127@163.com                  |
+|     FGMS @ Harbin Institute of Technology(HIT)              |
+|  Jiangsu University of Science and Technolgy(JUST)          |
+|    URL:https://github.com/hitliaomq/ELASTIC3rd              |
+|Please Cite:                                                 |
+|M.Q. Liao, et al., Elastic3rd: A tool for calculating third- |
+|  order elastic constants from first-principles calculations.|
+|  Computer Physics Communications 261 (2021) 107777          |
+|If the strain-stress method is used, please also cite:       |
+|M.Q. Liao, et al., A high-efficient strain-stress method for |
+|  calculating higher- order elastic constants from first-    |
+|  principles.                                                |
+|  Computer Physics Communications 280 (2022) 108478          |
++=============================================================+
+===================The input parameters===================
+The Runing mode is : CONTINUE
+The BaseName is : C
+The Method used here is: Strain-Stress method
+The strain mode(s) is(are) specified.
+The crystal symmetry is : c1
+The order of elastic is : 3
+The code for calculating the energy : MATTERSIM
+The maximum of the strain : 6.0
+The steps run in every mode : 13
+The core used in energy calculate : 8
+
+elastic3rd.elastic is imported
++=============================================================+
+| EEEEE L       A   SSSSS TTTTT IIIII CCCCC 33333 RRRRR DDD   |
+| E     L      A A  S       T     I   C         3 R   R D  D  |
+| EEEE  L     A   A SSSSS   T     I   C      3333 RRRRR D   D |
+| E     L     AAAAA     S   T     I   C         3 R  R  D  D  |
+| EEEEE LLLLL A   A SSSSS   T   IIIII CCCCC 33333 R   R DDD   |
++-------------------------------------------------------------+
+|             Version: ELASTIC3RD  version 7.0.1              |
+|                Date: 2024-12-25                             |
+|              Author: Liao Mingqing                          |
+|              E_mail: liaomq1900127@163.com                  |
+|     FGMS @ Harbin Institute of Technology(HIT)              |
+|  Jiangsu University of Science and Technolgy(JUST)          |
+|    URL:https://github.com/hitliaomq/ELASTIC3rd              |
+|Please Cite:                                                 |
+|M.Q. Liao, et al., Elastic3rd: A tool for calculating third- |
+|  order elastic constants from first-principles calculations.|
+|  Computer Physics Communications 261 (2021) 107777          |
+|If the strain-stress method is used, please also cite:       |
+|M.Q. Liao, et al., A high-efficient strain-stress method for |
+|  calculating higher- order elastic constants from first-    |
+|  principles.                                                |
+|  Computer Physics Communications 280 (2022) 108478          |
++=============================================================+
+===================The input parameters===================
+The Runing mode is : CONTINUE
+The BaseName is : C
+The Method used here is: Strain-Stress method
+The strain mode(s) is(are) specified.
+The crystal symmetry is : c1
+The order of elastic is : 3
+The code for calculating the energy : MATTERSIM
+The maximum of the strain : 6.0
+The steps run in every mode : 13
+The core used in energy calculate : 8
+
+For crystal type(c1), 1 number of strain mode is required for Strain-Stress Method method.
+====================Crystal Structure====================
+2026-10-15 16:43:38
+BaseVec:
+     3.5000000000     0.0000000000     0.0000000000
+     0.0000000000     3.5000000000     0.0000000000
+     0.0000000000     0.0000000000     3.5000000000
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.500000  3.500000  3.500000  90.000  90.000  90.000
+Volume : 42.875
+
+2026-10-15 16:43:38
+2026-10-15 16:43:38
+Time cost: 0.4156534671783447
+Cauchy stress (in GPa):
+[[-3.02463188e+01 -1.95749919e-07  4.08168216e-06]
+ [-1.95749919e-07 -3.02462940e+01  6.22805010e-06]
+ [ 4.08168216e-06  6.22805010e-06 -3.02463036e+01]]
+2026-10-15 16:43:38
+
+==================Deformed Crystal========================
+
+----------------------- Mode 1 ---------------------------
+
+2026-10-15 16:43:38
+/home/lmq/software/Elastic3rd-dev/diamond/mattersim
+------------------ Strain -6.0 in Mode 1 ------------------
+
+2026-10-15 16:43:38
+BaseVec:
+     3.2760656345     -0.0069918471     -0.2175892282
+     -0.0069918471     3.3866082104     -0.2140933047
+     -0.2175892282     -0.2140933047     3.4866630156
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.283291  3.393376  3.500000  97.110  97.349  90.000
+Volume : 38.37233455889799
+
+2026-10-15 16:43:38
+2026-10-15 16:43:39
+Time cost: 1.1594047546386719
+Cauchy stress (in GPa):
+[[-131.85888672   -2.73801494  -93.70469666]
+ [  -2.73801494 -107.12676239  -86.23753357]
+ [ -93.70469666  -86.23753357  -87.65524292]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[-131.85888672   -2.73801494  -93.70469666]
+ [  -2.73801494 -107.12676239  -86.23753357]
+ [ -93.70469666  -86.23753357  -87.65524292]]
+Lagrangian stress:
+[-148.41010863 -113.90991115 -102.73546585  -93.95716538 -106.35159086
+  -15.76017435]
+------------------ End of Strain -6.0 in Mode 1 ------------------
+
+------------------ Strain -5.0 in Mode 1 ------------------
+
+2026-10-15 16:43:39
+BaseVec:
+     3.3154999689     -0.0047615802     -0.1801035358
+     -0.0047615802     3.4067421319     -0.1777227457
+     -0.1801035358     -0.1777227457     3.4908419245
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.320392  3.411378  3.500000  95.889  96.051  90.000
+Volume : 39.2136353238577
+
+2026-10-15 16:43:39
+2026-10-15 16:43:41
+Time cost: 1.2278742790222168
+Cauchy stress (in GPa):
+[[-109.84664154   -1.90496552  -74.05852509]
+ [  -1.90496552  -89.4208374   -69.3249054 ]
+ [ -74.05852509  -69.3249054   -72.02719879]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[-109.84664154   -1.90496552  -74.05852509]
+ [  -1.90496552  -89.4208374   -69.3249054 ]
+ [ -74.05852509  -69.3249054   -72.02719879]]
+Lagrangian stress:
+[-120.7031892   -93.89825428  -81.71414511  -74.57217767  -82.54397354
+  -10.30674531]
+------------------ End of Strain -5.0 in Mode 1 ------------------
+
+------------------ Strain -4.0 in Mode 1 ------------------
+
+2026-10-15 16:43:41
+BaseVec:
+     3.3540266761     -0.0029912742     -0.1431646197
+     -0.0029912742     3.4263568045     -0.1416689826
+     -0.1431646197     -0.1416689826     3.4942000216
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.357082  3.429286  3.500000  94.683  94.784  90.000
+Volume : 40.017973312000684
+
+2026-10-15 16:43:41
+2026-10-15 16:43:42
+Time cost: 0.9047119617462158
+Cauchy stress (in GPa):
+[[-90.35913086  -1.17341423 -56.20903397]
+ [ -1.17341423 -74.08528137 -53.43113708]
+ [-56.20903397 -53.43113708 -59.47229767]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[-90.35913086  -1.17341423 -56.20903397]
+ [ -1.17341423 -74.08528137 -53.43113708]
+ [-56.20903397 -53.43113708 -59.47229767]]
+Lagrangian stress:
+[-96.99246396 -76.75590658 -65.05508648 -56.93245282 -61.68048704
+  -6.18178738]
+------------------ End of Strain -4.0 in Mode 1 ------------------
+
+------------------ Strain -3.0 in Mode 1 ------------------
+
+2026-10-15 16:43:42
+BaseVec:
+     3.3916967631     -0.0016530413     -0.1067255113
+     -0.0016530413     3.4454727791     -0.1058989906
+     -0.1067255113     -0.1058989906     3.4967692330
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.393376  3.447100  3.500000  93.493  93.548  90.000
+Volume : 40.78591279397215
+
+2026-10-15 16:43:42
+2026-10-15 16:43:43
+Time cost: 0.9856002330780029
+Cauchy stress (in GPa):
+[[-72.99953461  -0.61908364 -40.09238434]
+ [ -0.61908364 -60.79906082 -38.64640808]
+ [-40.09238434 -38.64640808 -49.45347214]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[-72.99953461  -0.61908364 -40.09238434]
+ [ -0.61908364 -60.79906082 -38.64640808]
+ [-40.09238434 -38.64640808 -49.45347214]]
+Lagrangian stress:
+[-76.63046593 -62.14873893 -52.12374651 -40.90407183 -43.4089513
+  -3.2540369 ]
+------------------ End of Strain -3.0 in Mode 1 ------------------
+
+------------------ Strain -2.0 in Mode 1 ------------------
+
+2026-10-15 16:43:43
+BaseVec:
+     3.4285557908     -0.0007223790     -0.0707436758
+     -0.0007223790     3.4641082235     -0.0703824863
+     -0.0707436758     -0.0703824863     3.4985770876
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.429286  3.464823  3.500000  92.316  92.340  90.000
+Volume : 41.517879564110736
+
+2026-10-15 16:43:43
+2026-10-15 16:43:43
+Time cost: 0.8223741054534912
+Cauchy stress (in GPa):
+[[-57.38721085  -0.26939261 -25.5248642 ]
+ [ -0.26939261 -49.23607254 -24.91772842]
+ [-25.5248642  -24.91772842 -41.46904755]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[-57.38721085  -0.26939261 -25.5248642 ]
+ [ -0.26939261 -49.23607254 -24.91772842]
+ [-25.5248642  -24.91772842 -41.46904755]]
+Lagrangian stress:
+[-59.02055639 -49.72065596 -42.30512235 -26.25992223 -27.31918084
+  -1.37077833]
+------------------ End of Strain -2.0 in Mode 1 ------------------
+
+------------------ Strain -1.0 in Mode 1 ------------------
+
+2026-10-15 16:43:43
+BaseVec:
+     3.4646446154     -0.0001777090     -0.0351803515
+     -0.0001777090     3.4822792185     -0.0350914970
+     -0.0351803515     -0.0350914970     3.4996472579
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.464823  3.482456  3.500000  91.152  91.158  90.000
+Volume : 42.214177192769014
+
+2026-10-15 16:43:43
+2026-10-15 16:43:44
+Time cost: 0.7424829006195068
+Cauchy stress (in GPa):
+[[-43.19958115  -0.07233886 -12.25008583]
+ [ -0.07233886 -39.1141243  -12.10300636]
+ [-12.25008583 -12.10300636 -35.13389587]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[-43.19958115  -0.07233886 -12.25008583]
+ [ -0.07233886 -39.1141243  -12.10300636]
+ [-12.25008583 -12.10300636 -35.13389587]]
+Lagrangian stress:
+[-43.66631634 -39.15716183 -35.10716711 -12.72611556 -12.98237661
+  -0.3329959 ]
+------------------ End of Strain -1.0 in Mode 1 ------------------
+
+------------------ Strain 0.0 in Mode 1 ------------------
+
+2026-10-15 16:43:44
+------------------ End of Strain 0.0 in Mode 1 ------------------
+
+------------------ Strain 1.0 in Mode 1 ------------------
+
+2026-10-15 16:43:44
+BaseVec:
+     3.5346551219     -0.0001724551     0.0348301545
+     -0.0001724551     3.5172831584     0.0349163820
+     0.0348301545     0.0349163820     3.4996525123
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.534827  3.517456  3.500000  88.860  88.865  90.000
+Volume : 43.50044339070007
+
+2026-10-15 16:43:44
+2026-10-15 16:43:45
+Time cost: 0.6254422664642334
+Cauchy stress (in GPa):
+[[-18.48708916  -0.08265655  11.40633011]
+ [ -0.08265655 -22.56579971  11.54942894]
+ [ 11.40633011  11.54942894 -26.77490616]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[-18.48708916  -0.08265655  11.40633011]
+ [ -0.08265655 -22.56579971  11.54942894]
+ [ 11.40633011  11.54942894 -26.77490616]]
+Lagrangian stress:
+[-18.62302102 -22.90937046 -27.64671284  12.16588531  11.9195799
+  -0.32015503]
+------------------ End of Strain 1.0 in Mode 1 ------------------
+
+------------------ Strain 2.0 in Mode 1 ------------------
+
+2026-10-15 16:43:45
+BaseVec:
+     3.5686399973     -0.0006802536     0.0693405159
+     -0.0006802536     3.5341398027     0.0696806427
+     0.0693405159     0.0696806427     3.4986192278
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.569314  3.534827  3.500000  87.730  87.752  90.000
+Volume : 44.09051203490391
+
+2026-10-15 16:43:45
+2026-10-15 16:43:46
+Time cost: 0.8382813930511475
+Cauchy stress (in GPa):
+[[ -7.93384504  -0.36808017  22.09464264]
+ [ -0.36808017 -16.05844307  22.66122246]
+ [ 22.09464264  22.66122246 -24.74230385]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[ -7.93384504  -0.36808017  22.09464264]
+ [ -0.36808017 -16.05844307  22.66122246]
+ [ 22.09464264  22.66122246 -24.74230385]]
+Lagrangian stress:
+[ -8.73206722 -17.1314532  -27.31979093  23.97889761  23.00858843
+  -1.28152234]
+------------------ End of Strain 2.0 in Mode 1 ------------------
+
+------------------ Strain 3.0 in Mode 1 ------------------
+
+2026-10-15 16:43:46
+BaseVec:
+     3.6019818377     -0.0015103351     0.1035594504
+     -0.0015103351     3.5505796962     0.1043146180
+     0.1035594504     0.1043146180     3.4969120522
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.603471  3.552112  3.500000  86.611  86.659  90.000
+Volume : 44.64512626046102
+
+2026-10-15 16:43:46
+2026-10-15 16:43:46
+Time cost: 0.700509786605835
+Cauchy stress (in GPa):
+[[  1.3782047   -0.94599497  32.11977005]
+ [ -0.94599497 -10.73867321  33.38098145]
+ [ 32.11977005  33.38098145 -24.18994713]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[  1.3782047   -0.94599497  32.11977005]
+ [ -0.94599497 -10.73867321  33.38098145]
+ [ 32.11977005  33.38098145 -24.18994713]]
+Lagrangian stress:
+[ -0.54462763 -12.9328316  -29.31886752  35.58204465  33.42978753
+  -2.92873008]
+------------------ End of Strain 3.0 in Mode 1 ------------------
+
+------------------ Strain 4.0 in Mode 1 ------------------
+
+2026-10-15 16:43:46
+BaseVec:
+     3.6347053509     -0.0026512197     0.1375135752
+     -0.0026512197     3.5666113682     0.1388391851
+     0.1375135752     0.1388391851     3.4945405560
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.637307  3.569314  3.500000  85.501  85.585  90.000
+Volume : 45.16412693720543
+
+2026-10-15 16:43:46
+2026-10-15 16:44:08
+Time cost: 21.282714128494263
+Cauchy stress (in GPa):
+[[  9.45593262  -1.88297927  41.51749802]
+ [ -1.88297927  -6.59536934  43.72320175]
+ [ 41.51749802  43.72320175 -25.1063652 ]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[  9.45593262  -1.88297927  41.51749802]
+ [ -1.88297927  -6.59536934  43.72320175]
+ [ 41.51749802  43.72320175 -25.1063652 ]]
+Lagrangian stress:
+[  6.00092817 -10.31090787 -33.6574985   47.08922173  43.32527231
+  -5.29335558]
+------------------ End of Strain 4.0 in Mode 1 ------------------
+
+------------------ Strain 5.0 in Mode 1 ------------------
+
+2026-10-15 16:44:08
+BaseVec:
+     3.6668329955     -0.0040928583     0.1712280096
+     -0.0040928583     3.5822422053     0.1732744388
+     0.1712280096     0.1732744388     3.4915121277
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.670831  3.586433  3.500000  84.400  84.529  90.000
+Volume : 45.6472790638993
+
+2026-10-15 16:44:08
+2026-10-15 16:44:24
+Time cost: 16.53851318359375
+Cauchy stress (in GPa):
+[[ 16.30783463  -3.25945139  50.34254456]
+ [ -3.25945139  -3.60699368  53.71809769]
+ [ 50.34254456  53.71809769 -27.45493698]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[ 16.30783463  -3.25945139  50.34254456]
+ [ -3.25945139  -3.60699368  53.71809769]
+ [ 50.34254456  53.71809769 -27.45493698]]
+Lagrangian stress:
+[ 10.95725019  -9.25715637 -40.33876607  58.6328089   52.85576867
+  -8.43157386]
+------------------ End of Strain 5.0 in Mode 1 ------------------
+
+------------------ Strain 6.0 in Mode 1 ------------------
+
+2026-10-15 16:44:24
+BaseVec:
+     3.6983851979     -0.0058265069     0.2047265975
+     -0.0058265069     3.5974785259     0.2076398509
+     0.2047265975     0.2076398509     3.4878320935
+Lattice Parameter:
+    a         b         c      alpha   beta    gamma
+3.704052  3.603471  3.500000  83.307  83.489  90.000
+Volume : 46.09427421600218
+
+2026-10-15 16:44:24
+2026-10-15 16:44:42
+Time cost: 17.357075929641724
+Cauchy stress (in GPa):
+[[ 22.02342796  -5.00625706  58.56934357]
+ [ -5.00625706  -1.65455329  63.31613922]
+ [ 58.56934357  63.31613922 -31.14158058]]
+[[1.  0.  1. ]
+ [0.  0.5 1. ]
+ [1.  1.  0. ]]
+Cauchy stress:
+[[ 22.02342796  -5.00625706  58.56934357]
+ [ -5.00625706  -1.65455329  63.31613922]
+ [ 58.56934357  63.31613922 -31.14158058]]
+Lagrangian stress:
+[ 14.45659414  -9.65640672 -49.29569868  70.24500839  62.08219414
+ -12.24947734]
+------------------ End of Strain 6.0 in Mode 1 ------------------
+
+------------------------ End of Mode 1 --------------------------
+
+
+=============================== Post Processing ==================================
+
+[-30.24631882]
+[-148.41010863 -120.7031892   -96.99246396  -76.63046593  -59.02055639
+  -43.66631634  -30.24631882  -18.62302102   -8.73206722   -0.54462763
+    6.00092817   10.95725019   14.45659414]
+Fitting Result: 
+[  1319.42514756 -22087.28626719]
+Error: 
+[ 159.4018003  3188.03599119]
+R^2 : 0.8494405394722663
+[-30.24629402]
+[-113.90991115  -93.89825428  -76.75590658  -62.14873893  -49.72065596
+  -39.15716183  -30.24629402  -22.90937046  -17.1314532   -12.9328316
+  -10.31090787   -9.25715637   -9.65640672]
+Fitting Result: 
+[   848.12111397 -20715.49631482]
+Error: 
+[ 159.927278   3198.54558005]
+R^2 : 0.6501012960448749
+[-30.24630356]
+[-102.73546585  -81.71414511  -65.05508648  -52.12374651  -42.30512235
+  -35.10716711  -30.24630356  -27.64671284  -27.31979093  -29.31886752
+  -33.6574985   -40.33876607  -49.29569868]
+Fitting Result: 
+[   417.00637925 -24567.21567539]
+Error: 
+[ 158.85461217 3177.09226884]
+R^2 : 0.21153873445714078
+[6.2280501e-06]
+[-9.39571654e+01 -7.45721777e+01 -5.69324528e+01 -4.09040718e+01
+ -2.62599222e+01 -1.27261156e+01  6.22805010e-06  1.21658853e+01
+  2.39788976e+01  3.55820447e+01  4.70892217e+01  5.86328089e+01
+  7.02450084e+01]
+Fitting Result: 
+[ 1330.85311188 -3224.60690331]
+Error: 
+[ 11.2141807  224.28361523]
+R^2 : 0.9992248034928546
+[4.08168216e-06]
+[-1.06351591e+02 -8.25439735e+01 -6.16804870e+01 -4.34089513e+01
+ -2.73191808e+01 -1.29823766e+01  4.08168216e-06  1.19195799e+01
+  2.30085884e+01  3.34297875e+01  4.33252723e+01  5.28557687e+01
+  6.20821941e+01]
+Fitting Result: 
+[ 1353.68031317 -6016.93291831]
+Error: 
+[ 14.83252373 296.65047549]
+R^2 : 0.9987102644946618
+[-1.95749919e-07]
+[-1.57601744e+01 -1.03067453e+01 -6.18178738e+00 -3.25403690e+00
+ -1.37077833e+00 -3.32995896e-01 -1.95749919e-07 -3.20155025e-01
+ -1.28152234e+00 -2.92873008e+00 -5.29335558e+00 -8.43157386e+00
+ -1.22494773e+01]
+Fitting Result: 
+[   19.31925281 -3796.2966662 ]
+Error: 
+[ 3.43005481 68.60109566]
+R^2 : 0.9924556795412431
+[[ 1.31942515e+03 -2.20872863e+04]
+ [ 8.48121114e+02 -2.07154963e+04]
+ [ 4.17006379e+02 -2.45672157e+04]
+ [ 1.33085311e+03 -3.22460690e+03]
+ [ 1.35368031e+03 -6.01693292e+03]
+ [ 1.93192528e+01 -3.79629667e+03]]
+[1175.9575434968144, 273.5387751803602, 671.1333562614218]
+[-16188.956717102925, -12530.850177441906, -9979.511473506776, -144.0936294359126, -2936.419644434909, -949.0741665496007]
+========================!!!END!!!=========================

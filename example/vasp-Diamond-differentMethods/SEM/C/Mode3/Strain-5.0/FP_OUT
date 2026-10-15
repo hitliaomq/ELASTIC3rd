@@ -1,0 +1,58 @@
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    2 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Aug 31 2025 15:26:05) complex          
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       8 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.762142349804E+02    0.76214E+02   -0.17346E+04  7200   0.132E+03
+DAV:   2    -0.696734191722E+02   -0.14589E+03   -0.13779E+03  9856   0.243E+02
+DAV:   3    -0.745440837241E+02   -0.48707E+01   -0.48396E+01  9488   0.411E+01
+DAV:   4    -0.745892316733E+02   -0.45148E-01   -0.45110E-01  8944   0.447E+00
+DAV:   5    -0.745900911358E+02   -0.85946E-03   -0.85903E-03  9552   0.543E-01    0.103E+01
+DAV:   6    -0.722301167894E+02    0.23600E+01   -0.16075E+00  8080   0.755E+00    0.558E+00
+DAV:   7    -0.714495577263E+02    0.78056E+00   -0.17978E+00  8592   0.819E+00    0.746E-01
+DAV:   8    -0.714586070384E+02   -0.90493E-02   -0.48187E-02  9152   0.133E+00    0.799E-02
+DAV:   9    -0.714588492787E+02   -0.24224E-03   -0.50579E-04  8864   0.160E-01    0.372E-02
+DAV:  10    -0.714589064557E+02   -0.57177E-04   -0.37281E-05  8936   0.462E-02    0.442E-03
+DAV:  11    -0.714589086696E+02   -0.22139E-05   -0.14752E-06  9392   0.913E-03    0.112E-03
+DAV:  12    -0.714589085848E+02    0.84807E-07   -0.39898E-08  6760   0.162E-03
+   1 F= -.71458909E+02 E0= -.71458909E+02  d E =-.714589E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.182E+00 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.182E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.712544747917E+02    0.20443E+00   -0.20899E+01  8480   0.312E+01    0.753E-01
+DAV:   2    -0.712749534482E+02   -0.20479E-01   -0.29888E-01  8768   0.343E+00    0.528E-01
+DAV:   3    -0.712700583138E+02    0.48951E-02   -0.14251E-02  8888   0.931E-01    0.630E-02
+DAV:   4    -0.712700726207E+02   -0.14307E-04   -0.19541E-03  8704   0.291E-01    0.327E-02
+DAV:   5    -0.712700735583E+02   -0.93761E-06   -0.29826E-05  9072   0.374E-02    0.838E-03
+DAV:   6    -0.712700728202E+02    0.73813E-06   -0.29290E-06  8728   0.127E-02    0.109E-03
+DAV:   7    -0.712700728735E+02   -0.53332E-07   -0.12489E-07  6464   0.272E-03
+   2 F= -.71270073E+02 E0= -.71270073E+02  d E =0.188836E+00
+ trial-energy change:    0.188836  1 .order    0.187206   -0.181570    0.555982
+ step:   0.2437(harm=  0.2462)  dis= 0.00807  next Energy=   -71.481012 (dE=-0.221E-01)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.714734280391E+02   -0.20336E+00   -0.11968E+01  8712   0.236E+01    0.562E-01
+DAV:   2    -0.714839464576E+02   -0.10518E-01   -0.15582E-01  8688   0.252E+00    0.401E-01
+DAV:   3    -0.714812414214E+02    0.27050E-02   -0.99735E-03  8992   0.775E-01    0.841E-02
+DAV:   4    -0.714810653732E+02    0.17605E-03   -0.14458E-03  8648   0.267E-01    0.240E-02
+DAV:   5    -0.714810684472E+02   -0.30740E-05   -0.30188E-05  9080   0.357E-02    0.417E-03
+DAV:   6    -0.714810686600E+02   -0.21283E-06   -0.93588E-07  8656   0.668E-03    0.862E-04
+DAV:   7    -0.714810686406E+02    0.19386E-07   -0.35036E-08  5928   0.150E-03
+   3 F= -.71481069E+02 E0= -.71481069E+02  d E =-.221601E-01
+ curvature:  -0.12 expect dE=-0.976E-07 dE for cont linesearch -0.976E-07
+ trial: gam=-0.00209 g(F)=  0.793E-06 g(S)=  0.000E+00 ort = 0.379E-03 (trialstep = 0.849E+00)
+ search vector abs. value=  0.103E-09
+ reached required accuracy - stopping structural energy minimisation

@@ -1,0 +1,33 @@
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    2 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Aug 31 2025 15:26:05) complex          
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       8 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.756579989791E+02    0.75658E+02   -0.17032E+04  3600   0.130E+03
+DAV:   2    -0.691252760050E+02   -0.14478E+03   -0.13613E+03  4976   0.235E+02
+DAV:   3    -0.741540855099E+02   -0.50288E+01   -0.49958E+01  4736   0.411E+01
+DAV:   4    -0.742076498866E+02   -0.53564E-01   -0.53507E-01  4632   0.471E+00
+DAV:   5    -0.742088218099E+02   -0.11719E-02   -0.11715E-02  4688   0.640E-01    0.861E+00
+DAV:   6    -0.727321563183E+02    0.14767E+01   -0.10181E+00  4248   0.562E+00    0.478E+00
+DAV:   7    -0.722374562612E+02    0.49470E+00   -0.11581E+00  4264   0.618E+00    0.684E-01
+DAV:   8    -0.722438395971E+02   -0.63833E-02   -0.23470E-02  4616   0.880E-01    0.761E-02
+DAV:   9    -0.722440539108E+02   -0.21431E-03   -0.43840E-04  4464   0.141E-01    0.274E-02
+DAV:  10    -0.722441094161E+02   -0.55505E-04   -0.52465E-05  4560   0.537E-02    0.250E-03
+DAV:  11    -0.722441097802E+02   -0.36415E-06   -0.11913E-06  4672   0.705E-03    0.657E-04
+DAV:  12    -0.722441096945E+02    0.85732E-07   -0.46617E-08  3456   0.157E-03
+   1 F= -.72244110E+02 E0= -.72244110E+02  d E =-.722441E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.416E-48 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.100E-09
+ reached required accuracy - stopping structural energy minimisation

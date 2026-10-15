@@ -1,0 +1,14 @@
+INPUT_PARAMETERS
+suffix             Mo
+pseudo_dir         /opt/abacus-orb/APNS_v1/Pseudopotential
+orbital_dir        /opt/abacus-orb/APNS_v1/Orbitals/precision
+ecutwfc            100
+scf_nmax           100
+basis_type         lcao
+smearing_method    gauss
+smearing_sigma     0.01
+calculation        scf
+relax_nmax         1
+force_thr_ev       1.0e-3
+cal_stress         1
+out_stru           0

@@ -1,0 +1,16 @@
+BaseName        Mo          #Equal to your *.cell's file name(MoASTEP); Any string(VASP). It will be the folder name of all result
+CalMode         S          #Specific the calculate mode, W for whole, S for specific(STRAINMODE file is required)
+GenSM           0          # 1 for using the build-in strain modes, 0 for using user-supplied strain modes
+Geom            1
+FlagSE          S          #Method. E for strain-Energy, S for strain-Stress
+CoefMethod      Fit        #Method for Coefficient. Fit for fitting, Num for numerical differentiation, if Num, set STEPS=5 and the strain must be symmetrical
+Continue        1          #Continue mode, 0 for New, 1 for Continue
+CrystalType     C1     #The crystal type, using Laue group
+Ord             3          #The Order, now only 3 is supported
+EnergyCode      abacus     #Code to calculate the energy or stress. Now noly castep and vasp are supported
+EnergyRun       1          # 1(default. RunCASTEP.sh/bat -NP NP BaseName[CASTEP], mpirun -np NP vasp_std[VASP]), 0(manual)
+MaxStrain       5.00       #The maximum strain used in the calculation
+MinStrain       -5.00      #The minimum strain used in the calculation
+STEPS           11          #The steps used in the calculation
+Acc             4          #The accuracy for numerical differentiation(not work for fitting)
+NP              8          #The cores used in the energy/stress calculation

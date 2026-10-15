@@ -1,0 +1,34 @@
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    2 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Aug 31 2025 15:26:05) complex          
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       8 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.758076138097E+02    0.75808E+02   -0.17169E+04  3600   0.131E+03
+DAV:   2    -0.698994120073E+02   -0.14571E+03   -0.13773E+03  4960   0.240E+02
+DAV:   3    -0.749846891156E+02   -0.50853E+01   -0.50558E+01  4720   0.414E+01
+DAV:   4    -0.750367191354E+02   -0.52030E-01   -0.51958E-01  4536   0.467E+00
+DAV:   5    -0.750378174534E+02   -0.10983E-02   -0.10977E-02  4664   0.616E-01    0.925E+00
+DAV:   6    -0.732511270825E+02    0.17867E+01   -0.12138E+00  4176   0.626E+00    0.508E+00
+DAV:   7    -0.726533930767E+02    0.59773E+00   -0.13559E+00  4264   0.681E+00    0.703E-01
+DAV:   8    -0.726604434385E+02   -0.70504E-02   -0.26396E-02  4600   0.947E-01    0.790E-02
+DAV:   9    -0.726606446047E+02   -0.20117E-03   -0.43710E-04  4376   0.143E-01    0.280E-02
+DAV:  10    -0.726606979913E+02   -0.53387E-04   -0.47517E-05  4568   0.521E-02    0.262E-03
+DAV:  11    -0.726606984352E+02   -0.44387E-06   -0.11942E-06  4624   0.721E-03    0.649E-04
+DAV:  12    -0.726606982940E+02    0.14117E-06   -0.37635E-08  3432   0.143E-03    0.607E-05
+DAV:  13    -0.726606983038E+02   -0.98141E-08   -0.34954E-09  3224   0.453E-04
+   1 F= -.72660698E+02 E0= -.72660698E+02  d E =-.726607E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.115E-47 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.100E-09
+ reached required accuracy - stopping structural energy minimisation

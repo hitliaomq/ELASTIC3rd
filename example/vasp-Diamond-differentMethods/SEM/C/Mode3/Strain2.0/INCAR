@@ -1,0 +1,17 @@
+ISTART  =  1            (Read existing wavefunction, if there)
+ISPIN  =  1            (Non-Spin polarised DFT)
+LREAL  =  .FALSE.       (Projection operators: automatic)
+ENCUT  =  520        (Cut-off energy for plane wave basis set, in eV)
+LWAVE  =  .FALSE.        (Write WAVECAR or not)
+LCHARG  =  .FALSE.        (Write CHGCAR or not)
+ADDGRID  =  .TRUE.        (Increase grid, helps GGA convergence)
+NPAR  =  4           (Divides k-grid into separate groups)
+ISMEAR  =  -5            (Gaussian smearing, metals:1)
+SIGMA  =  0.05         (Smearing value in eV, metals:0.2)
+NELM  =  90           (Max electronic SCF steps)
+NELMIN  =  6            (Min electronic SCF steps)
+EDIFF  =  1E-07        (SCF energy convergence, in eV)
+NSW  =  100
+IBRION  =  2            (Algorithm: 0-MD, 1-Quasi-New, 2-CG)
+ISIF  =  2
+EDIFFG  =  -2E-03        (Ionic convergence, eV/AA)
