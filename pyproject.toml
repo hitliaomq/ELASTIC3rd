@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elastic3rd"
+description = "Calculate nth order elastic constants for crystals."
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Mingqing Liao", email = "liaomq1900127@163.com" },
+]
+keywords = ["physics", "materials", "elastic constants"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pyyaml",
+]
+dynamic = ["version"]
+
+[project.scripts]
+elastic3rd = "elastic3rd.scripts.run_elastic3rd:run_e3rd"
+
+[project.urls]
+Homepage = "https://github.com/hitliaomq/elastic3rd"
+Documentation = "https://elastic3rd.readthedocs.io/en/latest"
+"Author Homepage" = "https://scholar.google.com/citations?user=rfEuIUUAAAAJ"
+
+[tool.setuptools.dynamic]
+version = { attr = "elastic3rd.__version__" }
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "*.tests*"]
+
+[tool.setuptools.package-data]
+"elastic3rd.energy" = ["energyrun"]
+"elastic3rd.symmetry" = ["COEFS/*/*", "COEFS/*/*/*", "SymData/*/*"]
