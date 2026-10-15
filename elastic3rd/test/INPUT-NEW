@@ -1,0 +1,15 @@
+Continue  0
+EnergyCode  castep
+EnergyRun  1
+CrystalType  c1
+Ord  3
+MaxStrain  5.0
+NP  1
+STEPS  5
+BaseName  C
+CalMode  W
+FlagSE  E
+GenSM  1
+CoefMethod  Fit
+Acc  4
+MinStrain  -5.0
