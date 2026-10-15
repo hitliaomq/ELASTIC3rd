@@ -1,14 +1,9 @@
-.. Read the Docs Template documentation master file, created by
-   sphinx-quickstart on Tue Aug 26 14:19:49 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 .. |logo| image:: Elastic3rd_LOGO.png
           :height: 30pt
           :width: 30pt
           :alt: Logo
 
-|logo| ELASTIC3rd: 3rd ELASTIC constants calculator
+|logo| ELASTIC3rd: nth-order elastic constants calculator
 ==============================================================================================
 
 .. toctree::
@@ -17,15 +12,24 @@
    Introduction <Introduction>
    Installation <installation>
    Get Started <GetStart>
+   Energy and Stress Providers <EnergyCodes>
    Theory Background <Theory>
    Examples <examples>
-
-   *
+   FAQ <FAQ>
+   API <API>
 
 Citing
 ======
 
-Mingqing Liao, Yong Liu, Shun-li Shang e.t. al. Elastic3rd: A tool for calculating third-order elastic constants from first principles submitted to computer physics communication (2020)
+If you use Elastic3rd in your research, please cite:
+
+- Mingqing Liao, ShunLi Shang, Yong Liu, Zhigao Chen, Xingjun Liu, Huazhou Song, Fu Xu.
+  *Elastic3rd: A tool for calculating third-order elastic constants from first principles*,
+  Computer Physics Communications 261 (2021) 107777.
+
+- Mingqing Liao, et al.
+  *Strain-stress method for calculating high-order elastic constants*,
+  Computer Physics Communications 280 (2022) 108478.
 
 and give the following link: `Elastic3rd <https://github.com/hitliaomq/ELASTIC3rd>`_
 
@@ -33,9 +37,10 @@ and give the following link: `Elastic3rd <https://github.com/hitliaomq/ELASTIC3r
 
 Author Information
 ==================
-| Mingqing Liao(廖名情)
+| Mingqing Liao
 | liaomq1900127@163.com
 | FGMS group @ Harbin Institute of Technology(HIT)
+| Jiangsu University of Science and Technology(JSIT)
 
 
 Indices and tables
@@ -44,4 +49,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
