@@ -97,7 +97,7 @@ Higher-order effects
 ====================
 
 Truncating the expansion at the order being fitted biases higher-order constants when
-the strain window is large. The ``elastic3rd post`` command refits the stored data with
+the strain window is large (ref. https://doi.org/10.1016/j.diamond.2021.108490). The ``elastic3rd post`` command refits the stored data with
 an extra polynomial order and reports the constants after the higher-order terms are
 taken into account (``Flag_Ord`` up to 9), together with the convergence of each
 constant versus the strain window.
