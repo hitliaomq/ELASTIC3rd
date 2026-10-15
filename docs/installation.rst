@@ -4,7 +4,7 @@ Installation
 
 Requirements
 ============
-- Python 3.5 or newer
+- Python 3.7 or newer
 - numpy, scipy, matplotlib, pyyaml (installed automatically by pip)
 - Optional, depending on the calculator you use:
 
@@ -28,9 +28,9 @@ This also installs the ``elastic3rd`` command line entry point::
 Install from source
 ===================
 Clone or download the repository, enter the project root folder (the folder that
-contains ``setup.py``), and run::
+contains ``pyproject.toml``), and run::
 
-    python setup.py install
+    pip install .
 
 or, for a development install so that code edits take effect immediately::
 

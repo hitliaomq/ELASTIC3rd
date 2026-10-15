@@ -219,6 +219,53 @@ the MACE calculator, no queue submission. The same pattern works for ``chgnet``,
 ``matgl`` (set e.g. ``model: M3GNet-MP-2021.2.8-PES``), ``sevenn``, ``mattersim``,
 ``orb``, ``grace``, ``tace``, ``matris``, ``nequip``, ``dpmd`` and ``alphanet``.
 
+Bundled example folders
+-----------------------
+
+In addition to the older Si/C/Mg setups, the `examples
+<https://github.com/hitliaomq/ELASTIC3rd/tree/master/examples>`_ folder ships three
+complete worked setups.
+
+``vasp-Diamond-differentMethods`` (cubic diamond, VASP, four methods side by side)
+    One input folder with four sub-folders, each a self-contained run of the same
+    structure (``POSCAR``), ``INCAR``/``KPOINTS`` files and a user-provided
+    ``STRAINMODE`` file (six modes for the cubic class: ``100000``, ``110000``,
+    ``100200``, ...):
+
+    - ``Ord2``: second order only (``Ord 2``, ``FlagSE S``, ``MaxStrain 1``, 7 points)
+    - ``SEM``: strain-energy method (``FlagSE E``, ``Ord 3``, ``MaxStrain 6``, 13 points)
+    - ``SSM``: strain-stress method (``FlagSE S``, same strain grid as ``SEM``)
+    - ``ND``: the separate numerical-differentiation workflow, run with
+      ``elastic3rd nd`` (``MaxStrain 4``)
+
+    All of them set ``CrystalType c1``, ``CalMode S`` (built-in modes are replaced by the
+    shipped ``STRAINMODE``), ``Geom 1`` (the equilibrium structure is relaxed first) and
+    ``Continue 1``, so an interrupted run can simply be restarted. The comparison of the
+    three recovery schemes on this data, including the higher-order effect on the TOECs
+    of diamond, is the subject of M. Liao, Y. Liu, Y. Wang et al., Revisiting the
+    third-order elastic constants of diamond: the higher-order effect, Diamond Relat.
+    Mater. 117 (2021) 108490, doi:10.1016/j.diamond.2021.108490.
+
+``ML-Diamond`` (cubic diamond, all machine-learning providers)
+    Eleven sub-folders (``mace``, ``matgl``, ``sevenn``, ``mattersim``, ``orb``,
+    ``grace``, ``nequip``, ``dpa``, ``alphanet``, ``tace``, ``matris``) with identical
+    ``INPUT.e3rd`` files except for the ``EnergyCode`` key (the ``dpa`` folder uses the
+    provider name ``dpmd``). The setup mirrors the VASP strain-stress run above
+    (``FlagSE S``, ``CalMode S`` with a shipped ``STRAINMODE``, ``CrystalType c1``,
+    ``Ord 3``, ``MaxStrain 6``, 13 points): the energy/stress of every deformed lattice
+    is computed in-process by the corresponding ASE calculator, so a full TOEC pipeline
+    per model runs on a workstation. Drop a ``settings.yaml`` (model, device, optimizer)
+    into a sub-folder to select the model; see :doc:`EnergyCodes`.
+
+``abacus-Mo`` (molybdenum, ABACUS)
+    The ``E3rd`` sub-folder holds the Elastic3rd input (``INPUT.e3rd`` with
+    ``EnergyCode abacus``, ``BaseName Mo``, ``CrystalType c1``, ``Ord 3``, ``FlagSE S``,
+    ``CalMode S``, ``GenSM 0`` with a user ``STRAINMODE`` file, symmetric grid from
+    ``MinStrain -5`` to ``MaxStrain 5``, 11 points, ``Geom 1``), while the ABACUS inputs
+    (``STRU``, ``KPT``, ``INPUT``) sit in the parent folder. The provider drives
+    ``abacuspy`` and reads the results from ``abacus.json``; see :doc:`EnergyCodes` for
+    the required files.
+
 Post
 ----
 
@@ -255,7 +302,10 @@ For test, the user can run elastic3rd post in the `example/Si/CASTEP` folder dir
 - Higher-order effect and figures
 
 Run `elastic3rd post -n 4 -fig 1` to include the fourth-order term when recovering the
-constants and to show the fitting figures of every strain mode:
+constants and to show the fitting figures of every strain mode. The higher-order-effect
+treatment is documented in M. Liao, Y. Liu, Y. Wang et al., Revisiting the third-order
+elastic constants of diamond: the higher-order effect, Diamond Relat. Mater. 117 (2021)
+108490, doi:10.1016/j.diamond.2021.108490:
 
 |FittingFig|
 

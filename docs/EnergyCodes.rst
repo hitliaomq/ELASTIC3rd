@@ -32,7 +32,8 @@ EnergyCode       E/S        Files in the working folder         Notes
                                                                 ``abacus.json``; runs
                                                                 ``mpirun -np NP abacus``
 ``qe``           E only     ``BaseName.scf``, reads             Energy from ``BaseName.out``;
-                                                                strain-energy method only
+                                                                strain-energy method only;
+                                                                interface not yet tested
 ===============  =========  ==================================  ====================================================
 
 Machine-learning providers
@@ -93,3 +94,71 @@ cheap, which is convenient for testing an input setup before spending CPU-time o
 first-principles production run. Note, however, that the elastic constants inherit the
 accuracy of the underlying model; report final values from the intended electronic
 structure method.
+
+Provider references
+===================
+
+When a calculation uses one of the providers, the corresponding publications should be
+cited.
+
+First-principles codes:
+
+- ``vasp``: G. Kresse, J. Furthmuller, Efficient iterative schemes for ab initio
+  total-energy calculations using a plane-wave basis set, Phys. Rev. B 54 (1996)
+  11169, doi:10.1103/PhysRevB.54.11169.
+- ``castep``, ``castep_ac``: S. J. Clark et al., First principles methods using
+  CASTEP, Z. Kristallogr. - Cryst. Mater. 220 (2005) 567,
+  doi:10.1524/zkri.220.5.567.65075.
+- ``abacus``: K. Zhou et al., ABACUS: An electronic structure analysis package for
+  the AI era, J. Chem. Phys. 163 (2025) 192501, doi:10.1063/5.0297563.
+- ``qe``: P. Giannozzi et al., QUANTUM ESPRESSO: a modular and open-source software
+  project for quantum simulations of materials, J. Phys.: Condens. Matter 21 (2009)
+  395502, doi:10.1088/0953-8984/21/39/395502.
+
+Machine-learning models and libraries:
+
+- ``mace``: I. Batatia, D. P. Kovacs, C. Simm, C. Ortner, G. Csanyi, MACE: Higher
+  order equivariant message passing neural networks for fast and accurate force
+  fields, Adv. Neural Inf. Process. Syst. 35 (2022) 11423, arXiv:2206.07697.
+- ``chgnet``: B. Deng et al., CHGNet as a pretrained universal neural network
+  potential for charge-informed atomistic modelling, Nat. Mach. Intell. 5 (2023)
+  1031, doi:10.1038/s42256-023-00716-3.
+- ``matgl``: C. Chen, S. P. Ong, A universal graph deep learning interatomic
+  potential for the periodic table, Nat. Comput. Sci. 2 (2022) 718,
+  doi:10.1038/s43588-022-00349-3 (M3GNet); H. Simeon, G. de Fabritiis, TensorNet:
+  Cartesian tensor representations for efficient learning of molecular potentials,
+  Adv. Neural Inf. Process. Syst. 36 (2023), arXiv:2306.06482 (TensorNet); Y.-C. Ko
+  et al., Materials Graph Library (MatGL), an open-source graph deep learning
+  library for materials science and chemistry, npj Comput. Mater. 11 (2025),
+  doi:10.1038/s41524-025-01742-y (MatGL library).
+- ``sevenn``: C. Park, K. Kim, Y. Hwang, I. S. Han, Scalable parallel algorithm for
+  graph neural network interatomic potentials in molecular dynamics simulations,
+  J. Chem. Theory Comput. 20 (2024) 4857, doi:10.1021/acs.jctc.4c00190.
+- ``mattersim``: L. Yang et al., MatterSim: A deep learning atomistic model across
+  elements, temperatures and pressures, arXiv:2405.04967 (2024) (preprint).
+- ``orb``: W. Neumann et al. (Orbital Materials), Orb: A fast, scalable neural
+  network potential, arXiv:2410.22570 (2024); preprint only, no peer-reviewed
+  publication found.
+- ``grace``: P. Bochkarev, Y. Lysogorskiy, R. Drautz, Graph atomic cluster expansion
+  for semilocal interactions beyond equivariant message passing, Phys. Rev. X 14
+  (2024) 021036, doi:10.1103/PhysRevX.14.021036; Y. Lysogorskiy, P. Bochkarev,
+  R. Drautz, Graph atomic cluster expansion for foundational machine learning
+  interatomic potentials, arXiv:2508.17936 (2025) (preprint).
+- ``nequip``: S. Batzner et al., E(3)-equivariant graph neural networks for
+  data-efficient and accurate interatomic potentials, Nat. Commun. 13 (2022) 2453,
+  doi:10.1038/s41467-022-29939-5.
+- ``dpmd``: L. Zhang, J. Han, H. Wang, W. Barasol, D. Cesa, E. Weinan, Deep
+  potential molecular dynamics: A scalable model with the accuracy of quantum
+  mechanics, Phys. Rev. Lett. 120 (2018) 143001, doi:10.1103/PhysRevLett.120.143001;
+  J. Wang, L. Zhang, J. Han, E. Weinan, DeePMD-kit: A deep learning package for
+  many-body potential energy representation and molecular dynamics, Comput. Phys.
+  Commun. 228 (2018) 178, doi:10.1016/j.cpc.2018.03.016; J. Zeng et al., DeePMD-kit
+  v2: A software package for deep potential models, J. Chem. Phys. 159 (2023)
+  054801, doi:10.1063/5.0155600.
+- ``alphanet``: D. Yin et al., AlphaNet: Scaling up local-frame-based neural network
+  interatomic potentials, npj Comput. Mater. 11 (2025) 332, arXiv:2501.07155.
+- ``tace``: Z. Xu, W. Xie, H. Xie, P. Hu, Towards universal property prediction in
+  Cartesian space: TACE is all you need, arXiv:2509.14961 (2025) (preprint).
+- ``matris``: no peer-reviewed reference is available; cite the project repository
+  https://github.com/HPC-AI-Team/MatRIS.
+

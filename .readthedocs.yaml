@@ -14,6 +14,8 @@ sphinx:
 
 python:
   install:
+    # Docs build dependencies (the Read the Docs theme).
+    - requirements: docs/requirements.txt
     # Install the package itself so its modules are importable during the build.
     - method: pip
       path: .

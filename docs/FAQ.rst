@@ -41,8 +41,8 @@ My relaxed structures at each strain drift / symmetry is not kept.
     relxations stall, and ``Geom`` handles the pre-deformation equilibrium structure.
 
 How do I get 4th-order constants?
-    Set ``Ord 4`` (built-in mode tables and coefficient relations exist for all 12 classes
-    at 2nd/3rd/4th order). For 5th order, only i/c1/c2/t1/t2/o/m/n are tabulated. You can
+    Set ``Ord 4`` (built-in mode tables and coefficient relations exist for all 11 classes
+    at 2nd/3rd/4th order). For 5th order, only c1/c2/t1/t2/o/m/n are tabulated. You can
     also always recover higher-order information afterwards from stored data with
     ``elastic3rd post -n N``.
 

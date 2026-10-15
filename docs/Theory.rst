@@ -106,5 +106,5 @@ Supported orders
 ================
 
 Fully supported independent-constant tables (and built-in strain modes) exist for 2nd,
-3rd and 4th order over all 12 elastic crystal classes; 5th order is available for the
-isotropic, cubic, tetragonal, orthorhombic, monoclinic and triclinic classes.
+3rd and 4th order over all 11 elastic crystal classes; 5th order is available for the
+cubic, tetragonal, orthorhombic, monoclinic and triclinic classes.

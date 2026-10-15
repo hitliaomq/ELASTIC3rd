@@ -45,11 +45,11 @@ Parameter      Default       Comments
 BaseName       Si            Name of the result folder. For CASTEP it must equal the stem of the
                              .cell/.param files; for VASP it is any string; for the ML providers it is
                              the stem of the structure file (BaseName.cif, BaseName.poscar, ...)
-CrystalType    C1            Elastic crystal class: isotropic/i, cubic1/c1, cubic2/c2, hexagonal1/h1,
+CrystalType    C1            Elastic crystal class: cubic1/c1, cubic2/c2, hexagonal1/h1,
                              hexagonal2/h2, rhombohedral1/r1, rhombohedral2/r2, tetragonal1/t1,
                              tetragonal2/t2, orthorhombic/o, monoclinic/m, triclinic/n (case-insensitive,
                              long or short names)
-Ord            3             Order of the elastic constants (2, 3 or 4; 5 for i/c1/c2/t1/t2/o/m/n)
+Ord            3             Order of the elastic constants (2, 3 or 4; 5 for c1/c2/t1/t2/o/m/n)
 EnergyCode     CASTEP        Provider that computes energy/stress; Elastic3rd imports the module
                              elastic3rd.energy.<EnergyCode> (case-insensitive), see EnergyCodes page
 EnergyRun      1             1 = built-in run command (CASTEP: RunCASTEP.bat/sh -np NP BaseName; VASP:
@@ -231,6 +231,12 @@ without running any calculation), use the ``elastic3rd post`` command in the fol
 the job was submitted::
 
     elastic3rd post -n 4        # recover 4th-order constants from the existing data
+
+The higher-order-effect strategy (recovering lower-order constants while retaining
+higher-order terms of the energy/stress expansion in the fit) is described in
+M. Liao, Y. Liu, Y. Wang, F. Zhou, N. Qu, T. Han, D. Yang, Z. Lai, Z.-K. Liu, J. Zhu,
+Revisiting the third-order elastic constants of diamond: the higher-order effect,
+Diamond Relat. Mater. 117 (2021) 108490, doi:10.1016/j.diamond.2021.108490.
 
 For the full option list, run ``elastic3rd post -h``. See :doc:`examples` for a worked
 example.
