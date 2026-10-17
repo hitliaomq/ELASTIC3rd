@@ -137,8 +137,7 @@ Machine-learning models and libraries:
 - ``mattersim``: L. Yang et al., MatterSim: A deep learning atomistic model across
   elements, temperatures and pressures, arXiv:2405.04967 (2024) (preprint).
 - ``orb``: W. Neumann et al. (Orbital Materials), Orb: A fast, scalable neural
-  network potential, arXiv:2410.22570 (2024); preprint only, no peer-reviewed
-  publication found.
+  network potential, arXiv:2410.22570 (2024).
 - ``grace``: P. Bochkarev, Y. Lysogorskiy, R. Drautz, Graph atomic cluster expansion
   for semilocal interactions beyond equivariant message passing, Phys. Rev. X 14
   (2024) 021036, doi:10.1103/PhysRevX.14.021036; Y. Lysogorskiy, P. Bochkarev,
@@ -147,18 +146,12 @@ Machine-learning models and libraries:
 - ``nequip``: S. Batzner et al., E(3)-equivariant graph neural networks for
   data-efficient and accurate interatomic potentials, Nat. Commun. 13 (2022) 2453,
   doi:10.1038/s41467-022-29939-5.
-- ``dpmd``: L. Zhang, J. Han, H. Wang, W. Barasol, D. Cesa, E. Weinan, Deep
-  potential molecular dynamics: A scalable model with the accuracy of quantum
-  mechanics, Phys. Rev. Lett. 120 (2018) 143001, doi:10.1103/PhysRevLett.120.143001;
-  J. Wang, L. Zhang, J. Han, E. Weinan, DeePMD-kit: A deep learning package for
-  many-body potential energy representation and molecular dynamics, Comput. Phys.
-  Commun. 228 (2018) 178, doi:10.1016/j.cpc.2018.03.016; J. Zeng et al., DeePMD-kit
-  v2: A software package for deep potential models, J. Chem. Phys. 159 (2023)
-  054801, doi:10.1063/5.0155600.
+- ``dpmd``: D. Zhang, et al., A graph neural network for the era of large atomistic 
+  models, Npj Comput. Mater. 12 (2026) 276. doi: 10.1038/s41524-026-02146-2.
 - ``alphanet``: D. Yin et al., AlphaNet: Scaling up local-frame-based neural network
   interatomic potentials, npj Comput. Mater. 11 (2025) 332, arXiv:2501.07155.
 - ``tace``: Z. Xu, W. Xie, H. Xie, P. Hu, Towards universal property prediction in
   Cartesian space: TACE is all you need, arXiv:2509.14961 (2025) (preprint).
-- ``matris``: no peer-reviewed reference is available; cite the project repository
-  https://github.com/HPC-AI-Team/MatRIS.
+- ``matris``: Y. Zhou, et al., MatRIS: toward reliable and efficient pretrained machine 
+  learning interatomic potentials, (2026). arXiv: 2603.02002.
 
