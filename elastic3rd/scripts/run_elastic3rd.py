@@ -58,7 +58,7 @@ def post(args):
             VOLUME = crylat.print_lattice(BaseVec)
 
     C = espost.post_mode(V0=VOLUME, Flag_Sep=0, Flag_Fig=FIG, Flag_Data=0, Flag_Ord=N, EEnergy=ENERGY, 
-            INPUT=INPUT, STRAINMODE=STRAINMODE, FigName='diamond-3rd', DataFileName='diamond-3rd')
+            INPUT=INPUT, STRAINMODE=STRAINMODE, FigName='test-3rd', DataFileName='test-3rd')
     #if STRAINMODE:
     #    #Not None
     #    (C2, C3) = espost.post_mode(V0=VOLUME, Flag_Fig=FIG, Flag_Ord=N, EEnergy=ENERGY, INPUT=INPUT, STRAINMODE=STRAINMODE)
