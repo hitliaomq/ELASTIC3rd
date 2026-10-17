@@ -228,9 +228,10 @@ complete worked setups.
 
 ``vasp-Diamond-differentMethods`` (cubic diamond, VASP, four methods side by side)
     One input folder with four sub-folders, each a self-contained run of the same
-    structure (``POSCAR``), ``INCAR``/``KPOINTS`` files and a user-provided
-    ``STRAINMODE`` file (six modes for the cubic class: ``100000``, ``110000``,
-    ``100200``, ...):
+    structure (``POSCAR``), ``INCAR``/``KPOINTS`` files (**Note:** ``POTCAR`` file 
+    is required to run the examples) and a user-provided
+    ``STRAINMODE`` file (six modes for the cubic class: ``1 0 0 0 0 0``, ``1 1 0 0 0 0``,
+    ``1 0 0 2 0 0``, ...):
 
     - ``Ord2``: second order only (``Ord 2``, ``FlagSE S``, ``MaxStrain 1``, 7 points)
     - ``SEM``: strain-energy method (``FlagSE E``, ``Ord 3``, ``MaxStrain 6``, 13 points)
