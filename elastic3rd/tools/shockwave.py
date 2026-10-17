@@ -27,12 +27,12 @@ import numpy as np
 import elastic3rd
 import elastic3rd.esutils as esutils
 import elastic3rd.crystal.deform as crydef
+import elastic3rd.crystal.lattice as crylat
 import elastic3rd.symmetry
 
 flag_test = 0
 
-'''
-INPUT = "INPUT"
+INPUT = "INPUT.e3rd"
 if os.path.exists(INPUT):
     ParaIn = esutils.read_input(INPUT)
     eglue = __import__("elastic3rd.energy." + ParaIn['EnergyCode'], fromlist = ParaIn['EnergyCode'])
@@ -58,7 +58,6 @@ StrainMode = {"100" : np.array([1., 0, 0, 0, 0, 0]),
               "110" : np.array([0.5, 0.5, 0, 0, 0, 1.]), 
               "111" : np.array([0.3, 0.3, 0.3, 0.6, 0.6, 0.6])}
 SMOrder = ["100", "110", "111"]
-'''
 
 def post_shockwave(SMOrder, BaseName, StrainList):
     

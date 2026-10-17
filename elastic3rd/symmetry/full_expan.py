@@ -654,7 +654,7 @@ class Eta(object):
         else:
             return MultiEta.from_etas([self, newEta])
 
-    def __radd__(newEta):
+    def __radd__(self, newEta):
         return self.__add__(newEta)
     
     def negtive(self):

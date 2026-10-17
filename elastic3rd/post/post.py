@@ -235,6 +235,7 @@ def get_coef(s, e, V0, flag_se, flag=3):
             (coefi, pcovi) = esfit.esfit(s, ei, flag_se, flag)
         else:
             s2 = s
+            n_d = np.where(np.abs(s) < 1e-5)
             s2[n_d] = 1
             if flag == 1:
                 e2 = ei/s2/s2

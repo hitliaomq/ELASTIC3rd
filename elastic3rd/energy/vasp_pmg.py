@@ -9,6 +9,7 @@ from pymatgen.io.vasp.outputs import Outcar, Vasprun
 from pymatgen.core.structure import Structure
 import elastic3rd.energy.glue as glue
 import numpy as np
+import os, shutil
 
 def run(NP, BaseName=None):
     '''

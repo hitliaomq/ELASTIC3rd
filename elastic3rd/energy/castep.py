@@ -812,10 +812,10 @@ def parse_geom(geom_file):
                 #Not empty
                 first_ele_list = re.split(r'\s+', first_ele)
                 if first_ele_list[0].isdigit():
-                    if int(first_ele_list[0]) == 0:
-                        pass
-                    else:
-                        geom_param.append(property_val)
+                    #if int(first_ele_list[0]) == 0:
+                    #    pass
+                    #else:
+                    #    geom_param.append(property_val)
                     property_val = {'Energy': [], 'Position': [], 'Lattice': [], 'Force': [], 'Stress': [], 'Atom': [], 'Velocity': []}
                 else:
                     #print(flag)
@@ -854,6 +854,8 @@ def parse_castep(castep_file):
     castep_param = []
     property_val = {'Energy': [], 'Position': [], 'Lattice': [], 'Force': [], 'Stress': [], 'Atom': [], 'Velocity': []}
     #The following is copy from parse_stress_from_castep
+    count, i = 1, 0
+    Stress = np.zeros((3, 3))
     with open(castep_file, 'r') as fopen:
         for eachline in fopen:
             eachline = eachline.strip();

@@ -435,7 +435,7 @@ def get_e0(s, e, flag_se):
                 #if is stress, the data around 0 is linear
                 e0 = (x1 * y2 - x2 * y1)/(x1 - x2)
         else:
-            e0 = np.min(ei)
+            e0 = np.min(s)
     return e0
 
 def multiesplot(s, e, coef, flag_se, flag_ord=3, V0=None, FigName=None):

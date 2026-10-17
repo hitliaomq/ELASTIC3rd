@@ -39,7 +39,7 @@ import importlib
 RUNDIRECTCODE = ['mattersim', 'chgnet', 'matgl', 'sevenn', 
                  'orb', 'mace', 'grace', 'nequip', 'dpmd', 'alphanet', 'tace', 'matris']
 
-def import_energycode(EnergyCode="vasp"):
+def import_energycode(EnergyCode="vasp", INPUT="INPUT.e3rd"):
     if os.path.exists(INPUT):
         ParaIn = esutils.read_input(INPUT)
         eglue = importlib.import_module('energy.{}'.format(ParaIn['EnergyCode']))
