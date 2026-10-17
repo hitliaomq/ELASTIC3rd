@@ -34,7 +34,7 @@ And the Lagrangian strain can be written as follows:
 The F is the deformation gradient, and can be expressed by the lattic vector of deformed structure(r') and intial structure (r).
 
 .. math::
-    r^{'} = Fr
+    r^{\prime} = Fr
 
 when using symmetrical strain, the deformation gradient can be expressed by the Lagrangian strain.
 
