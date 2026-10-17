@@ -34,7 +34,7 @@ And the Lagrangian strain can be written as follows:
 The F is the deformation gradient, and can be expressed by the lattic vector of deformed structure(r') and intial structure (r).
 
 .. math::
-    r^' = Fr
+    r^{'} = Fr
 
 when using symmetrical strain, the deformation gradient can be expressed by the Lagrangian strain.
 
@@ -68,43 +68,67 @@ Differentiating the energy expansion above with respect to strain gives the conj
 
 so fitting stress vs. strain yields constants of order :math:`N` from a polynomial of
 degree :math:`N-1` instead of :math:`N`. Elastic3rd converts the Cauchy stress printed by
-the first-principles code into the second Piola-Kirchhoff stress (``cauchy2pk``), which
-means the strain-stress method (``FlagSE S``) needs one order less of strain data and
-considerably fewer deformation modes for low-symmetry crystals (ref. Phys. Rev. Lett.
-121, 216001 (2018)). The pre-factors differ accordingly: an :math:`N`-th order constant
-is recovered from a fitted coefficient multiplied by :math:`N!` in the energy method and
-:math:`(N-1)!` in the stress method.
+the first-principles code into the second Piola-Kirchhoff stress (``cauchy2pk``). In the 
+strain-stress method, one deformation can generate more independent equation about elastic 
+consatnts (up to 6 if the strain mode is chosen carefully), which means the strain-stress 
+method (``FlagSE S``) needs less strain modes compared to strain-energy method (ref. Comput. 
+Phys. Commun. 
+280 (2022) 108478).
 
-Coefficient recovery
-====================
+Numerical differentiation method
+================================
 
-Two schemes are available (``CoefMethod``):
+The separate numerical-differentiation scheme of Phys. Rev. Lett. 121, 216001 (2018)
+(Cao *et al.*) treats every independent constant on its own, and is driven by the
+``elastic3rd nd`` command (see :doc:`examples`). Instead of fitting the response of a
+complete mode set with one polynomial, the constants are obtained directly as
+derivatives of the second Piola-Kirchhoff stress at zero strain:
 
-- **fit**: the energy (or stress) of each strain mode is fitted with a polynomial whose
-  degree equals the requested order (starting at :math:`\eta^2` for energy,
-  :math:`\eta^1` for stress, since the unstrained structure is at equilibrium);
-- **num**: the derivatives at zero strain are estimated directly by finite-difference
-  stencils of accuracy 2/4/6/8 (``Acc``) on a symmetric strain list, following the
-  separated-strain scheme of Phys. Rev. Lett. 121, 216001 (2018).
+.. math::
+    C_{ijkl}=\left.\frac{\partial\sigma_{ij}}{\partial\eta_{kl}}\right|_{\eta=0},
+    \qquad
+    C_{ijklmn}=\left.\frac{\partial^{2}\sigma_{ij}}
+    {\partial\eta_{kl}\,\partial\eta_{mn}}\right|_{\eta=0}.
+
+For each constant, the program generates a dedicated set of strain modes acting only on
+the components that survive the permutation symmetry of that constant (Eq. 6-8 of the
+reference, implemented in ``elastic3rd.tools.sep_nd``), so the requested derivative is
+read off the conjugate stress component (converted from the Cauchy stress by
+``cauchy2pk``) without solving any coupled system.
+
+The derivatives are estimated with finite-difference stencils symmetric around
+:math:`\eta = 0`. The accuracy parameter ``Acc`` sets the number of points:
+:math:`\pm\varepsilon` for ``Acc 2``, :math:`\pm\varepsilon/2` and :math:`\pm\varepsilon`
+for ``Acc 4``, and so on up to 8-point stencils. The stencil weights are generated for
+the actual strain list by solving the linear system that makes the formula exact for
+polynomials up to the stencil order (``elastic3rd.tools.nd_coef``); when energy rather
+than stress is differentiated, the vanishing first derivative at equilibrium is imposed
+as an extra condition, which reduces the number of points needed for the same accuracy.
+
+Because no global polynomial model is assumed, each estimate uses the fewest possible
+strain points and applies to every crystal class without a fitted mode set; the price
+is that each constant needs its own calculations, and a bare central difference
+inherits the numerical noise of the stress. Elastic3rd therefore evaluates every
+constant at each requested strain amplitude, writes the individual estimates to
+``EC.json`` and their average to ``EC_ave.json``, and prints the averaged constants in
+GPa; the spread over amplitudes is a direct, assumption-free error estimate. The method
+requires stress output, so it works with ``vasp``, ``castep`` and ``abacus``.
+
+Coefficient relation and higher-order effects
+=============================================
 
 In both cases, the symmetry relations among the tensor components (Brugger for 2nd/3rd,
-Brendel for 4th, and higher orders where tabulated) are encoded in
-``elastic3rd/symmetry``: each strain mode contributes a linear equation that relates the
-fitted coefficients to the independent constants, and the system is solved exactly when
-the mode set is complete, or by least squares otherwise.
-
-Higher-order effects
-====================
-
-Truncating the expansion at the order being fitted biases higher-order constants when
-the strain window is large (ref. https://doi.org/10.1016/j.diamond.2021.108490). The ``elastic3rd post`` command refits the stored data with
-an extra polynomial order and reports the constants after the higher-order terms are
-taken into account (``Flag_Ord`` up to 9), together with the convergence of each
-constant versus the strain window.
-
-Supported orders
-================
+Brendel for 4th) are encoded in ``elastic3rd/symmetry``: each strain mode contributes a 
+linear equation that relates the fitted coefficients to the independent constants, and 
+the system is solved exactly when the mode set is complete, or by least squares otherwise.
 
 Fully supported independent-constant tables (and built-in strain modes) exist for 2nd,
-3rd and 4th order over all 11 elastic crystal classes; 5th order is available for the
-cubic, tetragonal, orthorhombic, monoclinic and triclinic classes.
+3rd and 4th order over all 11 elastic crystal classes.
+
+Truncating the expansion at the order being fitted biases higher-order constants when
+the strain window is large (ref. https://doi.org/10.1016/j.diamond.2021.108490). The 
+``elastic3rd post`` command refits the stored data with an extra polynomial order and 
+reports the constants after the higher-order terms are taken into account (``Flag_Ord`` 
+up to 9), together with the convergence of each constant versus the strain window.
+
+

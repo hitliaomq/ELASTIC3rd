@@ -63,6 +63,7 @@ GenSM          1             With CalMode=W: 1 = take built-in strain modes for 
                              with CalMode=S); 0 = generate modes programmatically
 CoefMethod     fit           fit = polynomial fitting, num = numerical differentiation (num requires a
                              symmetric strain list and STEPS = 5)
+                             num (not work now, please use command 'elastic3rd nd')
 Acc            4             Accuracy of the numerical-differentiation stencil (2/4/6/8); ignored by the
                              fitting method
 MaxStrain      5.0           Maximum strain amplitude, in percent
@@ -230,12 +231,10 @@ To take higher-order effects into account (i.e. refit the collected energy/stres
 without running any calculation), use the ``elastic3rd post`` command in the folder where
 the job was submitted::
 
-    elastic3rd post -n 4        # recover 4th-order constants from the existing data
+    elastic3rd post -n 4        # taking 4th-order effect into consideration
 
-The higher-order-effect strategy (recovering lower-order constants while retaining
-higher-order terms of the energy/stress expansion in the fit) is described in
-M. Liao, Y. Liu, Y. Wang, F. Zhou, N. Qu, T. Han, D. Yang, Z. Lai, Z.-K. Liu, J. Zhu,
-Revisiting the third-order elastic constants of diamond: the higher-order effect,
+The higher-order-effect is described in M. Liao, et al., Revisiting the third-order elastic 
+constants of diamond: the higher-order effect,
 Diamond Relat. Mater. 117 (2021) 108490, doi:10.1016/j.diamond.2021.108490.
 
 For the full option list, run ``elastic3rd post -h``. See :doc:`examples` for a worked
